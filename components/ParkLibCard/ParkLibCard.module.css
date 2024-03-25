@@ -1,0 +1,19 @@
+.parkName {
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkGreen);
+}
+
+.parkName h4 {
+    color: var(--bone);
+}
+
+.parkImage{
+    margin: 0;
+    padding: 0;
+}
+
+.parkCard {
+    border-width: 0.5px;
+    border-color: var(--black);
+}
