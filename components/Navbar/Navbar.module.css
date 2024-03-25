@@ -1,0 +1,19 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 430px; 
+    height: 82px;
+    background-color: var(--blue);
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+.innerWrapper {
+    display: flex;
+    gap: 3rem;
+}
+    
+    
+
