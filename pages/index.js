@@ -4,8 +4,11 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import TutorialOverlayPopup from "@/components/TutorialOverlayPopop";
+
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -17,7 +20,12 @@ export default function Home() {
       <Navbar/>
       <main className={`${styles.main}`}>
         Eskweeet-it!
+      <TutorialOverlayPopup/>
+      <button>
+        <Link href={'/faq'}>FAQ Page</Link>
+      </button>
       </main>
+      <Footer/>
     </>
   );
 }
