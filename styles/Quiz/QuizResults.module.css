@@ -1,0 +1,73 @@
+.QSContainer {
+    margin-top: 10rem;
+    min-height: 80vh;
+    padding: 2.5rem 0rem;
+}
+
+.innerWrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.Image{
+    margin-left: -1.25rem;
+}
+
+.button {
+    margin-left: 1.8rem;
+    margin-top: 2.5rem;
+}
+
+.Question {
+    padding-top: .5rem;
+}
+
+.yourCorrectAnswer {
+    color: #098F5E;
+    font-weight: 600;
+    padding-left: 1.25rem;
+}
+
+.yourWrongAnswer {
+    color: #D10431;
+    font-weight: 600;
+    padding-left: 1.25rem;
+}
+
+.iconCross {
+    padding-right: .4rem;
+    padding-top: .1rem;
+}
+
+.imageTree {
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+
+.imageBadge {
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    z-index: -1;
+}
+
+.imageSqwee {
+    position: absolute;
+    bottom: 5rem;
+    left: 10rem;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+
+.imageSwirl {
+    margin: 0;
+    padding: none;
+    width: 100vw;
+    pointer-events: none;
+    position: absolute;
+    top: 11rem;
+    z-index: -10;
+  }
