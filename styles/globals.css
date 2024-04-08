@@ -5,6 +5,7 @@
   --darkGreen: #3E655D;
   --orange: #F7802B;
   --purple: #D4B1CF;
+  --white: #FFFFFF;
 
   --font-h1: 3rem; /*48px, semibold*/
   --font-h2: 2.5rem; /*40px*/
@@ -12,16 +13,63 @@
   --font-h4: 1.5rem; /*24px*/
   --font-h5-sb: 1.25rem; /*20px*/
   --font-h5: 1.25rem; /*20px*/
-  --font-body: 1rem; /*16px* Nunito/ 
-  --font-button: 1rem; /*16px bold*/ 
+  --font-body: 1rem; /*16px* Nunito*/ 
+  --font-button: 1.5rem; /*24px semibold*/ 
   --font-link: 1rem; /*16px bold nunito*/ 
 }
 
-/*For all HTML elements*/
+/*For all HTML elements*/ /*1 rem = 16px*/
 *, html {
     margin: 0;
     padding: 0;
     font-size: 16px; 
 }
 
+/*Typography*/
+body {
+  font-size: var(--font-body);
+  font-weight: 500;
+  background-color: var(--bone);
+}
 
+h1 {
+  font-size: var(--font-h1);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--font-h2);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--font-h3);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--font-h4);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: var(--font-h5);
+  font-weight: 500;
+}
+
+
+
+/*Buttons*/
+button {
+  padding: 16px, 8px;
+  width: 17.625rem;
+  height: 4.625rem;
+  font-size: var(--font-button);
+  font-weight: 600;
+  font-family: 'KoHo';
+  border:none;
+  border-radius: 4rem;
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--black);
+}
