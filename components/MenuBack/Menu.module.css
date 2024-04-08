@@ -1,19 +1,18 @@
-.Navbar {
+.Menu {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     min-width: 430px; 
     height: 80px;
     background-color: var(--darkGreen);
     position: fixed;
-    bottom:0;
+    top:0;
     left:0;
 }
 
 .innerWrapper {
     display: flex;
-    gap: 3rem;
+    padding: 0 1.25rem;
+    gap: 18rem;
 }
     
-    
-

@@ -1,43 +1,51 @@
 import styles from './Navbar.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
+    const router = useRouter();
+    
     return (
         <div className={styles.Navbar}>
             <div className={styles.innerWrapper}>
-                <Link href="/"><Image href="/images_interface/temp_icon.png"/>
-                    <Image 
-                        src="/images_interface/temp_icon.png"
-                        width={50}
-                        height={50}
-                        alt="temporary icon for home"
-                    />
-                </Link>
-                <Link href="/ParksLibrary"><Image href="/images_interface/temp_icon.png"/>
-                    <Image 
-                        src="/images_interface/temp_icon.png"
-                        width={50}
-                        height={50}
-                        alt="temporary icon for parks"
-                    />
-                </Link>
-                <Link href="/Profile"><Image href="/images_interface/temp_icon.png"/>
-                    <Image 
-                        src="/images_interface/temp_icon.png"
-                        width={50}
-                        height={50}
-                        alt="temporary icon for profile"
-                    />
-                </Link>
-                <Link href="/Community"><Image href="/images_interface/temp_icon.png"/>
-                    <Image 
-                        src="/images_interface/temp_icon.png"
-                        width={50}
-                        height={50}
-                        alt="temporary icon for community"
-                    />
-                </Link>
+                <Image 
+                    src="/images_interface/home_icon.svg"
+                    width={50}
+                    height={50}
+                    alt="icon for home"
+                    onClick={() => router.push("/")}
+                    style={{ border: router.pathname === "/" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    tabIndex={100}
+                />
+                <Image 
+                    src="/images_interface/community_icon.svg"
+                    width={50}
+                    height={50}
+                    alt="icon for community"
+                    onClick={() => router.push("/Community")}
+                    style={{ border: router.pathname === "/Community" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    tabIndex={101}
+                />
+                <Image 
+                    src="/images_interface/parks_icon.svg"
+                    width={50}
+                    height={50}
+                    alt="icon for parks"
+                    onClick={() => router.push("/ParksLibrary")}
+                    style={{ border: router.pathname === "/ParksLibrary" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    tabIndex={102}
+                />
+                <Image 
+                    src="/images_interface/profile_icon.svg"
+                    width={50}
+                    height={50}
+                    alt="icon for profile"
+                    onClick={() => router.push("/Profile")}
+                    style={{ border: router.pathname === "/Profile" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    tabIndex={103}
+                />
+                
             </div>
         </div>
     )
