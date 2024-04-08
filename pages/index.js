@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import MenuBack from "@/components/MenuBack";
 import Navbar from "@/components/Navbar";
 import TutorialOverlayPopup from "@/components/TutorialOverlayPopop";
 
@@ -17,15 +18,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
+      <MenuBack/>
       <main className={`${styles.main}`}>
-        Eskweeet-it!
-      <TutorialOverlayPopup/>
-      <button>
+        MAIN
+        <button>
         <Link href={'/faq'}>FAQ Page</Link>
-      </button>
+        </button>
       </main>
-      <Footer/>
+      <Navbar/>
     </>
   );
 }
