@@ -126,7 +126,7 @@ export default function qPage() {
                             width={430}
                             height={90}
                             alt="image of a forest with a trail curving into it"
-                            className={styles.indicatorFour}
+                            className={styles.indicator}
                         />
                     </p> : 
                     <p> 
@@ -135,7 +135,7 @@ export default function qPage() {
                             width={430}
                             height={90}
                             alt="image of a forest with a trail curving into it"
-                            className={styles.indicatorThree}
+                            className={styles.indicator}
                         />
                     </p> :
                     <p>
@@ -144,7 +144,7 @@ export default function qPage() {
                             width={430}
                             height={90}
                             alt="image of a forest with a trail curving into it"
-                            className={styles.indicatorTwo}
+                            className={styles.indicator}
                         />
                     </p> :
                     <p>
@@ -153,7 +153,7 @@ export default function qPage() {
                             width={430}
                             height={90}
                             alt="image of a forest with a trail curving into it"
-                            className={styles.indicatorOne}
+                            className={styles.indicator}
                         /> 
                     </p> :
                     <p></p>  
@@ -165,7 +165,7 @@ export default function qPage() {
                 width={760.51}
                 height={610.78}
                 alt="image of a forest with a trail curving into it"
-                className={styles.Image}
+                className={styles.imageSwirl}
             />
             <Navbar/>
         </div>
