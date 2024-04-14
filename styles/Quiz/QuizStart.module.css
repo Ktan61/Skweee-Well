@@ -1,3 +1,25 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 430px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "l c r"
+    "l c r"
+    "l c r";
+}
+
+.gridLeft {
+    grid-area: l;
+}
+
+.gridCenter {
+    grid-area: c;
+}
+
+.gridRight {
+    grid-area: r;
+}
+
 .QSContainer {
     margin-top: 5rem;
     background-color: var(--bone);
@@ -7,6 +29,29 @@
 
 .Image{
     margin-left: -1.25rem;
+}
+
+.imageSqwee {
+    position: absolute;
+    top: 24rem;
+    left: 5rem;
+    z-index: 10;
+}
+
+.imageAcorn1 {
+    position: absolute;
+    top: 29.5rem;
+    left: 14.5rem;
+    z-index: 10;
+    transform: rotate(-5deg);
+}
+
+.imageAcorn2 {
+    position: absolute;
+    top: 29.5rem;
+    left: 17rem;
+    z-index: 10;
+    transform: rotate(5deg);
 }
 
 .quizTime {

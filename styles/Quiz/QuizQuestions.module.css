@@ -11,6 +11,10 @@
   z-index:10;
 }
 
+.innerContainer {
+  margin: 0;
+}
+
 .headingContainer {
   display: flex;
   flex-direction: row;
@@ -107,7 +111,7 @@
   margin-left: 3.375rem;
 }
 
-.Image {
+.imageSwirl {
   margin: 0;
   width: 100vw;
   pointer-events: none;
@@ -116,26 +120,8 @@
   z-index: -10;
 }
 
-.indicatorOne {
-  position: absolute;
-  left: 0;
-  bottom: 4.8rem;
-}
-
-.indicatorTwo {
-  position: absolute;
-  left: -2.6rem;
-  bottom: 4.8rem;
-}
-
-.indicatorThree {
-  position: absolute;
-  left: -5.0rem;
-  bottom: 4.8rem;
-}
-
-.indicatorFour {
-  position: absolute;
-  left: -7.4rem;
-  bottom: 4.8rem;
+.indicator {
+  position: fixed;
+  left: 0%;
+  bottom: 6rem;
 }

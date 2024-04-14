@@ -12,12 +12,23 @@ export default function QuizResults() {
     const [selectedAnswers, setSelectedAnswers] = useState("0");
     const {questions} = quiz;
     let resultAnswers = [];
+    const [score, setScore] = useState(0);
 
     useEffect(() => {
         if (router.isReady) {
             setSelectedAnswers(router.query.resultAnswers);
         }
     }, [router.isReady]); 
+
+    const calculateScore = () => {
+        let totalScore = 0;
+        for (let i = 0; i < questions.length; i++) {
+            if (questions[i].correctAnswer === questions[i].answers[Number(selectedAnswers.split("")[i])]) {
+                totalScore += 1;
+            }
+        }
+        setScore(totalScore);
+    }
 
     return (
         <main className={styles.QSContainer}>
@@ -86,6 +97,12 @@ export default function QuizResults() {
                         </p>
                     </div>
                 })}
+                <button 
+                    onClick={() => calculateScore()}
+                    className={styles.button}
+                    tabIndex={31}
+                    >{score}
+                </button>
                 <button 
                     onClick={() => router.push('/Quiz/QuizStart')}
                     className={styles.button}
