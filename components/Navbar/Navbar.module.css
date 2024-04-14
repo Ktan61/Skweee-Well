@@ -1,4 +1,19 @@
 .Navbar {
+    display: grid;
+    grid-template-columns: 1fr 430px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "l c r"
+    "l c r"
+    "l c r";
+}
+
+.gridLeft {
+    grid-area: l;
+}
+
+.gridCenter {
+    grid-area: c;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -6,14 +21,12 @@
     height: 80px;
     background-color: var(--darkGreen);
     position: fixed;
-    bottom:0;
-    left:0;
+    top:100%;
+    left:50%;
+    transform: translate(-50%, -100%);
 }
 
-.innerWrapper {
-    display: flex;
-    gap: 3rem;
+.gridRight {
+    grid-area: r;
 }
-    
-    
 

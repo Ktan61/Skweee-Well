@@ -8,7 +8,8 @@ export default function Navbar() {
     
     return (
         <div className={styles.Navbar}>
-            <div className={styles.innerWrapper}>
+            <section className={styles.gridLeft}></section>
+            <section className={styles.gridCenter}>
                 <Image 
                     src="/images_interface/home_icon.svg"
                     width={50}
@@ -44,9 +45,9 @@ export default function Navbar() {
                     onClick={() => router.push("/Profile")}
                     style={{ border: router.pathname === "/Profile" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
                     tabIndex={103}
-                />
-                
-            </div>
+                />        
+            </section>
+            <section className={styles.gridLeft}></section>
         </div>
     )
 }
