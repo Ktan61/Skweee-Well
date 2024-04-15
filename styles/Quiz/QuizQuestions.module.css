@@ -1,24 +1,21 @@
-.page{
-  position:relative;
+.page {
+  display: relative;
 }
 
-.quizBody {
+.innerQuizContainer {
   background-color: transparent;
   min-height: 80vh;
   margin-top: 5rem;
   padding: 2.5rem 1.25rem;
-  position: relative;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
   z-index:10;
-}
-
-.innerContainer {
-  margin: 0;
 }
 
 .headingContainer {
   display: flex;
   flex-direction: row;
- gap: 11rem;
   position: relative;
 }
 
@@ -58,9 +55,10 @@
 
 .answerPopUp{
   display: none;
-  position: absolute;
-  top: 10px;
-  left: 20px;
+  position: fixed;
+  top: .8rem;
+  left: 50%;
+  transform: translate(-50%);
   z-index: 10;
   background-color: var(--blue);
   width: 390px;
@@ -116,12 +114,13 @@
   width: 100vw;
   pointer-events: none;
   position: absolute;
-  top: 2rem;
+  top: 8rem;
   z-index: -10;
 }
 
 .indicator {
   position: fixed;
-  left: 0%;
-  bottom: 6rem;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
