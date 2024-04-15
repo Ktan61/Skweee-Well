@@ -64,5 +64,7 @@
 }
 
 .button {
-    padding-left: 3.375rem;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
 }

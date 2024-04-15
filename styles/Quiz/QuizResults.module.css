@@ -1,23 +1,12 @@
+/*PAGE LAYOUT*/
 .QSContainer {
-    margin-top: 10rem;
-    min-height: 80vh;
-    padding: 2.5rem 0rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 12rem;
 }
 
-.innerWrapper {
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-.Image{
-    margin-left: -1.25rem;
-}
-
-.button {
-    margin-left: 1.8rem;
-    margin-top: 2.5rem;
-}
-
+/*RESULTS*/
 .Question {
     padding-top: .5rem;
 }
@@ -39,35 +28,100 @@
     padding-top: .1rem;
 }
 
-.imageTree {
-    position: absolute;
-    top: -10rem;
-    left: -10rem;
-    z-index: -1;
-    transform: rotateY(180deg);
+.buttonCollectBadge {
+    margin-left: 1.8rem;
+    margin-top: 2.5rem;
+}
+
+/*BADGE POPUP*/
+.badgeDiv{
+    display: none;
+    position: fixed;
+    top: 4.95rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    background-color: var(--purple);
+    width: 430px;
+    height: 83.5%;
+}
+
+.innerChampionDiv {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.innerGoldDiv {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.innerSilverDiv {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.innerBronzeDiv {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.innerNoBadgeDiv {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem 2rem 2rem;
+    text-align: center;
 }
 
 .imageBadge {
-    position: absolute;
-    top: 6rem;
-    right: 1rem;
-    z-index: -1;
+    padding-top: 2.5rem;
 }
 
-.imageSqwee {
-    position: absolute;
-    bottom: 5rem;
-    left: 10rem;
-    z-index: 0;
-    transform: rotateY(180deg);
+.buttonTryAgain {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 
+/*PAGE DESIGN ELEMENTS*/
 .imageSwirl {
     margin: 0;
     padding: none;
-    width: 100vw;
+    width: 430px;
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     top: 11rem;
     z-index: -10;
-  }
+}
+
+.imageTree {
+    position: fixed;
+    top: -14rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+
+}
+
+.imageSqwee {
+    margin-bottom: 5rem;
+}
+

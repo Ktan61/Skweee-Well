@@ -3,8 +3,11 @@ import styles from "@/styles/Quiz/QuizStart.module.css";
 import Image from "next/image";
 import MenuBack from "@/components/MenuBack";
 import Navbar from "@/components/Navbar";
+import { useRouter } from "next/router";
 
 export default function Quiz() {
+    const router = useRouter();
+
     return (
         <main className={styles.main}>
             <section className={styles.gridLeft}>
@@ -25,9 +28,11 @@ export default function Quiz() {
                     </div>
                     <h4 className={styles.quizTime} tabIndex={32}>Quiz Time!</h4>
                     <p className={styles.quizBody} tabIndex={33}>You've completed the locations for this hunt, now it's time to test your knowledge about Central Park! </p>
-                    <Link href='/Quiz/QuizQuestions' className={styles.button} tabIndex={34}>
-                        <button >Start Quiz</button>
-                    </Link>
+                    <button 
+                        className={styles.button}
+                        tabIndex={34}               
+                        onClick={() => router.push("/Quiz/QuizQuestions")}> Start Quiz
+                    </button>
                     <Navbar/>
                 </div>
             </section>
