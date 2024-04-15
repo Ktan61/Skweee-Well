@@ -4,15 +4,17 @@ import Image from "next/image";
 import MenuBack from "@/components/MenuBack";
 import Navbar from "@/components/Navbar";
 import { useRouter } from "next/router";
+import HeadArea from "@/components/HeadArea";
 
 export default function Quiz() {
     const router = useRouter();
 
     return (
         <main className={styles.main}>
-            <section className={styles.gridLeft}>
-
-            </section>
+            <HeadArea
+                title="Scavenger Hunt Quiz"
+            />
+            <section className={styles.gridLeft}></section>
             <section className={styles.gridCenter}>
                 <MenuBack/>
                 <div className={styles.QSContainer}>
@@ -36,9 +38,7 @@ export default function Quiz() {
                     <Navbar/>
                 </div>
             </section>
-            <section className={styles.gridRight}>
-
-            </section>
+            <section className={styles.gridRight}></section>
         </main>
     )
 }

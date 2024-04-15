@@ -38,7 +38,7 @@ export default function Navbar() {
                     tabIndex={102}
                 />
                 <Image 
-                    src="/images_interface/profile_icon.svg"
+                    src="/images_interface/profile_icon.png"
                     width={50}
                     height={50}
                     alt="icon for profile"

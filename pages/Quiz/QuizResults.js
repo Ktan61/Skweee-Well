@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import { quiz } from "@/data/quizData";
 import { useState, useEffect } from "react";
+import HeadArea from "@/components/HeadArea";
 
 export default function QuizResults() {
     const router = useRouter();
@@ -52,6 +53,9 @@ export default function QuizResults() {
 
     return (
         <main className={styles.QSContainer}>
+            <HeadArea
+                title="Quiz Results"
+            />
             <MenuBack/>
             <div className={styles.innerWrapper}>
                 <div id="badgeDiv" className={styles.badgeDiv}>
