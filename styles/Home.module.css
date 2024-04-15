@@ -5,5 +5,39 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: var(--bone);
+}
+
+.bannerSection {
+  display: flex;
+  padding-top: 2.5rem;
+  padding-left: 1.8rem;  
+}
+
+.welcome {
+  width: 13.5rem;
+}
+
+.imageSqweeAcorn {
+  margin-top: 2.5rem;
+}
+
+/*PAGE DESIGN ELEMENTS*/
+
+.imageSwirl {
+  margin: 0;
+  width: 430px;;
+  pointer-events: none;
+  position: fixed;
+  top: 14rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -10;
+}
+
+.imageTree {
+  position: fixed;
+  top: -14rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
 }

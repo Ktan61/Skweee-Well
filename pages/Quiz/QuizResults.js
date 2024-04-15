@@ -172,19 +172,19 @@ export default function QuizResults() {
                 
             </div>
             <Image
-                    src="/images_interface/sqwee_4_acorns.svg"
-                    width={120}
-                    height={120}
-                    alt="image of central park quiz badge"
-                    className={styles.imageSqwee}
-                />
+                src="/images_interface/sqwee_4_acorns.svg"
+                width={120}
+                height={120}
+                alt="image of central park quiz badge"
+                className={styles.imageSqwee}
+            />
             <Image
-                    src="/images_interface/Tree_cropped.svg"
-                    width={430}
-                    height={650}
-                    alt="image of a forest with a trail curving into it"
-                    className={styles.imageTree}
-                />
+                src="/images_interface/Tree_cropped.svg"
+                width={430}
+                height={650}
+                alt="image of a forest with a trail curving into it"
+                className={styles.imageTree}
+            />
             <Image
                 src="/images_interface/orange_swirl.svg"
                 width={760.51}
