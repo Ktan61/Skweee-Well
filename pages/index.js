@@ -10,6 +10,8 @@ import TutorialOverlayPopup from "@/components/TutorialOverlayPopop";
 
 export default function Home() {
 
+  var name = process.env.NEXT_PUBLIC_NAME;
+var url = `https://gis.burnaby.ca/arcgis/rest/services/OpenData/OpenData1/MapServer/6/query?where=1%3D1&outFields=*&outSR=4326&f=${name}`
   return (
     <>
       <Head>
@@ -21,6 +23,7 @@ export default function Home() {
       <MenuBack/>
       <main className={`${styles.main}`}>
         MAIN
+        {name}
         <button>
         <Link href={'/faq'}>FAQ Page</Link>
         </button>
