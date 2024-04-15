@@ -1,7 +1,10 @@
+import HeadArea from "@/components/HeadArea";
 import FaqDropdown from "@/components/FaqDropdown";
 import React from "react";
+import MenuBack from "@/components/MenuBack";
+import Navbar from "@/components/Navbar";
 
-export default function faq(){
+export default function FAQ(){
 
 
 /**const FAQPage = () => {
@@ -18,9 +21,12 @@ export default function faq(){
 
     return(
         <>
-    
-      <h4>Frequently Asked Questions</h4>
-    
+          <HeadArea
+            title="FAQ"
+          />
+          <MenuBack/>
+          <h4>Frequently Asked Questions</h4>
+          <Navbar/>
         </>
     )
   }

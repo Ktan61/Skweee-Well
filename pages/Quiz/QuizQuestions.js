@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
+import HeadArea from "@/components/HeadArea";
 
 export default function qPage() {
     const router = useRouter();
@@ -47,6 +48,9 @@ export default function qPage() {
 
     return (
         <main className={styles.page}>
+            <HeadArea
+                title="Central Park Quiz"
+            />
             <MenuBack/>
             <div className={styles.innerQuizContainer}>
                 <div className={styles.headingContainer}>
