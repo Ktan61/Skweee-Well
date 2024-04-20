@@ -12,7 +12,7 @@
     overflow: hidden;
     position: fixed;
     left: 50%;
-    top:10rem;
+    top:200px;
     transform: translateX(-50%);
   }
   .profilePhoto{
@@ -21,25 +21,25 @@
   }
   .passportIconContainer{
     position: fixed;
-    top:20rem;
+    top:22.5rem;
     left: 46%;
     transform: translateX(-50%);
   }
   .pageHeader{
     position: fixed;
     transform: translateX(-50%);
-   left:43%;
+   left:43.89%;
    top:120px;
   }
   .galleryHeader{
     position: fixed;
     transform: translateX(-50%);
-    top: 30rem;
-    left:43%;
+    top: 34rem;
+    left:43.89%;
   }
   .username{
     position: fixed;
     left: 50%;
-    top:23.7rem;
+    top:26.4rem;
     transform: translateX(-50%);
   }
