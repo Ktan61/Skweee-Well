@@ -109,6 +109,11 @@
   margin-left: 3.375rem;
 }
 
+.button:hover {
+  color: var(--white);
+  background-color: var(--darkGreen);
+}
+
 .imageSwirl {
   margin: 0;
   width: 100vw;

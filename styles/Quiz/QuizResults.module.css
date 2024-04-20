@@ -33,6 +33,11 @@
     margin-top: 2.5rem;
 }
 
+.buttonCollectBadge:hover {
+    color: var(--white);
+    background-color: var(--darkGreen);
+}
+
 /*BADGE POPUP*/
 .badgeDiv{
     display: none;
@@ -40,65 +45,83 @@
     top: 4.95rem;
     left: 50%;
     transform: translate(-50%);
-    z-index: 10;
+    z-index: 1;
     background-color: var(--purple);
     width: 430px;
     height: 83.5%;
 }
 
 .innerChampionDiv {
-    display: none;
+    display: none; /*hides badge popup*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     text-align: center;
 }
 
 .innerGoldDiv {
-    display: none;
+    display: none; /*hides badge popup*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     text-align: center;
 }
 
 .innerSilverDiv {
-    display: none;
+    display: none; /*hides badge popup*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     text-align: center;
 }
 
 .innerBronzeDiv {
-    display: none;
+    display: none; /*hides badge popup*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     text-align: center;
 }
 
 .innerNoBadgeDiv {
-    display: none;
+    display: none; /*hides badge popup*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     text-align: center;
 }
 
 .imageBadge {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .buttonTryAgain {
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    margin-bottom: 1.25rem;
+}
+
+.buttonTryAgain:hover {
+    color: var(--white);
+    background-color: var(--darkGreen);
+}
+
+.buttonLeaderboard {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.buttonLeaderboard:hover {
+    color: var(--white);
+    background-color: var(--darkGreen);
 }
 
 /*PAGE DESIGN ELEMENTS*/

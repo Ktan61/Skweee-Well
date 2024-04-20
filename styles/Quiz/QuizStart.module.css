@@ -1,7 +1,7 @@
 .main {
     display: grid;
     grid-template-columns: 1fr 430px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 932px 1fr;
     grid-template-areas:
     "l c r"
     "l c r"
@@ -64,7 +64,10 @@
 }
 
 .button {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
+    margin-left: 3.375rem;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--darkGreen);
 }
