@@ -14,7 +14,7 @@ export default function Profile() {
       <MenuBack/>
       <Navbar/>
       <main className={`${styles.main}`}>
-        My Profile
+        <h4 className={styles.pageHeader}>My Profile</h4>
         <div className={styles.profilePhotoContainer}>
         <Image
         src="/images_content/profile-photo.jpg"
@@ -32,6 +32,13 @@ export default function Profile() {
         alt="orange book icon for badge collection"
         className={styles.passportIcon}
       />
+      </div>
+      <div className={styles.username}>
+    <h5>@naturelover222</h5>
+      </div>
+      <h4 className={styles.galleryHeader}>My Gallery</h4>
+      <div className={styles.galleryContainer}>
+
       </div>
       </main>
     </>

@@ -21,7 +21,25 @@
   }
   .passportIconContainer{
     position: fixed;
-    top:21rem;
-    left: 47%;
+    top:20rem;
+    left: 46%;
+    transform: translateX(-50%);
+  }
+  .pageHeader{
+    position: fixed;
+    transform: translateX(-50%);
+   left:43%;
+   top:120px;
+  }
+  .galleryHeader{
+    position: fixed;
+    transform: translateX(-50%);
+    top: 30rem;
+    left:43%;
+  }
+  .username{
+    position: fixed;
+    left: 50%;
+    top:23.7rem;
     transform: translateX(-50%);
   }
