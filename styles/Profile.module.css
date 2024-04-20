@@ -7,4 +7,21 @@
     min-height: 100vh;
     background-color: var(--bone);
   }
-  
+  .profilePhotoContainer{
+    border-radius: 50%;
+    overflow: hidden;
+    position: fixed;
+    left: 50%;
+    top:10rem;
+    transform: translateX(-50%);
+  }
+  .profilePhoto{
+    object-fit:cover;
+    height: auto;
+  }
+  .passportIconContainer{
+    position: fixed;
+    top:21rem;
+    left: 47%;
+    transform: translateX(-50%);
+  }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import HeadArea from "@/components/HeadArea";
 import Navbar from "@/components/Navbar";
 import MenuBack from "@/components/MenuBack";
+import Image from "next/image";
 
 export default function Profile() {
   return (
@@ -13,7 +14,25 @@ export default function Profile() {
       <MenuBack/>
       <Navbar/>
       <main className={`${styles.main}`}>
-        Profile
+        My Profile
+        <div className={styles.profilePhotoContainer}>
+        <Image
+        src="/images_content/profile-photo.jpg"
+        width={200}
+        height={200}
+        alt="profile photo of a woman with brown hair"
+        className={styles.profilePhoto}
+      />
+      </div>
+      <div className={styles.passportIconContainer}>
+      <Image
+        src="/images_interface/passport-icon.png"
+        width={60}
+        height={60}
+        alt="orange book icon for badge collection"
+        className={styles.passportIcon}
+      />
+      </div>
       </main>
     </>
   );
