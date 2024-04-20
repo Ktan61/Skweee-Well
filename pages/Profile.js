@@ -14,7 +14,8 @@ export default function Profile() {
       <MenuBack/>
       <Navbar/>
       <main className={`${styles.main}`}>
-        <h4 className={styles.pageHeader}>My Profile</h4>
+       <div className={styles.topSectionContainer}>
+        <h3 className={styles.pageHeader}>My Profile</h3>
         <div className={styles.profilePhotoContainer}>
         <Image
         src="/images_content/profile-photo.jpg"
@@ -34,9 +35,10 @@ export default function Profile() {
       />
       </div>
       <div className={styles.username}>
-    <h5>@naturelover222</h5>
+    <h4>@naturelover222</h4>
       </div>
-      <h4 className={styles.galleryHeader}>My Gallery</h4>
+      </div>
+      <h3 className={styles.galleryHeader}>My Gallery</h3>
       <div className={styles.galleryContainer}>
 
       </div>
