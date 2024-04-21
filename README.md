@@ -16,3 +16,4 @@ This application is an interactive web app that provides the user with nearby ou
 - get directions to parks that are new to you
 
 ## Packages Installed
+- react-chartjs-2

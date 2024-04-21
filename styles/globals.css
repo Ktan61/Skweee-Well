@@ -63,6 +63,10 @@ h5 {
   font-weight: 500;
 }
 
+p {
+  font-family: 'Nunito';
+  font-size: var(--font-body);
+}
 
 
 /*Buttons*/
