@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 180vh;
+  min-height: 210vh;
   background-color: var(--bone);
   margin-bottom: 6rem;
 }
@@ -65,7 +65,7 @@
   line-height: 1.5;
   top: 29.5rem;
   position: absolute;
-  width: 22%;
+  width: 20%;
   transform: translateX(-50%);
   text-align: center;
   left: 50%;
@@ -101,14 +101,13 @@
   padding-bottom: 50px;
   position: absolute;
   transform: translateX(-50%);
-  top: 162.5%;
+  top: 192.8%;
   left: 44.6%;
 }
 
 .imageSwirl {
   margin: 0;
   width: 430px;
-  ;
   pointer-events: none;
   position: absolute;
   top: 28rem;
@@ -133,13 +132,110 @@
   position: absolute;
   left: 47.1%;
   transform: translate(-50%);
-  top: 127%;
+  top: 157.3%;
 }
 
 .visitedParks {
   position: absolute;
   transform: translateX(-50%);
-  top: 105%;
-  left: 46.5%;
+  top: 102.5%;
+  left: 50%;
   z-index: 1;
+}
+.sectionFeaturedParks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2.5rem 0rem;
+}
+
+.headerFeaturedParks {
+  width: 390px;
+  margin-left: 1.25rem;
+}
+
+.FPContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+  max-width: 430px;
+  overflow-x: scroll;
+}
+
+.featuredParksCard {
+  width: 308px;
+  height: 367px;
+  background-color: var(--greenGrey);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2.5rem;
+}
+
+.FPC_First {
+  margin-left: 1.25rem;
+}
+
+.FPC_Last {
+  margin-right: 1.25rem;
+}
+
+.FPC_Image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.FPC_TextDiv {
+  padding: 0.5rem 1.25rem;
+}
+
+.FPC_TextHeader {
+  padding-bottom: 0.5rem;
+}
+
+.FPC_LearnMore {
+  color: var(--darkGreen);
+  font-weight: 700;
+  padding-top: .25rem;
+  text-align: end;
+}
+
+@media only screen and (max-device-width: 430px){
+  .bioText{
+    width: 85%;
+  }
+  .passportIconContainer{
+    left:33%;
+  }
+  .friendsButton{
+    display: inline-block;
+    margin:0;
+    top: 30%;
+  }
+  .tree{
+    left:35%;
+  }
+  .chartHeader{
+    left:30%;
+  }
+  .parksHeader{
+    margin-left:2rem;
+    margin-bottom:-.5rem;
+  }
+  .visitedParks{
+  top: 109%;
+  }
+  .galleryHeader{
+    top: 71%;
+    left: 25.6%;
+  }
+  .friendsButtonContainer{
+    display: flex;
+    flex-direction: row;
+    top:60%;
+    gap: 20px;
+  }
+  .pageHeader{
+    left:25.6%;
+  }
 }
