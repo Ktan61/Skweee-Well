@@ -37,7 +37,14 @@ export default function Profile() {
       <div className={styles.username}>
     <h4>@naturelover222</h4>
       </div>
+      <div className={styles.bioContainer}>
+  <textarea className={styles.bioText} placeholder="Lover of nature, family and friends"></textarea>
+</div>
       </div>
+      <div className={styles.friendsButtonContainer}>
+<button className={styles.friendsButton}>Friends</button>
+<button className={styles.friendsButton}>Requests</button>
+</div>
       <h3 className={styles.galleryHeader}>My Gallery</h3>
       <div className={styles.galleryContainer}>
 
