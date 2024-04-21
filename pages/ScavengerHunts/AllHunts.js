@@ -29,7 +29,7 @@ export default function AllHunts() {
           />
           <p className={styles.pText}>Join Sqwee for a thrilling scavenger hunt at Central Park! Get ready for adventure, puzzles, and endless fun. Don't miss out – see you there!</p>
           <button 
-            onClick={() => router.push('/Community')}
+            onClick={() => router.push('/ScavengerHunts/CentralParkHunt')}
             className={styles.button}
             >Learn More
           </button>    
@@ -77,7 +77,6 @@ export default function AllHunts() {
             <h5 className={styles.boxText}>David Lam Park Scavenger Hunt</h5>
           </div>
           <button 
-              onClick={() => router.push('/Community')}
               className={styles.buttonHuntMaps}
               >Show More
           </button> 

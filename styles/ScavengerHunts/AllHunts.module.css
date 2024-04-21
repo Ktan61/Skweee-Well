@@ -8,10 +8,6 @@
 }
 
 /*BANNER SECTION*/
-.sectionBanner {
-
-}
-
 .headingBanner {
     padding: 2.5rem 1.25rem 1rem;
 }
@@ -27,6 +23,7 @@
 
 .pTextBanner {
     font-size: 1.125rem;    
+    font-family: 'KoHo';
 }
 
 .pText {
@@ -110,7 +107,7 @@
     margin-bottom: 2.5rem;
 }
 
-.button:hover {
+.buttonHuntMaps:hover {
     color: var(--white);
     background-color: var(--darkGreen);
 }

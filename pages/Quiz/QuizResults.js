@@ -46,8 +46,6 @@ export default function QuizResults() {
             document.getElementById("noBadgeDiv").style.display = "block";
         }
 
-
-
         setScore(totalScore);
     }
 

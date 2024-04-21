@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 1.25rem 5rem 1.25rem;
+    gap: 1.25rem;
+}
+
+.headingBanner {
+    padding: 1.25rem 1.25rem 1rem;
+}
+
+.pText {
+    width: 390px;
+    padding: 1rem 1.25rem 0rem;
+}
+
+.pText2 {
+    width: 390px;
+    padding: 1rem 1.25rem 2.5rem;
+}
+
+.headingWelcome {
+    padding: 1rem 1.25rem 0;
+    width: 390px;
+}
+
+.button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 2.50rem;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--darkGreen);
+}
