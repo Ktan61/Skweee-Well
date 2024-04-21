@@ -2,7 +2,7 @@ import styles from './Menu.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-export default function MenuBack() {
+export default function MenuTutorial() {
 
     const router = useRouter()
 
@@ -10,11 +10,11 @@ export default function MenuBack() {
         <div className={styles.Menu}>
             <div className={styles.innerWrapper}>
                 <Image 
-                        src="/images_interface/back_icon.svg"
+                        src="/images_interface/help_icon.svg"
                         width={50}
                         height={50}
-                        alt="icon for back"
-                        onClick={() => router.back()}
+                        alt="icon for help/tutorial"
+                        onClick={() => router.push("/")}
                         tabIndex={1}
                 />
                 <Image 

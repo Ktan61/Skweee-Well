@@ -60,7 +60,7 @@ export default function QuizResults() {
             <div className={styles.innerWrapper}>
                 <div id="badgeDiv" className={styles.badgeDiv}>
                     <div id="championBadgeDiv" className={styles.innerChampionDiv}>
-                        <h3>You got 4 out of 4 correct!</h3>
+                        <h3>You received the Champion Badge!</h3>
                         <Image
                             src="/images_interface/central_champion.svg"
                             width={250}
@@ -68,10 +68,10 @@ export default function QuizResults() {
                             alt="image of central park quiz champion badge"
                             className={styles.imageBadge}
                         />
-                        <h5 className={styles.popUpBodyText}>You received the champion badge for Central Park. Well done!</h5>
+                        <h5 className={styles.popUpBodyText}>You found all the locations and got a perfect score on the quiz. Well done!</h5>
                     </div>
                     <div id="goldBadgeDiv" className={styles.innerGoldDiv}>
-                        <h3>You got 3 out of 4 correct!</h3>
+                        <h3>You received the Gold Badge!</h3>
                         <Image
                             src="/images_interface/central_gold.svg"
                             width={250}
@@ -79,10 +79,10 @@ export default function QuizResults() {
                             alt="image of central park quiz gold badge"
                             className={styles.imageBadge}
                         />
-                        <h5 className={styles.popUpBodyText}>You received the gold badge for Central Park. Nicely done!</h5>
+                        <h5 className={styles.popUpBodyText}>You found all the locations and got 3/4 on the quiz. Nicely done!</h5>
                     </div>
                     <div id="silverBadgeDiv" className={styles.innerSilverDiv}>
-                        <h3>You got 2 out of 4 correct!</h3>
+                        <h3>You received the Silver Badge!</h3>
                         <Image
                             src="/images_interface/central_silver.svg"
                             width={250}
@@ -90,10 +90,10 @@ export default function QuizResults() {
                             alt="image of central park quiz silver badge"
                             className={styles.imageBadge}
                         />
-                        <h5 className={styles.popUpBodyText}>You received the silver badge for Central Park. Not too shabby!</h5>
+                        <h5 className={styles.popUpBodyText}>You found all the locations and got 2/4 on the quiz. Not too shabby!</h5>
                     </div>
                     <div id="bronzeBadgeDiv" className={styles.innerBronzeDiv}>
-                        <h3>You got 1 out of 4!</h3>
+                        <h3>You received the Bronze Badge!</h3>
                         <Image
                             src="/images_interface/central_bronze.svg"
                             width={250}
@@ -101,10 +101,10 @@ export default function QuizResults() {
                             alt="image of central park quiz bronze badge"
                             className={styles.imageBadge}
                         />
-                        <h5 className={styles.popUpBodyText}>You tried. Here's the bronze badge for Central Park.</h5>
+                        <h5 className={styles.popUpBodyText}>You found all the locations and got 1/4 on the quiz. You tried your best.</h5>
                     </div>
                     <div id="noBadgeDiv" className={styles.innerNoBadgeDiv}>
-                        <h3>You got 0 out of 4!</h3>
+                        <h3>Sqwee is very sad</h3>
                         <Image
                             src="/images_interface/sadsqwee.svg"
                             width={250}
@@ -112,14 +112,19 @@ export default function QuizResults() {
                             alt="image of sad sqwee squirrel with a broken acorn"
                             className={styles.imageBadge}
                         />
-                        <h5 className={styles.popUpBodyText}>Sqwee is very sad.</h5>
+                        <h5 className={styles.popUpBodyText}>You found all the locations <br/> but scored 0/4 on the quiz.<br/>Better luck next time!</h5>
                     </div>
                     <button 
                             onClick={() => router.push('/Quiz/QuizStart')}
                             className={styles.buttonTryAgain}
                             tabIndex={31}
                             >Try Again
-                        </button>
+                    </button>
+                    <button 
+                            onClick={() => router.push('/Community')}
+                            className={styles.buttonLeaderboard}
+                            >View Leaderboard
+                    </button>
                 </div>
                 <h2 tabIndex={30}>Results</h2>
                 {selectedAnswers.split("").map((answer, index) => { return (questions[index].correctAnswer === questions[index].answers[answer]) ? 

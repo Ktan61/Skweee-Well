@@ -1,0 +1,19 @@
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 430px; 
+    height: 80px;
+    background-color: var(--darkGreen);
+    position: fixed;
+    top:0%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.innerWrapper {
+    display: flex;
+    padding: 0 1.25rem;
+    gap: 18rem;
+}
+    
