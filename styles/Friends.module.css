@@ -1,0 +1,86 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 96vh;
+    background-color: var(--bone);
+    margin-bottom: 6rem;
+}
+
+.profilePhotoContainer {
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.profilePhoto {
+    object-fit: cover;
+    height: auto;
+}
+
+.passportIconContainer {
+    position: absolute;
+    top: 22.5rem;
+    left: 46%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.pageHeader {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 43.89%;
+    top: 120px;
+}
+
+.username {
+    position: absolute;
+    left: 50%;
+    top: 26.4rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.bioText {
+    height: 3rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    line-height: 1.5;
+    top: 29.5rem;
+    position: absolute;
+    width: 22%;
+    transform: translateX(-50%);
+    text-align: center;
+    left: 50%;
+    z-index: 1;
+}
+
+.friend {
+    padding: 1rem;
+    margin-bottom: 6px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.friendListContainer{
+    border-radius: 10px;
+    padding:1rem;
+    width:22%;
+    position: absolute;
+    margin:1rem;
+    top:55%;
+}
+.friendsHeader{
+    margin-bottom:1.5rem;
+    margin-top:1.3rem;
+}
