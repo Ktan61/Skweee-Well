@@ -1,77 +1,85 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6rem;
-    min-height: 130vh;
-    background-color: var(--bone);
-    margin-bottom:6rem;
-  }
-  .profilePhotoContainer{
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top:200px;
-    transform: translateX(-50%);
-    z-index:1;
-  }
-  .profilePhoto{
-    object-fit:cover;
-    height: auto;
-  }
-  .passportIconContainer{
-    position: absolute;
-    top:22.5rem;
-    left: 46%;
-    transform: translateX(-50%);
-    z-index:1;
-  }
-  .pageHeader{
-    position: absolute;
-    transform: translateX(-50%);
-   left:43.89%;
-   top:120px;
-  }
-  .galleryHeader{
-    position: absolute;
-    transform: translateX(-50%);
-    top: 43rem;
-    left:43.89%;
-    z-index:1;
-  }
-  .username{
-    position: absolute;
-    left: 50%;
-    top:26.4rem;
-    transform: translateX(-50%);
-    z-index:1;
-  }
-  .bioText{
-  height: 3rem; 
-  padding: 10px;
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  resize: none; 
-  font-size: 14px; 
-  line-height: 1.5;
-  top:29.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 180vh;
+  background-color: var(--bone);
+  margin-bottom: 6rem;
+}
+
+.profilePhotoContainer {
+  border-radius: 50%;
+  overflow: hidden;
   position: absolute;
-  width: 19%;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.profilePhoto {
+  object-fit: cover;
+  height: auto;
+}
+
+.passportIconContainer {
+  position: absolute;
+  top: 22.5rem;
+  left: 46%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.pageHeader {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 43.89%;
+  top: 120px;
+}
+
+.galleryHeader {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 43rem;
+  left: 44.1%;
+  z-index: 1;
+}
+
+.username {
+  position: absolute;
+  left: 50%;
+  top: 26.4rem;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.bioText {
+  height: 3rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.5;
+  top: 29.5rem;
+  position: absolute;
+  width: 22%;
   transform: translateX(-50%);
   text-align: center;
-  left:50%;
-  z-index:1;
-  }
- .friendsButton{
+  left: 50%;
+  z-index: 1;
+}
+
+.friendsButton {
   padding: 16px, 8px;
   width: 11.5rem;
   height: 4.625rem;
   font-size: var(--font-button);
   font-weight: 600;
   font-family: 'KoHo';
-  border:none;
+  border: none;
   border-radius: 4rem;
   cursor: pointer;
   background-color: var(--orange);
@@ -80,39 +88,58 @@
   margin-right: .4rem;
   margin-left: .4rem;
 
- }
- .friendsButtonContainer{
+}
+
+.friendsButtonContainer {
   position: absolute;
-  z-index:1;
-  left:50%;
+  z-index: 1;
+  left: 50%;
   transform: translateX(-50%);
- }
- .chartHeader{
+}
+
+.chartHeader {
   padding-bottom: 50px;
   position: absolute;
   transform: translateX(-50%);
-  top: 67rem;
-  left:44.2%;
- }
- .imageSwirl{
+  top: 162.5%;
+  left: 44.6%;
+}
+
+.imageSwirl {
   margin: 0;
-  width: 430px;;
+  width: 430px;
+  ;
   pointer-events: none;
   position: absolute;
   top: 28rem;
   left: 50%;
   transform: translate(-50%);
- 
- }
- .swirlContainer{
-z-index: 0;
- }
- .leaderboardButton{
+
+}
+
+.swirlContainer {
+  z-index: 0;
+}
+
+.leaderboardButton {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  margin-top:1rem;
- }
- .chartContainer{
-  
- }
+  margin-top: 1rem;
+}
+
+.tree {
+  z-index: 0;
+  position: absolute;
+  left: 47.1%;
+  transform: translate(-50%);
+  top: 127%;
+}
+
+.visitedParks {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 105%;
+  left: 46.5%;
+  z-index: 1;
+}

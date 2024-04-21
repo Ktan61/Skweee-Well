@@ -11,7 +11,7 @@ export default function Profile() {
     const handleButtonClick = () => {
      console.log("button clicked")
     }
-    
+
   return (
     <>
       <HeadArea
@@ -47,13 +47,18 @@ export default function Profile() {
   <textarea className={styles.bioText} placeholder="Lover of nature, family and friends"></textarea>
 </div>
 <div className={styles.friendsButtonContainer}>
+<Link href='/Friends'>
 <button className={styles.friendsButton}>Friends</button>
+</Link>
 <button className={styles.friendsButton}>Requests</button>
 </div>
       </div>
       
-      <h3 className={styles.galleryHeader}>My Gallery</h3>
       <div className={styles.galleryContainer}>
+      <h3 className={styles.galleryHeader}>My Gallery</h3>
+      </div>
+      <div className={styles.visitedParks}>
+    <h3 className={styles.parksHeader}>Parks I've Visited</h3>
       </div>
       <div className={styles.swirlContainer}>
       <Image
@@ -64,7 +69,15 @@ export default function Profile() {
         className={styles.imageSwirl}
       />
       </div>
-      <div className={styles.chartContainer}>
+
+        <div className={styles.chartContainer}>
+      <Image
+        src="/images_content/profile-tree.png"
+        width={323}
+        height={560}
+        alt="profile photo of a woman with brown hair"
+        className={styles.tree}
+      />
       <h3 className={styles.chartHeader}>Park Report</h3>
       <VerticalChart/>
       <Link href="/Community">
