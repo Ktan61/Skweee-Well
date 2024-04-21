@@ -83,7 +83,7 @@ return (
         <section className={styles.sectionFeaturedParks}>
          <h3 className={styles.headerFeaturedParks}>Featured Parks</h3>
          <div className={styles.FPContainer}>
-          <div className={styles.featuredParksCard}>
+          <div className={`${styles.featuredParksCard} ${styles.FPC_First}`}>
             <Image
                   src="/images_content/FP_Central.png"
                   width={308}
@@ -148,7 +148,7 @@ return (
               >Learn more &#8594;</p>
             </div>
           </div>
-          <div className={styles.featuredParksCard}>
+          <div className={`${styles.featuredParksCard} ${styles.FPC_Last}`}>
             <Image
                   src="/images_content/FP_Taylor.png"
                   width={308}
