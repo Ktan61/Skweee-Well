@@ -12,7 +12,6 @@ export default function Home() {
   const [data, setData] = useState([]);
 
   var welcome = process.env.NEXT_PUBLIC_WELCOME;
-  var name = process.env.NEXT_PUBLIC_NAME;
 
 return (
     <>
@@ -51,7 +50,7 @@ return (
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box2}`}
-            onClick={() => router.push('/ParksLibrary')}
+            onClick={() => router.push('/ScavengerHunts/AllHunts')}
           >
             <h5 className={styles.quickLinkBoxes_Text}>Sqwee Scavenger Hunt</h5>
           </div>

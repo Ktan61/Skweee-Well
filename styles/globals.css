@@ -4,6 +4,7 @@
   --bone: #ECE2D0;
   --darkGreen: #3E655D;
   --greenGrey: #D8E0DF;
+  --lightBlue: #A1D6E4;
   --lightGreen: #93BDB5;
   --lighterGreen: #AADCD2;
   --lightOrange: #FAB380;
@@ -94,3 +95,6 @@ button {
   border-radius: 10px;
 }
 
+@media (max-width: 932px) {
+  *::-webkit-scrollbar { display: none; }
+}
