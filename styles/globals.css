@@ -78,3 +78,19 @@ button {
   background-color: var(--orange);
   color: var(--black);
 }
+
+/** SCROLL BAR **/
+*::-webkit-scrollbar {
+  height: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .2);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--darkGreen);
+  border-radius: 10px;
+}
+
