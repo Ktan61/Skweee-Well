@@ -12,7 +12,6 @@ export default function Home() {
   const [data, setData] = useState([]);
 
   var welcome = process.env.NEXT_PUBLIC_WELCOME;
-  var name = process.env.NEXT_PUBLIC_NAME;
 
 return (
     <>
@@ -51,7 +50,7 @@ return (
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box2}`}
-            onClick={() => router.push('/ParksLibrary')}
+            onClick={() => router.push('/ScavengerHunts/AllHunts')}
           >
             <h5 className={styles.quickLinkBoxes_Text}>Sqwee Scavenger Hunt</h5>
           </div>
@@ -83,7 +82,7 @@ return (
         <section className={styles.sectionFeaturedParks}>
          <h3 className={styles.headerFeaturedParks}>Featured Parks</h3>
          <div className={styles.FPContainer}>
-          <div className={styles.featuredParksCard}>
+          <div className={`${styles.featuredParksCard} ${styles.FPC_First}`}>
             <Image
                   src="/images_content/FP_Central.png"
                   width={308}
@@ -148,7 +147,7 @@ return (
               >Learn more &#8594;</p>
             </div>
           </div>
-          <div className={styles.featuredParksCard}>
+          <div className={`${styles.featuredParksCard} ${styles.FPC_Last}`}>
             <Image
                   src="/images_content/FP_Taylor.png"
                   width={308}

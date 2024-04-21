@@ -4,6 +4,7 @@
   --bone: #ECE2D0;
   --darkGreen: #3E655D;
   --greenGrey: #D8E0DF;
+  --lightBlue: #A1D6E4;
   --lightGreen: #93BDB5;
   --lighterGreen: #AADCD2;
   --lightOrange: #FAB380;
@@ -81,12 +82,12 @@ button {
 
 /** SCROLL BAR **/
 *::-webkit-scrollbar {
-  height: 20px;
+  height: 24px;
 }
 
 *::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, .2);
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -94,3 +95,6 @@ button {
   border-radius: 10px;
 }
 
+@media (max-width: 932px) {
+  *::-webkit-scrollbar { display: none; }
+}
