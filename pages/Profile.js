@@ -4,8 +4,14 @@ import HeadArea from "@/components/HeadArea";
 import Navbar from "@/components/Navbar";
 import MenuBack from "@/components/MenuBack";
 import Image from "next/image";
+import VerticalChart from "@/components/VerticalChart";
 
 export default function Profile() {
+
+    const handleButtonClick = () => {
+     console.log("button clicked")
+    }
+    
   return (
     <>
       <HeadArea
@@ -40,14 +46,30 @@ export default function Profile() {
       <div className={styles.bioContainer}>
   <textarea className={styles.bioText} placeholder="Lover of nature, family and friends"></textarea>
 </div>
-      </div>
-      <div className={styles.friendsButtonContainer}>
+<div className={styles.friendsButtonContainer}>
 <button className={styles.friendsButton}>Friends</button>
 <button className={styles.friendsButton}>Requests</button>
 </div>
+      </div>
+      
       <h3 className={styles.galleryHeader}>My Gallery</h3>
       <div className={styles.galleryContainer}>
-
+      </div>
+      <div className={styles.swirlContainer}>
+      <Image
+        src="/images_interface/orange_swirl.svg"
+        width={760.51}
+        height={610.78}
+        alt="orange swirl background"
+        className={styles.imageSwirl}
+      />
+      </div>
+      <div className={styles.chartContainer}>
+      <h3 className={styles.chartHeader}>Park Report</h3>
+      <VerticalChart/>
+      <Link href="/Community">
+      <button className={styles.leaderboardButton} onClick={handleButtonClick}>View Leaderboard</button>
+     </Link>
       </div>
       </main>
     </>

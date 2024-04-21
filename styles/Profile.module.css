@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 6rem;
-    min-height: 100vh;
+    min-height: 130vh;
     background-color: var(--bone);
+    margin-bottom:6rem;
   }
   .profilePhotoContainer{
     border-radius: 50%;
@@ -14,6 +15,7 @@
     left: 50%;
     top:200px;
     transform: translateX(-50%);
+    z-index:1;
   }
   .profilePhoto{
     object-fit:cover;
@@ -24,6 +26,7 @@
     top:22.5rem;
     left: 46%;
     transform: translateX(-50%);
+    z-index:1;
   }
   .pageHeader{
     position: absolute;
@@ -34,14 +37,16 @@
   .galleryHeader{
     position: absolute;
     transform: translateX(-50%);
-    top: 41rem;
+    top: 43rem;
     left:43.89%;
+    z-index:1;
   }
   .username{
     position: absolute;
     left: 50%;
     top:26.4rem;
     transform: translateX(-50%);
+    z-index:1;
   }
   .bioText{
   height: 3rem; 
@@ -56,9 +61,10 @@
   width: 19%;
   transform: translateX(-50%);
   text-align: center;
+  left:50%;
+  z-index:1;
   }
  .friendsButton{
-  display:inline-block;
   padding: 16px, 8px;
   width: 11.5rem;
   height: 4.625rem;
@@ -70,7 +76,43 @@
   cursor: pointer;
   background-color: var(--orange);
   color: var(--black);
-  margin-top: 20px;
+  margin-top: 29rem;
   margin-right: .4rem;
   margin-left: .4rem;
+
+ }
+ .friendsButtonContainer{
+  position: absolute;
+  z-index:1;
+  left:50%;
+  transform: translateX(-50%);
+ }
+ .chartHeader{
+  padding-bottom: 50px;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 67rem;
+  left:44.2%;
+ }
+ .imageSwirl{
+  margin: 0;
+  width: 430px;;
+  pointer-events: none;
+  position: absolute;
+  top: 28rem;
+  left: 50%;
+  transform: translate(-50%);
+ 
+ }
+ .swirlContainer{
+z-index: 0;
+ }
+ .leaderboardButton{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top:1rem;
+ }
+ .chartContainer{
+  
  }
