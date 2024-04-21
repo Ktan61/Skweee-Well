@@ -1,10 +1,103 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 6rem;
-    min-height: 100vh;
-    background-color: var(--bone);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-color: var(--bone);
+}
+
+/*PARK CARDS HEADER*/
+
+.parkLibHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.parksHeader {
+  width: 380px;
+}
+
+/*PARK LIBRARY CARDS SECTION*/
+
+.PC_Container {
+  display: flex;
+  flex-direction: row;
+  max-width: 420px;
+  gap: 1.25rem;
+}
+
+.parkCard {
+  margin-top: 1.25rem;
+}
+
+.PC_Image {
+  margin-bottom: -10px;
+  z-index: -2;
+}
+
+.PC_TextDiv {
+  background-color: var(--lightGreen);
+  width: 185px;
+  height: 80px;
+  border-radius: 10px;
+  align-content: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.PC_TextHeader {
+  text-align: center;
+}
+
+.showMoreButton {
+  font-family: var(--font-button);
+  align-self: center;
+  margin-top: 40px;
+}
+
+
+/*DISCOVER BC PARKS SECTION*/
+
+.discoverBCParks_header {
+  width: 380px;
+  margin-top: 60px;
+}
+
+.BCParksContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+  max-width: 430px;
+  overflow-x: scroll;
+  margin-top: 1.25rem;
+}
+
+.BCPark1 {
+  width: 137px;
+  height: 129px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+.BCPark2 {
+  width: 137px;
+  height: 129px;
+  background-color: var(--blue);
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+.BCPark3 {
+  width: 137px;
+  height: 129px;
+  background-color: var(--orange);
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+}
