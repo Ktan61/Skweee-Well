@@ -1,5 +1,5 @@
 .page {
-  display: relative;
+  display: fixed;
 }
 
 .innerQuizContainer {
@@ -116,10 +116,12 @@
 
 .imageSwirl {
   margin: 0;
-  width: 100vw;
+  width: 430px;
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   top: 8rem;
+  left: 50%;
+  transform: translate(-50%);
   z-index: -10;
 }
 
