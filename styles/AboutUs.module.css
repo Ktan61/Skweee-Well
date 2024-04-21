@@ -1,0 +1,63 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 1.25rem 5rem 1.25rem;
+    gap: 1.25rem;
+    min-height: 100vh;
+}
+
+
+
+/*SQWELL DESCRIPTION SECTION*/
+
+.sqwellDesc {
+    display: flex;
+    padding-top: 3.8rem;
+    padding-left: 2.5rem;  
+}
+
+.imageTreeBG {
+    position: absolute; /*can change to fixed so it doesn't scroll*/
+    top: 1rem;
+    left: 50%;
+    transform: translate(3.5%);
+    z-index: -1;
+}
+
+.textContent {
+    width: 430px;
+}
+
+/*SQWELL TEAM SECTION*/
+
+.sqwellTeam {
+    width: 390px;
+    z-index: 1;
+}
+
+.members {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+.headShot {
+    margin-right: 30px;
+}
+
+
+/*PAGE DESIGN ELEMENTS*/
+
+.imageOrangeBG {
+    margin: 0;
+    width: 430px;
+    pointer-events: none;
+    position: absolute;
+    top: 42rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -10;
+ }
