@@ -10,7 +10,7 @@
   .profilePhotoContainer{
     border-radius: 50%;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     left: 50%;
     top:200px;
     transform: translateX(-50%);
@@ -20,26 +20,57 @@
     height: auto;
   }
   .passportIconContainer{
-    position: fixed;
+    position: absolute;
     top:22.5rem;
     left: 46%;
     transform: translateX(-50%);
   }
   .pageHeader{
-    position: fixed;
+    position: absolute;
     transform: translateX(-50%);
    left:43.89%;
    top:120px;
   }
   .galleryHeader{
-    position: fixed;
+    position: absolute;
     transform: translateX(-50%);
-    top: 34rem;
+    top: 41rem;
     left:43.89%;
   }
   .username{
-    position: fixed;
+    position: absolute;
     left: 50%;
     top:26.4rem;
     transform: translateX(-50%);
   }
+  .bioText{
+  height: 3rem; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  resize: none; 
+  font-size: 14px; 
+  line-height: 1.5;
+  top:29.5rem;
+  position: absolute;
+  width: 19%;
+  transform: translateX(-50%);
+  text-align: center;
+  }
+ .friendsButton{
+  display:inline-block;
+  padding: 16px, 8px;
+  width: 11.5rem;
+  height: 4.625rem;
+  font-size: var(--font-button);
+  font-weight: 600;
+  font-family: 'KoHo';
+  border:none;
+  border-radius: 4rem;
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--black);
+  margin-top: 20px;
+  margin-right: .4rem;
+  margin-left: .4rem;
+ }
