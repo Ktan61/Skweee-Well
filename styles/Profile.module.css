@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 217vh;
+  min-height: 273vh;
   background-color: var(--bone);
   margin-bottom: 6rem;
 }
@@ -42,13 +42,13 @@
 .galleryHeader {
   position: absolute;
   transform: translateX(-50%);
-  top: 42rem;
+  top: 41.5rem;
   left: 44.1%;
   z-index: 1;
 }
 
 .gallery{
- margin-top:12rem;
+ margin-top:10.2rem;
 }
 
 .username {
@@ -88,7 +88,6 @@
   cursor: pointer;
   background-color: var(--orange);
   color: var(--black);
-  margin-top: 29rem;
   margin-right: .4rem;
   margin-left: .4rem;
 
@@ -99,14 +98,14 @@
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
-  top: 10%;
+  top: 72.5%;
 }
 
 .chartHeader {
   padding-bottom: 50px;
   position: absolute;
   transform: translateX(-50%);
-  top: 200%;
+  top: 251%;
   left: 44.6%;
 }
 
@@ -115,7 +114,7 @@
   width: 430px;
   pointer-events: none;
   position: absolute;
-  top: 137%;
+  top: 181%;
   left: 50%;
   transform: translate(-50%);
 
@@ -137,13 +136,13 @@
   position: absolute;
   left: 47.1%;
   transform: translate(-50%);
-  top: 165.3%;
+  top: 207.3%;
 }
 
 .visitedParks {
   position: absolute;
   transform: translateX(-50%);
-  top: 113%;
+  top: 140%;
   left: 50%;
   z-index: 1;
 }
