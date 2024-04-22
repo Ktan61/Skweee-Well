@@ -1,14 +1,15 @@
 .sidebar {
     position: fixed;
-    top: 0;
-    right: -300px;
+    top: 79.9px;
+    right: 0px;
     width: 250px;
-    height: 100vh;
+    height: 57vh;
     background-color: var(--greenGrey);
     transition: right 0.3s ease;
     z-index: 1000;
     padding: 20px;
     overflow-y: auto;
+    border-radius: 20px;
 }
 
 .sidebar.active {

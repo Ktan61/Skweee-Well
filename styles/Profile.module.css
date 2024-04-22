@@ -14,7 +14,7 @@
   overflow: hidden;
   position: absolute;
   left: 50%;
-  top: 200px;
+  top: 188px;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -26,7 +26,7 @@
 
 .passportIconContainer {
   position: absolute;
-  top: 22.5rem;
+  top: 22rem;
   left: 46%;
   transform: translateX(-50%);
   z-index: 1;
@@ -54,7 +54,7 @@
 .username {
   position: absolute;
   left: 50%;
-  top: 26.4rem;
+  top: 26rem;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -69,7 +69,7 @@
   line-height: 1.5;
   top: 29.5rem;
   position: absolute;
-  width: 20%;
+  width: 23%;
   transform: translateX(-50%);
   text-align: center;
   left: 50%;
