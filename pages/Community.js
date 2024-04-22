@@ -12,7 +12,7 @@ export default function Community() {
       />
       <MenuBack/>
       <main className={`${styles.main}`}>
-        Community
+        <h3>Community</h3>
       </main>
       <Navbar/>
     </>

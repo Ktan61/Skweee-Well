@@ -87,7 +87,32 @@
     margin-bottom: 1.5rem;
     margin-top: 1.3rem;
 }
-
+.requestBox{
+    float: right;
+    width:20px;
+    height: 20px;
+    margin-right: 15px;
+   appearance: none;
+   outline: none;
+   border: 2px solid var(--darkGreen);
+   border-radius: 10px;
+}
+.requestBox:checked{
+    background-color: var(--darkGreen);
+}
+.declineRequestBox:checked{
+    background-color: red;
+}
+.declineRequestBox{
+    float: right;
+    width:20px;
+    height: 20px;
+    margin-right: 15px;
+    appearance: none;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 10px;
+}
 @media only screen and (max-device-width: 430px) {
     .profilePhotoContainer {
         left: 50%;
@@ -120,7 +145,7 @@
         top: 60%;
     }
 
-    .friendsPage {
+    .requestPage {
         left: 50%;
         transform: translateX(-50%);
     }

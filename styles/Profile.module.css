@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 210vh;
+  min-height: 217vh;
   background-color: var(--bone);
   margin-bottom: 6rem;
 }
@@ -42,9 +42,13 @@
 .galleryHeader {
   position: absolute;
   transform: translateX(-50%);
-  top: 43rem;
+  top: 42rem;
   left: 44.1%;
   z-index: 1;
+}
+
+.gallery{
+ margin-top:12rem;
 }
 
 .username {
@@ -95,13 +99,14 @@
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
+  top: 10%;
 }
 
 .chartHeader {
   padding-bottom: 50px;
   position: absolute;
   transform: translateX(-50%);
-  top: 192.8%;
+  top: 200%;
   left: 44.6%;
 }
 
@@ -110,7 +115,7 @@
   width: 430px;
   pointer-events: none;
   position: absolute;
-  top: 28rem;
+  top: 137%;
   left: 50%;
   transform: translate(-50%);
 
@@ -132,13 +137,13 @@
   position: absolute;
   left: 47.1%;
   transform: translate(-50%);
-  top: 157.3%;
+  top: 165.3%;
 }
 
 .visitedParks {
   position: absolute;
   transform: translateX(-50%);
-  top: 102.5%;
+  top: 113%;
   left: 50%;
   z-index: 1;
 }
@@ -148,10 +153,11 @@
   gap: 1.25rem;
   padding: 2.5rem 0rem;
 }
-
-.headerFeaturedParks {
-  width: 390px;
-  margin-left: 1.25rem;
+.parksHeader{
+  transform: translateX(6.5%);
+  top: 102.5%;
+  left: 70%;
+  z-index: 1;
 }
 
 .FPContainer {
@@ -223,7 +229,7 @@
     margin-bottom:-.5rem;
   }
   .visitedParks{
-  top: 109%;
+  top: 115%;
   }
   .galleryHeader{
     top: 71%;

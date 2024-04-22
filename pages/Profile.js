@@ -5,11 +5,12 @@ import Navbar from "@/components/Navbar";
 import MenuBack from "@/components/MenuBack";
 import Image from "next/image";
 import VerticalChart from "@/components/VerticalChart";
+import { useRouter } from "next/router";
 
 export default function Profile() {
 
   const handleButtonClick = () => {
-    console.log("button clicked")
+    
   }
 
   return (
@@ -50,12 +51,21 @@ export default function Profile() {
             <Link href='/Friends'>
               <button className={styles.friendsButton}>Friends</button>
             </Link>
+            <Link href='/Requests'>
             <button className={styles.friendsButton}>Requests</button>
+           </Link>
           </div>
         </div>
 
         <div className={styles.galleryContainer}>
           <h3 className={styles.galleryHeader}>My Gallery</h3>
+          <Image
+          src="/images_interface/gallery.png"
+          width={430}
+          height={311}
+          alt="saved pictures/gallery"
+          className={styles.gallery}
+          />
         </div>
         <div className={styles.visitedParks}>
           <h3 className={styles.parksHeader}>Parks I've Visited</h3>
@@ -71,7 +81,7 @@ export default function Profile() {
             />
             <div className={styles.FPC_TextDiv}>
               <h4 className={styles.FPC_TextHeader}>Central Park</h4>
-              <p>Find tranquility in the heart of Metrotown at Central Park, a sprawling 90-hectare... </p>
+        <br></br><br></br><br></br>
               <p 
                 className={styles.FPC_LearnMore}
                 onClick={() => router.push('/ParksLibrary')}
@@ -88,7 +98,7 @@ export default function Profile() {
             />
             <div className={styles.FPC_TextDiv}>
               <h4 className={styles.FPC_TextHeader}>Burnaby Mountain Conservation Area</h4>
-              <p>Green space offering a rose garden, playground & picnic sites...</p>
+              <br></br><br></br>
               <p 
                 className={styles.FPC_LearnMore}
               >Learn more &#8594;</p>
@@ -104,7 +114,7 @@ export default function Profile() {
             />
             <div className={styles.FPC_TextDiv}>
               <h4 className={styles.FPC_TextHeader}>Kensington Park</h4>
-              <p>Kensington is sports central in the heart of north Burnaby. It offers everything for residents, schools... </p>
+              <br></br><br></br><br></br>
               <p 
                 className={styles.FPC_LearnMore}
               >Learn more &#8594;</p>
@@ -120,7 +130,7 @@ export default function Profile() {
             />
             <div className={styles.FPC_TextDiv}>
               <h4 className={styles.FPC_TextHeader}>Robert Burnaby Park</h4>
-              <p>Quiet walks through leafy woods, family picnics under shady trees and acres of grassy, gently sloped... </p>
+              <br></br><br></br><br></br>
               <p 
                 className={styles.FPC_LearnMore}
               >Learn more &#8594;</p>
@@ -136,7 +146,7 @@ export default function Profile() {
             />
             <div className={styles.FPC_TextDiv}>
               <h4 className={styles.FPC_TextHeader}>Taylor Park</h4>
-              <p>Opened in 2005 with a family area, playground and picnic tables, fountains, trees and a special... </p>
+              <br></br><br></br><br></br>
               <p 
                 className={styles.FPC_LearnMore}
               >Learn more &#8594;</p>
