@@ -16,7 +16,13 @@ export default function ParksLibrary() {
       <Navbar/>
       <main className={`${styles.main}`}>
         <section className={styles.searchSection}>
-         
+          <Image
+            src="/images_interface/Search-Bar.svg"
+            width={391}
+            height={58}
+            alt="Temporary search bar"
+            className={styles.imageSearchBar}
+          />
         </section>
 
         <section className={styles.parkLibHeader}>

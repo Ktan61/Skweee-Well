@@ -10,6 +10,11 @@
 
 /*PARK CARDS HEADER*/
 
+.imageSearchBar {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .parkLibHeader {
   display: flex;
   flex-direction: row;
