@@ -51,7 +51,7 @@ const Sidebar = () => {
                 className={styles.icon}
               />
               Community Page</Link></li>
-            <li className={styles.listItem}><Link href="/faq" className={styles.link}>
+            <li className={styles.listItem}><Link href="/Help" className={styles.link}>
               <Image
                 src="/images_interface/help-settings.png"
                 width={30}
