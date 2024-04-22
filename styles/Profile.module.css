@@ -206,6 +206,9 @@
 }
 
 @media only screen and (max-device-width: 430px){
+  .main{
+    min-height: 223vh;
+  }
   .bioText{
     width: 85%;
   }
@@ -219,9 +222,12 @@
   }
   .tree{
     left:35%;
+    top:165%;
   }
   .chartHeader{
     left:30%;
+    top:202%;
+    z-index:1;
   }
   .parksHeader{
     margin-left:2rem;
@@ -234,6 +240,9 @@
     top: 71%;
     left: 25.6%;
   }
+  .gallery{
+   margin-top: 11rem;
+  }
   .friendsButtonContainer{
     display: flex;
     flex-direction: row;
@@ -242,5 +251,8 @@
   }
   .pageHeader{
     left:25.6%;
+  }
+  .swirlContainer{
+    z-index: -1;
   }
 }
