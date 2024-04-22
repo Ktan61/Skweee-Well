@@ -1,0 +1,81 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 1.25rem 5rem 1.25rem;
+    gap: 1.25rem;
+}
+
+/*TUTORIALS SECTION*/
+
+.sectionQuickLinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.50rem;
+    width: 430px;
+    gap: 1.25rem;
+}
+
+.headerQuickLinks{
+width: 390px;
+}
+
+.quickLinkBoxes {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 185px;
+height: 166px;
+background-color: var(--orange);
+border-radius: 10px;
+box-shadow: 1px 2.5px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.quickLinkBoxes:hover {
+background-color: var(--darkGreen);
+color: var(--white);
+}
+
+.box2{
+background-color: var(--lightGreen);
+}
+
+.box3{
+background-color: var(--blue);
+}
+
+.box4{
+background-color: var(--purple);
+}
+
+.quickLinkBoxes_Text {
+text-align: center;
+font-weight: 600;
+padding-left: 1.25rem;
+padding-right: 1.25rem;
+}
+
+/*ACCORDION FAQ SECTION*/
+  
+/*PAGE DESIGN ELEMENTS*/
+
+.imageSwirl {
+    margin: 0;
+    width: 430px;;
+    pointer-events: none;
+    position: fixed;
+    top: 14rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -10;
+}
+
+.imageSqwee {
+
+}
+

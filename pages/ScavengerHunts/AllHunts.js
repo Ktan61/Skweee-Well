@@ -54,7 +54,7 @@ export default function AllHunts() {
                   alt="landscape image of the lake at central park with trees surrounding it"
                   className={styles.FPC_Image}
             />
-            <h5 className={styles.boxText}>David Lam Park Scavenger Hunt</h5>
+            <h5 className={styles.boxText}>Stanley Park Scavenger Hunt</h5>
           </div>
           <div className={`${styles.huntMapsBoxes} ${styles.box3}`}>
             <Image
@@ -64,7 +64,7 @@ export default function AllHunts() {
                   alt="landscape image of the lake at central park with trees surrounding it"
                   className={styles.FPC_Image}
             />
-            <h5 className={styles.boxText}>David Lam Park Scavenger Hunt</h5>
+            <h5 className={styles.boxText}>Strathcona Park Scavenger Hunt</h5>
           </div>
           <div className={`${styles.huntMapsBoxes} ${styles.box4}`}>
             <Image
@@ -74,7 +74,7 @@ export default function AllHunts() {
                   alt="landscape image of the lake at central park with trees surrounding it"
                   className={styles.FPC_Image}
             />
-            <h5 className={styles.boxText}>David Lam Park Scavenger Hunt</h5>
+            <h5 className={styles.boxText}>Deer Lake Park Scavenger Hunt</h5>
           </div>
           <button 
               className={styles.buttonHuntMaps}

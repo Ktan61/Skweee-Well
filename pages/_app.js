@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
         html {
           font-family: ${fontKoHo.style.fontFamily};
         }
-
+        
       `}</style>
       <Component {...pageProps} />
     </>
