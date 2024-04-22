@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 6rem;
-    min-height: 96vh;
+    min-height: 115vh;
     background-color: var(--bone);
     margin-bottom: 6rem;
 }
@@ -78,8 +78,8 @@
     width: 22%;
     position: absolute;
     margin: 1rem;
-    top: 55%;
-    transform: translateX(-50%);
+    top: 65.5%;
+    transform: translateX(-54.5%);
     left: 50%;
 }
 

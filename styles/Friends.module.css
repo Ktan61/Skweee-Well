@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 6rem;
-    min-height: 96vh;
+    min-height: 120vh;
     background-color: var(--bone);
     margin-bottom: 6rem;
 }
@@ -53,8 +53,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: var(--font-body);
     top: 29.5rem;
     position: absolute;
     width: 20%;
@@ -78,14 +77,14 @@
     width: 22%;
     position: absolute;
     margin: 1rem;
-    top: 55%;
-    transform: translateX(-50%);
+    top: 78%;
+    transform: translateX(-53%);
     left: 50%;
 }
 
 .friendsHeader {
-    margin-bottom: 1.5rem;
-    margin-top: 1.3rem;
+    position:absolute;
+    top: -10%;
 }
 
 @media only screen and (max-device-width: 430px) {
