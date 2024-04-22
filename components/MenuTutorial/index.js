@@ -14,7 +14,7 @@ export default function MenuTutorial() {
                         width={50}
                         height={50}
                         alt="icon for help/tutorial"
-                        onClick={() => router.push("/")}
+                        onClick={() => router.push("/Help")}
                         tabIndex={1}
                 />
                 <Image 
