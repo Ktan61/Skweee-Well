@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import Sidebar from '../Sidebar'
 import { useState } from 'react'
 
-
 export default function MenuBack() {
 
     const router = useRouter()
@@ -35,7 +34,7 @@ export default function MenuBack() {
                         tabIndex={2}
                 />
             </div>
-            {sidebarOpen && <Sidebar />}
+            {sidebarOpen && <Sidebar />} 
         </div>
     )
 }
