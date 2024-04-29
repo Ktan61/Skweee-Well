@@ -17,10 +17,7 @@
 
 .leaderboard {
   margin-top: 5.5rem;
-  display: flex;
- 
   margin-bottom: 10px;
-  align-items: center;
 }
 
 .list {
@@ -168,12 +165,10 @@
   }
 
   .leaderboard {
-    justify-content: center;
     position: absolute;
     transform: translateX(-28.5%);
-    left: 37%;
+    left: 38.6%;
     margin-top: 6.5rem;
-    z-index: 1;
     width: 400px;
     top: 30%;
   }
