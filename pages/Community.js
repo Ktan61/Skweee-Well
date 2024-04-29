@@ -169,7 +169,7 @@ export default function Community() {
             </div>
           </div>
         </div>
-        <div className={styles.swirlContainer}>
+        {/* <div className={styles.swirlContainer}>
           <Image
             src="/images_interface/orange_swirl.svg"
             width={760.51}
@@ -177,7 +177,7 @@ export default function Community() {
             alt="orange swirl background"
             className={styles.imageSwirl}
           />
-        </div>
+        </div> */}
       </main>
       <Navbar/>
     </>
