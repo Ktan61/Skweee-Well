@@ -5,13 +5,9 @@ import Navbar from "@/components/Navbar";
 import MenuBack from "@/components/MenuBack";
 import Image from "next/image";
 import VerticalChart from "@/components/VerticalChart";
-import { useRouter } from "next/router";
+
 
 export default function Profile() {
-
-  const handleButtonClick = () => {
-    
-  }
 
   return (
     <>
@@ -176,7 +172,7 @@ export default function Profile() {
           <h3 className={styles.chartHeader}>Park Report</h3>
           <VerticalChart />
           <Link href="/Community">
-            <button className={styles.leaderboardButton} onClick={handleButtonClick}>View Leaderboard</button>
+            <button className={styles.leaderboardButton}>View Leaderboard</button>
           </Link>
         </div>
       </main>
