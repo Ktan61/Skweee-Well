@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import MenuTutorial from "@/components/MenuTutorial";
 
-
 export default function Home() {
 
   const router = useRouter();
@@ -96,7 +95,7 @@ return (
               <p>Find tranquility in the heart of Metrotown at Central Park, a sprawling 90-hectare... </p>
               <p 
                 className={styles.FPC_LearnMore}
-                onClick={() => router.push('/ParksLibrary')}
+                onClick={() => router.push('/CentralPark')}
               >Learn more &#8594;</p>
             </div>
           </div>
