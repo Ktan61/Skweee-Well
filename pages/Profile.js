@@ -6,7 +6,6 @@ import MenuBack from "@/components/MenuBack";
 import Image from "next/image";
 import VerticalChart from "@/components/VerticalChart";
 
-
 export default function Profile() {
 
   return (
