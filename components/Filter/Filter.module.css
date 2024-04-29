@@ -1,0 +1,67 @@
+.filter {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    transition: bottom 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+
+.filterContainer {
+    max-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header h3 {
+    width: 70px;
+}
+
+.sqweeeFilter {
+    margin: 0;
+    margin-bottom: -13px;
+    padding-left: 70px;
+}
+
+.filterContent {
+    margin: 2;
+    background-color: var(--greenGrey);
+    padding: 20px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.chips {
+    display: flex;
+    flex-direction: row;
+}
+
+.chipsList {
+    gap: 2px;
+    list-style-type: none;
+    text-align: center;
+    padding: 2px;
+}
+
+.chips li {
+    padding: 10px, 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    border:none;
+    border-radius: 4rem;
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.links {
+    text-decoration: none;
+}

@@ -4,7 +4,7 @@ export const inventory = {
     parks: [
         {
             parkName: "Robert Burnaby Park",
-            distance: "8.0km",
+            distance: 8.0,
             amenities: ["Swimming pool", "Trails", "Picnic Tables", "Playground", "Sports amenities", "Golf course", "Pet friendly"],
             sqweeeHunt: false,
             image: 
@@ -17,8 +17,8 @@ export const inventory = {
         },
         {
             parkName: "Burnaby Mountain Conservation Area",
-            distance: "10.1km",
-            amenities: ["Trails", "Picnic Tables", "Concesion", "Playground", "Pet friendly"],
+            distance: 10.1,
+            amenities: ["Trails", "Picnic Tables", "Concession", "Playground", "Pet friendly"],
             sqweeeHunt: false,
             image: 
                 <Image
@@ -30,8 +30,8 @@ export const inventory = {
         },
         {
             parkName: "Central Park",
-            distance: "3.7km",
-            amenities: ["Washroom", "Stadium", "Trails", "Picnic Tables", "Concesion", "Playground", "Pet friendly", "Water Fountains", "Sports amenities", "Golf course"],
+            distance: 3.7,
+            amenities: ["Washroom", "Stadium", "Trails", "Picnic Tables", "Concession", "Playground", "Pet friendly", "Water Fountains", "Sports amenities", "Golf course"],
             sqweeeHunt: true,
             image: 
                 <Image
@@ -43,7 +43,7 @@ export const inventory = {
         },
         {
             parkName: "Taylor Park",
-            distance: "7.0km",
+            distance: 7.0,
             amenities: ["Washroom", "Picnic Tables", "Playground", "Pet friendly", "Sports amenities"],
             sqweeeHunt: false,
             image: 
@@ -56,7 +56,7 @@ export const inventory = {
         },
         {
             parkName: "Confederation Park",
-            distance: "3.9km",
+            distance: 3.9,
             amenities: ["Washroom", "Picnic Tables", "Swimming Pool", "Playground", "Pet friendly", "Sports amenities", "Trails"],
             sqweeeHunt: false,
             image: 
@@ -69,7 +69,7 @@ export const inventory = {
         },
         {
             parkName: "Kensington Park",
-            distance: "6.9km",
+            distance: 6.9,
             amenities: ["Picnic Tables", "Swimming Pool", "Playground", "Sports amenities", "Golf course"],
             sqweeeHunt: false,
             image: 
