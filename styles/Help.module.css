@@ -61,7 +61,21 @@ padding-right: 1.25rem;
 }
 
 /*ACCORDION FAQ SECTION*/
-  
+.sectionFAQ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.50rem;
+    width: 430px;
+    gap: 1.25rem;
+}
+
+.headerFAQ{
+width: 390px;
+}  
+
 /*PAGE DESIGN ELEMENTS*/
 
 .imageSwirl {
@@ -78,4 +92,3 @@ padding-right: 1.25rem;
 .imageSqwee {
 
 }
-
