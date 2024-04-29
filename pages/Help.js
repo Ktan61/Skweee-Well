@@ -39,8 +39,8 @@ export default function Help() {
             <h5 className={styles.quickLinkBoxes_Text}>How to Update Your Profile</h5>
           </div>
         </section>
-        <section className={styles.sectionQuickLinks}>
-          <h4 className={styles.headerQuickLinks}>FAQ</h4>
+        <section className={styles.sectionFAQ}>
+          <h4 className={styles.headerFAQ}>FAQ</h4>
           <div>Question 1</div>
         </section>
         <Image
