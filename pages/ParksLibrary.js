@@ -12,13 +12,24 @@ import { inventory } from "@/data/parksData";
 const ParksLibrary = () => {
   const [filterOpen, setFilterOpen] = useState(false);
   const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
     setData(inventory.parks);
+    setFilteredData(inventory.parks);
   }, []); 
 
   const toggleFilter = () => {
     setFilterOpen(!filterOpen);
+  };
+
+  const handleFilterChange = (category) => {
+    if (category === "") {
+      setFilteredData(data);
+    } else {
+      const filteredParks = data.filter(park => park.amenities.includes(category));
+      setFilteredData(filteredParks);
+    }
   };
 
   return (
@@ -51,13 +62,13 @@ const ParksLibrary = () => {
               className={styles.imageFilter}
             />
           </div>
-          {filterOpen && <Filter />} 
+          {filterOpen && <Filter onChange={handleFilterChange} />} 
         </section>
 
         <section className={styles.PC_Library}>
           <div className={styles.parkCard}>
-            {data.map((inventory, index) => (
-              <ParksInfo key={index} parksData={inventory} />
+            {filteredData.map((park, index) => (
+              <ParksInfo key={index} parksData={park} />
             ))}
           </div>
         </section>

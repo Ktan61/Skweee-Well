@@ -1,7 +1,7 @@
 .filter {
     position: fixed;
     top: 50px;
-    right: 0;
+    right: 200px;
     width: 220px;
     height: 100vh;
     transition: bottom 0.3s ease;
