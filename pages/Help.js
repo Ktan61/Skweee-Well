@@ -4,9 +4,14 @@ import Navbar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import MenuTutorial from "@/components/MenuTutorial";
+import { matrix } from "../data/matrix.js";
+import { useState } from "react";
+import Accordion from "@/components/Accordion/index.js";
 
 export default function Help() {
   const router = useRouter();
+  const [data, setData] = useState([...matrix.faqArray]);
+
   return (
     <>
       <HeadArea
@@ -38,26 +43,36 @@ export default function Help() {
           >
             <h5 className={styles.quickLinkBoxes_Text}>How to Update Your Profile</h5>
           </div>
+          <Image
+            src="/images_interface/orange_swirl.svg"
+            width={760.51}
+            height={610.78}
+            alt="image of a forest with a trail curving into it"
+            className={styles.imageSwirl}
+          />
         </section>
         <section className={styles.sectionFAQ}>
           <h4 className={styles.headerFAQ}>FAQ</h4>
-          <div>Question 1</div>
+          {
+            data && data.map((info, index) => {
+              return(
+                <Accordion
+                  key={index}
+                  question={info.question}
+                  answer={info.answer}
+                />
+              )
+            })
+          }
         </section>
         <Image
             src="/images_interface/sqwee_2_trees.svg"
-            width={253}
-            height={193}
-            alt="image of a forest with a trail curving into it"
+            width={190}
+            height={145}
+            alt="image of sqwee the squirrel near some trees"
             className={styles.imageSqwee}
         />
       </main>
-      <Image
-        src="/images_interface/orange_swirl.svg"
-        width={760.51}
-        height={610.78}
-        alt="image of a forest with a trail curving into it"
-        className={styles.imageSwirl}
-      />
       <Navbar/>
     </>
   );

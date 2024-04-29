@@ -1,0 +1,33 @@
+.main {
+    width: 430px;
+    padding: 0 1.25rem 0;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.icon {
+    padding-right: 0rem;
+}
+
+.question {
+    width: 333px;
+}
+
+.arrow {
+    display: inline;
+}
+
+.answer {
+    padding-top: .5rem;
+    padding-left: 2.5rem;
+    font-size: var(--font-body);
+}
+
+.line {
+    border: 1px solid var(--black);
+}

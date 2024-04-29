@@ -64,7 +64,6 @@ h5 {
 }
 
 p {
-  font-family: 'Nunito';
   font-size: var(--font-body);
 }
 
@@ -95,7 +94,7 @@ button {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--darkGreen);
+  background-color: #F9A66B;
   border-radius: 10px;
 }
 

@@ -1,5 +1,5 @@
-export const accordionFAQ = {
-    FAQ : [
+export const matrix = {
+    faqArray : [
         {
             question: "Do all parks have a Sqwee Hunt?",
             answer: "Sqwee Hunts are currrently limited to larger parks, but we are continually expanding to include more parks. Keep enjoying BC parks — you might find a pleasant surprise at your next visit!"
@@ -27,6 +27,6 @@ export const accordionFAQ = {
         {
             question: "Can I change the visual settings in your app to make it easier to read?",
             answer:"Yes. In the Settings under the menu icon, you can change app contrast and the text sizes for easier viewing."
-        }   
+        } 
     ]
-};
+}
