@@ -18,6 +18,7 @@ export default function App({ Component, pageProps }) {
       <style jsx global>{`
         html {
           font-family: ${fontKoHo.style.fontFamily};
+          p: ${fontNunito.style.fontFamily}
         }
         
       `}</style>
