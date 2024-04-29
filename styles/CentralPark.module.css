@@ -59,7 +59,7 @@
     padding-left: 0.5rem;
 }
 
-/*FEATURED PARKS SECTION*/
+/*IMAGE AND VIDEO CAROUSEL SECTION*/
 .sectionCarousel {
     display: flex;
     flex-direction: column;
@@ -81,6 +81,7 @@
     background-color: var(--greenGrey);
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.25rem;
 }
   
 .carousel_First {
@@ -91,7 +92,39 @@
     margin-right: 3.75rem;
 }
 
-  /*TRAILS SECTION*/
+/*ACCORDION AMENITIES SECTION*/
+.sectionFAQ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.50rem;
+    width: 430px;
+    gap: 1.25rem;
+}
+
+.headerFAQ{
+width: 390px;
+}  
+
+.extraInfo {
+    display: flex;
+    align-items: center;
+    width: 390px;
+    border-top: 1.5px solid var(--black);
+    padding-top: .75rem;
+}
+
+.extraInfoIcons {
+    padding-right: 0.5rem;
+}
+
+.concessionIcon {
+    padding-right: .75rem;
+}
+
+/*TRAILS SECTION*/
 .sectionQuickLinks {
     display: flex;
     flex-direction: row;
@@ -182,8 +215,8 @@
     margin: 0;
     width: 430px;;
     pointer-events: none;
-    position: fixed;
-    top: 11rem;
+    position: absolute;
+    top: 6rem;
     left: 50%;
     transform: translate(-50%);
     z-index: -10;
