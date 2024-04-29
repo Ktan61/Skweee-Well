@@ -169,7 +169,6 @@ export default function Community() {
             </div>
           </div>
         </div>
-
       </main>
       <Navbar/>
     </>
