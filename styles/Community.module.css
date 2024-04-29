@@ -1,10 +1,151 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6rem;
-    min-height: 100vh;
-    background-color: var(--bone);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 1.25rem 5rem 1.25rem;
+  min-height: 120vh;
+  background-color: var(--bone);
+}
+
+.communityHeader {
+  margin-top: 40px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 49%;
+}
+
+.leaderboard {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+align-items: center;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.runnerUps {
+  padding: .5rem;
+  background-color: var(--white);
+  margin-bottom: .5rem;
+  border-radius: 15px;
+  display: block;
+  width: 400px;
+}
+.leaderboardPhotoContainer{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+.runnerUpUsername{
+  margin-left: 1rem;
+}
+.positionNumber{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.topThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  margin-bottom: -1rem;
+  margin-top: -.8rem;
+}
+
+.firstPlace {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.secondPlace {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.thirdPlace {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.profilePhoto {
+  display: flex;
+  flex-direction: row;
+}
+.eventsHeader{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 49%;
+  top:110%;
+  z-index: 1;
+}
+.swirlContainer {
+  z-index: 0;
+  position: absolute;
+  top: 106%;
+}
+
+
+/** 
+*events card
+**/
+
+.FPContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+  max-width: 430px;
+  overflow-x: scroll;
+  margin-top: 1rem;
+  z-index: 1;
+  margin-top: 6rem;
+}
+
+.featuredParksCard {
+  width: 308px;
+  height: 367px;
+  background-color: var(--greenGrey);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.FPC_First {
+  margin-left: 1.25rem;
+}
+
+.FPC_Last {
+  margin-right: 1.25rem;
+}
+
+.FPC_Image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.FPC_TextDiv {
+  padding: 0.5rem 1.25rem;
+}
+
+.FPC_TextHeader {
+  padding-bottom: 0.5rem;
+}
+
+.FPC_LearnMore {
+  color: var(--darkGreen);
+  font-weight: 700;
+  text-align: end;
+}
+.FPContainerTwo{
+  margin-bottom:2rem;
+  z-index: 1;
+}
+
