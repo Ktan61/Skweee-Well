@@ -18,9 +18,9 @@
 .leaderboard {
   margin-top: 5.5rem;
   display: flex;
-  flex-direction: column;
+ 
   margin-bottom: 10px;
-align-items: center;
+  align-items: center;
 }
 
 .list {
@@ -37,18 +37,22 @@ align-items: center;
   display: block;
   width: 400px;
 }
-.leaderboardPhotoContainer{
+
+.leaderboardPhotoContainer {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
 }
-.runnerUpUsername{
+
+.runnerUpUsername {
   margin-left: 1rem;
 }
-.positionNumber{
+
+.positionNumber {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+
 .topThree {
   display: flex;
   flex-direction: row;
@@ -78,18 +82,20 @@ align-items: center;
   display: flex;
   flex-direction: row;
 }
-.eventsHeader{
+
+.eventsHeader {
   position: absolute;
   transform: translateX(-50%);
   left: 49%;
-  top:110%;
+  top: 110%;
   z-index: 1;
 }
-.swirlContainer {
+
+/* .swirlContainer {
   z-index: 0;
   position: absolute;
   top: 106%;
-}
+} */
 
 
 /** 
@@ -144,8 +150,72 @@ align-items: center;
   font-weight: 700;
   text-align: end;
 }
-.FPContainerTwo{
-  margin-bottom:2rem;
+
+.FPContainerTwo {
+  margin-bottom: 2rem;
   z-index: 1;
 }
 
+@media only screen and (max-device-width: 430px) {
+  .main {
+    min-height: 197vh;
+  }
+
+  .topThree {
+    justify-content: center;
+    position: absolute;
+    top: -13.5rem;
+  }
+
+  .leaderboard {
+    justify-content: center;
+    position: absolute;
+    transform: translateX(-28.5%);
+    left: 37%;
+    margin-top: 6.5rem;
+    z-index: 1;
+    width: 400px;
+    top: 30%;
+  }
+
+  .communityHeader {
+    width: 100%;
+    transform: translateX(-25%);
+    left: 43%;
+    top: 7.8%;
+    z-index: 1;
+    position: absolute;
+  }
+
+  /* .swirlContainer{
+  /* position: absolute;
+  transform: translateX(-50%);
+  left:50%;
+margin-top: 0rem;
+width:400px;} */
+
+  .FPContainer {
+    transform: translateX(-20%);
+    left: 40%;
+    top: 86%;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .FPContainerTwo {
+    transform: translateX(-20%);
+    left: 40%;
+    top: 138%;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .eventsHeader {
+    width: 100%;
+    transform: translateX(-25%);
+    left: 45%;
+    top: 89%;
+    z-index: 1;
+    position: absolute;
+  }
+}
