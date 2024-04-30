@@ -26,6 +26,7 @@ const Filter = ({ onChange }) => {
             src="/images_interface/filterSqweee.svg"
             width={132}
             height={113}
+            onClick={closeFilter}
             alt="Sqweee helping filter the Parks Library"
           />
         </div>

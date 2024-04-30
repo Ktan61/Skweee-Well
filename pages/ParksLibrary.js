@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Filter from "@/components/Filter";
 import styles from "@/styles/ParksLibrary.module.css";
 import Link from "next/link";
@@ -13,16 +13,29 @@ const ParksLibrary = () => {
   const [filterOpen, setFilterOpen] = useState(false);
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
+  const filterRef = useRef(null);
 
   useEffect(() => {
     setData(inventory.parks);
     setFilteredData(inventory.parks);
+
+    document.addEventListener("mousedown", handleClickOutside);
+    
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []); 
+
+  const handleClickOutside = (event) => {
+    if (filterRef.current && !filterRef.current.contains(event.target)) {
+      setFilterOpen(false);
+    }
+  };
 
   const toggleFilter = () => {
     setFilterOpen(!filterOpen);
   };
-
+  
   const handleFilterChange = (category) => {
     if (category === "") {
       setFilteredData(data);
@@ -62,7 +75,7 @@ const ParksLibrary = () => {
               className={styles.imageFilter}
             />
           </div>
-          {filterOpen && <Filter onChange={handleFilterChange} />} 
+          {filterOpen && <div ref={filterRef}><Filter onChange={handleFilterChange} /></div>} 
         </section>
 
         <section className={styles.PC_Library}>
