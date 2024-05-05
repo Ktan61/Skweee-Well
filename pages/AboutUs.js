@@ -39,7 +39,23 @@ export default function AboutUs() {
             />
         </section>
         <br></br>
+        
         <section className={styles.sqwellTeam}>
+        <h4>Meet Sqweee</h4>
+          <div className={styles.members}>
+            <div className={styles.headShot}>
+              <Image
+                src="/images_content/AboutUs_Sqwee.svg"
+                width={163.3}
+                height={123}
+                alt="Sqwee the Squirrel photo"
+              />
+            </div>
+            <div className={styles.memberBlurb}>
+              <p>Sqweee is the ambassador of the Sqwell app! With his knack for finding the best acorns, Sqweee is more than just a squirrel; he's your trusty guide to navigating the Sqwell universe.</p>
+            </div>
+          </div>
+          <br></br>
           <h4>Sqwell Team</h4>
           <div className={styles.members}>
             <div className={styles.headShot}>
