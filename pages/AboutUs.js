@@ -11,7 +11,7 @@ export default function AboutUs() {
       <HeadArea
         title="About Us"
       />
-      <MenuBack/>
+      <MenuBack />
       <Image
                   src="/images_interface/AboutUs_OrangeBG.svg"
                   width={430}
@@ -20,11 +20,11 @@ export default function AboutUs() {
                   className={styles.imageOrangeBG}
             />
             
-      <Navbar/>
+      <Navbar />
       <main className={`${styles.main}`}>
         <section className={styles.sqwellDesc}>
           <div className={styles.textContent}>
-            <h3>About Us</h3>
+            <h3 tabIndex={3}>About Us</h3>
             <br></br>
             <p>The Sqwell team comprises<br></br>passionate individuals with<br></br>diverse backgrounds in<br></br>design, and outdoor recreation,<br></br>driven by a shared love for nature. The app features<br></br>an interactive scavenger hunt, offering themed<br></br>adventures tailored to the unique "special tidbits" of<br></br>each park in British Columbia, Canada. From wildlife<br></br>spotting to historical discoveries and brain-teasing<br></br>riddles, these hunts turn park exploration into a playful<br></br>and immersive experience, encouraging users to engage deeply with their surroundings while fostering a deeper appreciation for the natural world.</p>
             <br></br>
