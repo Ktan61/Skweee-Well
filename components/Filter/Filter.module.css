@@ -1,12 +1,12 @@
 .filter {
     position: fixed;
-    top: 69px;
-    right: 450px;
+    top: 233px;
+    right: 0px;
     width: 220px;
     height: 100vh;
     transition: bottom 0.3s ease;
     z-index: 1000;
-    padding: 20px;
+    padding: 0;
     overflow-y: auto;
     border-radius: 20px;
 }
