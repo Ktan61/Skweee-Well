@@ -129,8 +129,6 @@ const ParksLibrary = () => {
           </div>
         </section>
 
-        <br />
-        <Link href='/Quiz/QuizStart'>Quiz</Link>
       </main>
     </>
   );
