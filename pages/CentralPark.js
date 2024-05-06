@@ -8,10 +8,12 @@ import { useRouter } from "next/router";
 import { parkAmenities } from "../data/parkAmenities.js";
 import { useState, useEffect } from "react";
 import Accordion from "@/components/Accordion/index.js";
+import Map from "@/components/Map/MapIndex.js";
 
 export default function CentralPark() {
     const router = useRouter();
     const [data, setData] = useState([...parkAmenities.parkAmenitiesArray]);
+    
   return (
     <>
       <HeadArea
@@ -19,7 +21,16 @@ export default function CentralPark() {
       />
       <MenuBack/>
       <main className={`${styles.main}`}>
-        <h3 className={styles.header}>Central Park</h3>
+        <div className={styles.topHeadingContainer}>
+          <h3 className={styles.header}>Central Park</h3>
+          <Image
+              src="/images_interface/tree_conifer.svg"
+              width={40}
+              height={65}
+              alt="acorn icon indicating a scavenger hunt is in a particular park"
+              className={styles.iconAcorn}
+          />
+        </div>
         <section className={styles.sectionNavChips}>
             <h5 className={styles.navChip}>
                 <Link href="/CentralPark#sqweeHunt" className={styles.navChipText}>
@@ -33,7 +44,13 @@ export default function CentralPark() {
                     />
                 </Link>
             </h5>
-            <h5 className={`${styles.navChip} ${styles.navChipText}`}>
+            <h5 
+              className={`${styles.navChip} ${styles.navChipText}`}
+              id="addParkButton"
+              onClick={() => 
+                document.getElementById("popUpAddPark").style.display = "block"
+              }
+              >
                 Add Park
                 <Image
                 src="/images_interface/AddHeart.svg"
@@ -43,14 +60,63 @@ export default function CentralPark() {
                 className={styles.chipIcon}
                 />
             </h5>
-            <h5 className={`${styles.navChip} ${styles.navChipText}`}
-                >Park Map
+            <div id="popUpAddPark" className={styles.popUpAddPark}>
+              <div className={styles.innerPopUpAddPark}>
+                <Image
+                    src="/images_interface/close_white.svg"
+                    width={50}
+                    height={50}
+                    alt="icon to close popup"
+                    className={styles.closeButton}
+                    tabIndex={10}
+                    onClick={() => {
+                      const popUpAddPark = document.getElementById("popUpAddPark");
+                      const parkAddedMessage = document.getElementById("parkAddedButton");
+                      const addParkButton = document.getElementById("addParkButton");
+                      if (popUpAddPark && parkAddedMessage) {
+                        popUpAddPark.style.display = "none";
+                        addParkButton.style.display = "none";
+                        parkAddedMessage.style.display = "flex";
+                        parkAddedMessage.style.color = "#F7802B";
+                        parkAddedMessage.style.border = "3px solid #F7802B"
+                      }
+                    }}
+                  />
+                <div className={styles.addParkContainer}>
+                  <span className={styles.addParkTextBold}>Central Park</span> has been added to your favourites!
+                </div>
+                <Image
+                  src="/images_interface/sqwee.svg"
+                  width={148}
+                  height={115}
+                  alt="image of sqwee the squirrel holding a giant acorn"
+                  className={styles.imageSqweeAcorn}
+                  tabIndex={10}
+                />
+                <button 
+                  className={styles.savedParksButton}>
+                  Go to My Parks
+                </button>
+              </div>
+            </div>
+            <h5 id="parkAddedButton" className={`${styles.navChip} ${styles.navChipText} ${styles.parkAdded}`}
+                >Park Saved 
+                <Image
+                    src="/images_interface/iconHeart.svg"
+                    width={25}
+                    height={30}
+                    alt="acorn icon indicating a scavenger hunt is in a particular park"
+                    className={styles.chipIcon}
+                    />
+            </h5>
+            <h5 className={styles.navChip}>
+                <Link href="/CentralPark#parkMap" className={styles.navChipText}>Park Map</Link>
             </h5>
             <h5 className={styles.navChip}>
                 <Link href="/CentralPark#trails" className={styles.navChipText}>Trails</Link>
             </h5>
-            <h5 className={`${styles.navChip} ${styles.navChipText}`}
-                >Amenities
+            <h5 className={styles.navChip}>
+                <Link href="/CentralPark#amenities" className={styles.navChipText}>Amenities</Link>
             </h5>
             <h5 className={`${styles.navChip} ${styles.navChipText}`}
                 >Gallery
@@ -113,9 +179,36 @@ export default function CentralPark() {
             />
          </div>
         </section>
-        <div id="amenities" className={styles.spacer}></div>
+        <div className={styles.spacerWrapper}>
+          <div id="parkMap" className={styles.spacer}></div>
+        </div>
+        <section className={styles.sectionMap}>
+          <div className={styles.parkMapHeadingContainer}>
+            <h4 className={styles.amenitiesBanner}>Interactive Park Map</h4>
+            <Image
+                src="/images_interface/tree_conifer.svg"
+                width={40}
+                height={65}
+                alt="acorn icon indicating a scavenger hunt is in a particular park"
+                className={styles.iconAcorn}
+            />
+          </div>
+          <Map/>
+        </section>
+        <div className={styles.spacerWrapper}>
+          <div id="amenities" className={styles.spacer}></div>
+        </div>
         <section className={styles.sectionFAQ}>
-          <h4 className={styles.headerFAQ}>FAQ</h4>
+          <div className={styles.amenitiesHeadingContainer}>
+            <h4 className={styles.amenitiesBanner}>Amenities</h4>
+            <Image
+                src="/images_interface/tree_conifer.svg"
+                width={40}
+                height={65}
+                alt="acorn icon indicating a scavenger hunt is in a particular park"
+                className={styles.iconAcorn}
+            />
+          </div>
           {
             data && data.map((info, index) => {
               return(
@@ -158,7 +251,7 @@ export default function CentralPark() {
             />
             <h5>Picnic Tables</h5>
           </div>
-          <div className={styles.extraInfo}>
+          <div className={`${styles.extraInfo} ${styles.concessionBottomBorder}`}>
             <Image
                 src="/images_interface/parkicon_food.svg"
                 width={25}
@@ -169,9 +262,20 @@ export default function CentralPark() {
             <h5>Concession</h5>
           </div>
         </section>
-        <div id="trails" className={styles.spacer}></div>
+        <div className={styles.spacerWrapper}>
+          <div id="trails" className={styles.spacer}></div>
+        </div>
         <section className={styles.sectionQuickLinks}>
-          <h4 className={styles.headerQuickLinks}>Trails</h4>
+          <div className={styles.trailsHeadingContainer}>
+            <h4 className={styles.amenitiesBanner}>Trails</h4>
+            <Image
+                src="/images_interface/tree_conifer.svg"
+                width={40}
+                height={65}
+                alt="acorn icon indicating a scavenger hunt is in a particular park"
+                className={styles.iconAcorn}
+            />
+          </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box1}`}
           >
@@ -182,8 +286,17 @@ export default function CentralPark() {
           >
             <h5 className={styles.quickLinkBoxes_Text}>Cycling Trails</h5>
           </div>
+          <Image
+              src="/images_interface/orange_swirl.svg"
+              width={760.51}
+              height={610.78}
+              alt="image of a forest with a trail curving into it"
+              className={styles.imageSwirlTwo}
+            />
         </section>
-        <div id="sqweeHunt" className={styles.spacer}></div>
+        <div className={styles.spacerWrapper}>
+          <div id="sqweeHunt" className={styles.spacer}></div>
+        </div>
         <section className={styles.sectionHuntBanner}>
           <div className={styles.huntHeadingContainer}>
             <h4 className={styles.huntBanner}>Sqwee Scavenger Hunt</h4>
