@@ -13,29 +13,22 @@ const ParksLibrary = () => {
   const [filterOpen, setFilterOpen] = useState(false);
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
   const filterRef = useRef(null);
 
   useEffect(() => {
     setData(inventory.parks);
     setFilteredData(inventory.parks);
-
-    document.addEventListener("mousedown", handleClickOutside);
-    
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
   }, []); 
 
-  const handleClickOutside = (event) => {
-    if (filterRef.current && !filterRef.current.contains(event.target)) {
-      setFilterOpen(false);
-    }
-  };
+  useEffect(() => {
+    filterParks();
+  }, [data, searchQuery]);
 
   const toggleFilter = () => {
     setFilterOpen(!filterOpen);
   };
-  
+
   const handleFilterChange = (category) => {
     if (category === "") {
       setFilteredData(data);
@@ -45,6 +38,20 @@ const ParksLibrary = () => {
     }
   };
 
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filterParks = () => {
+    let filteredParks = data;
+    if (searchQuery) {
+      filteredParks = filteredParks.filter(park =>
+        park.parkName.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+    setFilteredData(filteredParks);
+  };
+
   return (
     <>
       <HeadArea title="Park Library" />
@@ -52,12 +59,12 @@ const ParksLibrary = () => {
       <Navbar />
       <main className={`${styles.main}`}>
         <section className={styles.searchSection}>
-          <Image
-            src="/images_interface/Search-Bar.svg"
-            width={391}
-            height={58}
-            alt="Temporary search bar"
-            className={styles.imageSearchBar}
+          <input
+            type="text"
+            placeholder="Search for Parks in Burnaby..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className={styles.searchInput}
           />
         </section>
 
