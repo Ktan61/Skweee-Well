@@ -19,6 +19,13 @@ const ParksLibrary = () => {
   useEffect(() => {
     setData(inventory.parks);
     setFilteredData(inventory.parks);
+
+    // Add event listener for clicks outside the filter sidebar
+    document.addEventListener("mousedown", handleClickOutside);
+    
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []); 
 
   useEffect(() => {
@@ -50,6 +57,12 @@ const ParksLibrary = () => {
       );
     }
     setFilteredData(filteredParks);
+  };
+
+  const handleClickOutside = (event) => {
+    if (filterRef.current && !filterRef.current.contains(event.target)) {
+      setFilterOpen(false);
+    }
   };
 
   return (
