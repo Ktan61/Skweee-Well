@@ -48,7 +48,8 @@
     z-index: 1;
     background-color: var(--purple);
     width: 430px;
-    height: 83.5%;
+    height: 90%;
+    padding-bottom: 5rem;
 }
 
 .innerChampionDiv {
