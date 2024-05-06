@@ -38,6 +38,9 @@ const ParksLibrary = () => {
   const handleFilterChange = (category) => {
     if (category === "") {
       setFilteredData(data);
+    } else if (category === "distance") {
+      const sortedParks = [...filteredData].sort((a, b) => a.distance - b.distance);
+      setFilteredData(sortedParks);
     } else {
       const filteredParks = data.filter(park => park.amenities.includes(category));
       setFilteredData(filteredParks);

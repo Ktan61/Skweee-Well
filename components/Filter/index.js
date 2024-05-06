@@ -7,14 +7,20 @@ import { inventory } from "@/data/parksData";
 const Filter = ({ onChange }) => {
   const [selectedCat, setSelectedCat] = useState("");
   const [filterOpen, setFilterOpen] = useState(false);
+  const [sortBy, setSortBy] = useState("");
 
   const toggleFilter = (category) => {
     setSelectedCat(category);
     onChange && onChange(category);
   };
-  
+
   const closeFilter = () => {
     setFilterOpen(false);
+  };
+
+  const sortByDistance = () => {
+    setSortBy("distance");
+    onChange && onChange("distance");
   };
 
   return (
@@ -79,6 +85,9 @@ const Filter = ({ onChange }) => {
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Sqweee Hunt")}>
                 <h5>Sqweee Hunt</h5>
+              </li>
+              <li li className={styles.links} onClick={sortByDistance}>
+                <h5>Sort by Distance</h5>
               </li>
 
             </ul>
