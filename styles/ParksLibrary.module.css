@@ -75,7 +75,7 @@
 /*DISCOVER BC PARKS SECTION*/
 
 .discoverBCParks_header {
-  width: 400px;
+  width: 380px;
   margin-top: 60px;
 }
 
@@ -84,14 +84,14 @@
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 1.25rem;
-  max-width: 430px;
+  max-width: 410px;
   overflow-x: scroll;
   margin-top: 1.25rem;
 }
 
 .BCPark1 {
-  width: 137px;
-  height: 129px;
+  width: 123px;
+  height: 115px;
   background-color: var(--purple);
   border-radius: 10px;
   align-content: center;
@@ -99,8 +99,8 @@
 }
 
 .BCPark2 {
-  width: 137px;
-  height: 129px;
+  width: 123px;
+  height: 115px;
   background-color: var(--blue);
   border-radius: 10px;
   align-content: center;
@@ -108,8 +108,8 @@
 }
 
 .BCPark3 {
-  width: 137px;
-  height: 129px;
+  width: 123px;
+  height: 115px;
   background-color: var(--orange);
   border-radius: 10px;
   align-content: center;

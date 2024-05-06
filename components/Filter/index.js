@@ -23,6 +23,12 @@ const Filter = ({ onChange }) => {
     onChange && onChange("distance");
   };
 
+  const clearFilters = () => {
+    setSelectedCat("");
+    setSortBy("");
+    onChange && onChange(""); 
+  };
+
   return (
     <div className={styles.filterContainer}>
       <aside className={`${styles.filter}`}>
@@ -81,8 +87,20 @@ const Filter = ({ onChange }) => {
               <li li className={styles.links} onClick={sortByDistance}>
                 <h5>Sort by Distance</h5>
               </li>
+              <br></br>
+
 
             </ul>
+          </div>
+          <div className={styles.clearFilters}>
+            <ul className={styles.chipsList}>
+              {selectedCat || sortBy ? (
+                  <li className={styles.clearFilters} onClick={clearFilters}>
+                    <h5>Clear Filters</h5>
+                  </li>
+              ) : null}
+            </ul>
+
           </div>
         </div>
 
