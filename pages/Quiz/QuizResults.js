@@ -23,6 +23,7 @@ export default function QuizResults() {
 
     const calculateScore = () => {
         let totalScore = 0;
+
         for (let i = 0; i < questions.length; i++) {
             if (questions[i].correctAnswer === questions[i].answers[Number(selectedAnswers.split("")[i])]) {
                 totalScore += 1;
@@ -51,6 +52,9 @@ export default function QuizResults() {
 
     return (
         <main className={styles.QSContainer}>
+            <audio controls>
+                <source src="./winSound.mp3" type="audio/mpeg"/>
+            </audio>
             <HeadArea
                 title="Quiz Results"
             />
