@@ -25,6 +25,23 @@
   width: 380px;
 }
 
+/*SEARCH*/
+.searchInput {
+  padding: 8px;
+  width: 24rem;
+  height: 2.3125rem;
+  font-size: var(--font-body);
+  border-radius: 4rem;
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--purple);
+}
+
+.searchInput:focus {
+  border-color: var(--orange);
+}
+
 /*FILTER*/
 .filterButton {
   width: 3rem;
