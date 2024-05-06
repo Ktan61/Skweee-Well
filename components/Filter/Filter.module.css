@@ -1,7 +1,8 @@
 .filter {
     position: fixed;
-    top: 170px;
-    right: 0px;
+    top: 29px;
+    left: 57%;
+    transform: translate(-43%);
     width: 220px;
     height: 100vh;
     transition: bottom 0.3s ease;
