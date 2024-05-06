@@ -1,0 +1,22 @@
+
+.closePopup{
+    display:inline-block;
+    padding:.5rem;
+    font-size: --font-button;
+    border: 1.5px solid var(--bone);
+    border-radius: 7px;
+    z-index: 55;
+    background-color: var(--orange);
+    margin-bottom: .5rem;
+    position: relative;
+    left:10%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.popupArea{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+

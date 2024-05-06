@@ -15,15 +15,6 @@ const Sidebar = () => {
       <div>
         <aside className={`${styles.sidebar}`}>
           <ul className={styles.menuList}>
-            <li>
-              <Image
-                src="/images_interface/searchbar-settings.png"
-                width={245}
-                height={39}
-                alt="searchbar placeholder"
-                className={styles.search}
-              />
-            </li>
             <li className={styles.listItem}><Link href="/" className={styles.link}>
               <Image
                 src="/images_interface/settings.png"

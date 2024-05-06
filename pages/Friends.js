@@ -22,17 +22,10 @@ export default function Friends() {
                         height={200}
                         alt="profile photo of a woman with brown hair"
                         className={styles.profilePhoto}
+                        tabIndex={3}
                     />
                 </div>
-                <div className={styles.passportIconContainer}>
-                    <Image
-                        src="/images_interface/passport-icon.png"
-                        width={60}
-                        height={60}
-                        alt="orange book icon for badge collection"
-                        className={styles.passportIcon}
-                    />
-                </div>
+                
                 <div className={styles.username}>
                     <h4>@naturelover222</h4>
                 </div>
