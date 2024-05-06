@@ -1,6 +1,6 @@
 .filter {
     position: fixed;
-    top: 233px;
+    top: 170px;
     right: 0px;
     width: 220px;
     height: 100vh;
@@ -55,7 +55,7 @@
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
-    border:none;
+    border: none;
     border-radius: 4rem;
     cursor: pointer;
     background-color: var(--white);
@@ -64,4 +64,14 @@
 
 .links {
     text-decoration: none;
+}
+
+.clearFilters {
+    text-decoration: none;
+    margin: 1px;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    background-color: var(--darkGreen);
+    color: var(--white);
 }

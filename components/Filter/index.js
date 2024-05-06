@@ -87,13 +87,20 @@ const Filter = ({ onChange }) => {
               <li li className={styles.links} onClick={sortByDistance}>
                 <h5>Sort by Distance</h5>
               </li>
-              {selectedCat || sortBy ? (
-                <li className={styles.links} onClick={clearFilters}>
-                  <h5>Clear Filters</h5>
-                </li>
-              ) : null}
+              <br></br>
+
 
             </ul>
+          </div>
+          <div className={styles.clearFilters}>
+            <ul className={styles.chipsList}>
+              {selectedCat || sortBy ? (
+                  <li className={styles.clearFilters} onClick={clearFilters}>
+                    <h5>Clear Filters</h5>
+                  </li>
+              ) : null}
+            </ul>
+
           </div>
         </div>
 
