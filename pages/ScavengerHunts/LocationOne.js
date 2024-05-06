@@ -64,7 +64,7 @@ export default function LocationOne() {
           <button
             onClick={() => router.push('/ScavengerHunts/LocationTwo')}
             className={styles.button}
-            tabIndex={10}
+            tabIndex={10} 
             >Next
           </button>
         </section>

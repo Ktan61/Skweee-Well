@@ -24,11 +24,9 @@ export default function CentralPark() {
         <div className={styles.topHeadingContainer}>
           <h3 className={styles.header} tabIndex={30}>Central Park</h3>
           <Image
-              src="/images_interface/tree_conifer.svg"
+              src="/images_interface/Tree2Updated.svg"
               width={40}
               height={55}
-              alt="small decorative tree beside section heading"
-              className={styles.iconAcorn}
           />
         </div>
         <section className={styles.sectionNavChips}>
@@ -295,11 +293,9 @@ export default function CentralPark() {
           <div className={styles.parkMapHeadingContainer}>
             <h4 className={styles.amenitiesBanner} tabIndex={30}>Interactive Park Map</h4>
             <Image
-                src="/images_interface/tree_conifer.svg"
+                src="/images_interface/Tree2Updated.svg"
                 width={40}
                 height={55}
-                alt="small decorative tree beside section heading"
-                className={styles.iconAcorn}
             />
           </div>
           <Map/>
@@ -311,11 +307,9 @@ export default function CentralPark() {
           <div className={styles.amenitiesHeadingContainer}>
             <h4 className={styles.amenitiesBanner} tabIndex={30}>Amenities</h4>
             <Image
-                src="/images_interface/tree_conifer.svg"
+                src="/images_interface/Tree2Updated.svg"
                 width={40}
                 height={55}
-                alt="small decorative tree beside section heading"
-                className={styles.iconAcorn}
             />
           </div>
           {
@@ -379,11 +373,9 @@ export default function CentralPark() {
           <div className={styles.trailsHeadingContainer}>
             <h4 className={styles.amenitiesBanner} tabIndex={30}>Trails</h4>
             <Image
-                src="/images_interface/tree_conifer.svg"
+                src="/images_interface/Tree2Updated.svg"
                 width={40}
                 height={55}
-                alt="small decorative tree beside section heading"
-                className={styles.iconAcorn}
             />
           </div>
           <div 
