@@ -38,14 +38,6 @@ const Filter = ({ onChange }) => {
         <div className={styles.filterContent}>
           <div className={styles.header}>
             <h3>Filters</h3>
-            <Image
-              src="/images_interface/filter-Close.svg"
-              width={43}
-              height={44}
-              alt="Close icon to close filter"
-              onClick={closeFilter}
-              className={styles.sqweeeFilter}
-            />
           </div>
           <br />
           <div className={styles.chips}>
