@@ -15,7 +15,8 @@
 .sqwellDesc {
     display: flex;
     padding-top: 3.8rem;
-    padding-left: 2.5rem;  
+    width: 390px;  
+    
 }
 
 .imageTreeBG {
@@ -27,7 +28,7 @@
 }
 
 .textContent {
-    width: 430px;
+    width: 380px;
 }
 
 
