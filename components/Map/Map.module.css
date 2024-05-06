@@ -1,0 +1,15 @@
+.mapStyle {
+    width: 430px;
+    height: 430px;
+}
+
+.contributors {
+    height: 30px;
+}
+
+.mapIcons {
+    display: flex;
+    padding: 1rem 1rem;
+    gap: 10px;
+    z-index: 1000;
+}

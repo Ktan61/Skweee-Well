@@ -7,15 +7,26 @@ import { inventory } from "@/data/parksData";
 const Filter = ({ onChange }) => {
   const [selectedCat, setSelectedCat] = useState("");
   const [filterOpen, setFilterOpen] = useState(false);
+  const [sortBy, setSortBy] = useState("");
 
   const toggleFilter = (category) => {
     setSelectedCat(category);
     onChange && onChange(category);
   };
-  
+
   const closeFilter = () => {
     setFilterOpen(false);
-    onChange && onChange("");
+  };
+
+  const sortByDistance = () => {
+    setSortBy("distance");
+    onChange && onChange("distance");
+  };
+
+  const clearFilters = () => {
+    setSelectedCat("");
+    setSortBy("");
+    onChange && onChange(""); 
   };
 
   return (
@@ -33,14 +44,6 @@ const Filter = ({ onChange }) => {
         <div className={styles.filterContent}>
           <div className={styles.header}>
             <h3>Filters</h3>
-            <Image
-              src="/images_interface/filter-Close.svg"
-              width={43}
-              height={44}
-              alt="Close icon to close filter"
-              onClick={closeFilter}
-              className={styles.sqweeeFilter}
-            />
           </div>
           <br />
           <div className={styles.chips}>
@@ -81,8 +84,23 @@ const Filter = ({ onChange }) => {
               <li className={styles.links} onClick={() => toggleFilter("Sqweee Hunt")}>
                 <h5>Sqweee Hunt</h5>
               </li>
+              <li li className={styles.links} onClick={sortByDistance}>
+                <h5>Sort by Distance</h5>
+              </li>
+              <br></br>
+
 
             </ul>
+          </div>
+          <div className={styles.clearFilters}>
+            <ul className={styles.chipsList}>
+              {selectedCat || sortBy ? (
+                  <li className={styles.clearFilters} onClick={clearFilters}>
+                    <h5>Clear Filters</h5>
+                  </li>
+              ) : null}
+            </ul>
+
           </div>
         </div>
 

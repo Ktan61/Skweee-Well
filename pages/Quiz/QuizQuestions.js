@@ -95,7 +95,7 @@ export default function qPage() {
                     }
                     {
                         (activeQuestion !== questions.length - 1) ?  
-                        <button className={styles.button} onClick={() => {nextQuestion()}} tabIndex={30}>Next Question</button> 
+                        <button className={styles.button} tabIndex={10} onClick={() => {nextQuestion()}}>Next Question</button> 
                         : 
                         <Link 
                             href={{

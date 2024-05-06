@@ -22,7 +22,7 @@ export default function Friends() {
                         height={200}
                         alt="profile photo of a woman with brown hair"
                         className={styles.profilePhoto}
-                        tabIndex={3}
+    
                     />
                 </div>
                 

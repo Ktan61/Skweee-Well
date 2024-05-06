@@ -16,6 +16,7 @@ export default function Accordion({
                 <h5 
                     className={styles.question}
                     onClick={() => setIsActive(!isActive)}
+                    tabIndex={30}
                 >
                     {question}
                 </h5>

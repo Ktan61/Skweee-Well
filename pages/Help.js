@@ -20,26 +20,30 @@ export default function Help() {
       <MenuTutorial/>
       <main className={`${styles.main}`}>
         <section className={styles.sectionQuickLinks}>
-          <h3 className={styles.headerQuickLinks}>Help</h3>
-          <h4 className={styles.headerQuickLinks}>Tutorials</h4>
+          <h3 className={styles.headerQuickLinks} tabIndex={10}>Help</h3>
+          <h4 className={styles.headerQuickLinks} tabIndex={10}>Tutorials</h4>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box1}`}
+            tabIndex={10}
             onClick={() => router.push('/ParksLibrary')}
           >
             <h5 className={styles.quickLinkBoxes_Text}>How to Use Park Pages</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box2}`}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>How to Play Scavenger Hunt</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box3}`}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>How to Find Your Badges</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box4}`}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>How to Update Your Profile</h5>
           </div>
@@ -52,7 +56,7 @@ export default function Help() {
           />
         </section>
         <section className={styles.sectionFAQ}>
-          <h4 className={styles.headerFAQ}>FAQ</h4>
+          <h4 className={styles.headerFAQ} tabIndex={10}>FAQ</h4>
           {
             data && data.map((info, index) => {
               return(

@@ -15,7 +15,8 @@
 .sqwellDesc {
     display: flex;
     padding-top: 3.8rem;
-    padding-left: 2.5rem;  
+    width: 390px;  
+    
 }
 
 .imageTreeBG {
@@ -27,8 +28,9 @@
 }
 
 .textContent {
-    width: 430px;
+    width: 380px;
 }
+
 
 /*SQWELL TEAM SECTION*/
 
@@ -56,7 +58,7 @@
     width: 430px;
     pointer-events: none;
     position: absolute;
-    top: 42rem;
+    top: 60rem;
     left: 50%;
     transform: translate(-50%);
     z-index: -10;

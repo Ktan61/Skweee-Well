@@ -147,6 +147,7 @@
   font-weight: 700;
   padding-top: .25rem;
   text-align: end;
+  cursor: pointer;
 }
 
 .imageTree2 {

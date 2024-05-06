@@ -59,8 +59,8 @@
 }
 
 .profilePhotoContainer {
-  width: 12rem; 
-  height: 12rem; 
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -148,6 +148,7 @@
   justify-content: center;
   margin-bottom: 1.6rem;
 }
+
 .chartHeaderContainer {
   padding-bottom: 50px;
   display: flex;
@@ -163,16 +164,15 @@
   z-index: 1;
   position: relative;
   height: auto;
-  top:-1rem;
+  top: -1rem;
 }
 
 .leaderboardButton {
- display: flex;
- justify-content: center;
- margin-top: 1rem;
- align-items: center;
- text-decoration: none;
- position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  text-decoration: none;
 }
 
 .tree {
@@ -291,16 +291,19 @@
   .main {
     min-height: 223vh;
   }
-.tree{
-  display: none;
-}
- .visitedParks{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-margin-top: -12rem;
- }
-.chartHeaderContainer{
-  position: relative;
-}
+
+  .tree {
+    display: none;
+  }
+
+  .visitedParks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -12rem;
+  }
+
+  .chartHeaderContainer {
+    position: relative;
+  }
 }

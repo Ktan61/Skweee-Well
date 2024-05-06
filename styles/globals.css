@@ -75,7 +75,7 @@ button {
   height: 4.625rem;
   font-size: var(--font-button);
   font-weight: 600;
-  font-family: 'KoHo';
+  font-family: 'KoHo', Helvetica, Arial, sans-serif;
   border:none;
   border-radius: 4rem;
   cursor: pointer;

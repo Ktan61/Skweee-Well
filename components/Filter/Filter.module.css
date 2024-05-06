@@ -1,12 +1,12 @@
 .filter {
     position: fixed;
-    top: 100px;
-    right: 450px;
+    top: 170px;
+    right: 0px;
     width: 220px;
     height: 100vh;
     transition: bottom 0.3s ease;
     z-index: 1000;
-    padding: 20px;
+    padding: 0;
     overflow-y: auto;
     border-radius: 20px;
 }
@@ -26,8 +26,8 @@
 
 .sqweeeFilter {
     margin: 0;
-    margin-bottom: -13px;
-    padding-left: 70px;
+    margin-bottom: -18px;
+    padding-left: 85px;
 }
 
 .filterContent {
@@ -47,7 +47,7 @@
     gap: 2px;
     list-style-type: none;
     text-align: center;
-    padding: 2px;
+    padding: 5px;
 }
 
 .chips li {
@@ -55,7 +55,7 @@
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
-    border:none;
+    border: none;
     border-radius: 4rem;
     cursor: pointer;
     background-color: var(--white);
@@ -64,4 +64,14 @@
 
 .links {
     text-decoration: none;
+}
+
+.clearFilters {
+    text-decoration: none;
+    margin: 1px;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    background-color: var(--darkGreen);
+    color: var(--white);
 }
