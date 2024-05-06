@@ -15,7 +15,6 @@ const Filter = ({ onChange }) => {
   
   const closeFilter = () => {
     setFilterOpen(false);
-    onChange && onChange("");
   };
 
   return (
