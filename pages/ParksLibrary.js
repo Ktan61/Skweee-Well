@@ -20,7 +20,6 @@ const ParksLibrary = () => {
     setData(inventory.parks);
     setFilteredData(inventory.parks);
 
-    // Add event listener for clicks outside the filter sidebar
     document.addEventListener("mousedown", handleClickOutside);
     
     return () => {
@@ -71,6 +70,7 @@ const ParksLibrary = () => {
       <MenuBack />
       <Navbar />
       <main className={`${styles.main}`}>
+
         <section className={styles.searchSection}>
           <input
             type="text"
@@ -80,7 +80,7 @@ const ParksLibrary = () => {
             className={styles.searchInput}
           />
         </section>
-
+        
         <section className={styles.parkLibHeader}>
           <div className={styles.parksHeader}>
             <h3>Parks</h3>
