@@ -70,7 +70,7 @@ const ParksLibrary = () => {
       <MenuBack />
       <Navbar />
       <main className={`${styles.main}`}>
-        <br />
+
         <section className={styles.searchSection}>
           <input
             type="text"
@@ -80,8 +80,6 @@ const ParksLibrary = () => {
             className={styles.searchInput}
           />
         </section>
-        
-        <br />
         
         <section className={styles.parkLibHeader}>
           <div className={styles.parksHeader}>
