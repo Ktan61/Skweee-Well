@@ -52,9 +52,6 @@ export default function QuizResults() {
 
     return (
         <main className={styles.QSContainer}>
-            <audio controls>
-                <source src="./winSound.mp3" type="audio/mpeg"/>
-            </audio>
             <HeadArea
                 title="Quiz Results"
             />
@@ -62,69 +59,75 @@ export default function QuizResults() {
             <div className={styles.innerWrapper}>
                 <div id="badgeDiv" className={styles.badgeDiv}>
                     <div id="championBadgeDiv" className={styles.innerChampionDiv}>
-                        <h3>You received the Champion Badge!</h3>
+                        <h3 tabIndex={30}>You received the Champion Badge!</h3>
                         <Image
                             src="/images_interface/central_champion.svg"
                             width={250}
                             height={250}
                             alt="image of central park quiz champion badge"
                             className={styles.imageBadge}
+                            tabIndex={30}
                         />
-                        <h5 className={styles.popUpBodyText}>You found all the locations and got a perfect score on the quiz. Well done!</h5>
+                        <h5 className={styles.popUpBodyText} tabIndex={30}>You found all the locations and got a perfect score on the quiz. Well done!</h5>
                     </div>
                     <div id="goldBadgeDiv" className={styles.innerGoldDiv}>
-                        <h3>You received the Gold Badge!</h3>
+                        <h3 tabIndex={30}>You received the Gold Badge!</h3>
                         <Image
                             src="/images_interface/central_gold.svg"
                             width={250}
                             height={250}
                             alt="image of central park quiz gold badge"
                             className={styles.imageBadge}
+                            tabIndex={30}
                         />
-                        <h5 className={styles.popUpBodyText}>You found all the locations and got 3/4 on the quiz. Nicely done!</h5>
+                        <h5 className={styles.popUpBodyText} tabIndex={30}>You found all the locations and got 3/4 on the quiz. Nicely done!</h5>
                     </div>
                     <div id="silverBadgeDiv" className={styles.innerSilverDiv}>
-                        <h3>You received the Silver Badge!</h3>
+                        <h3 tabIndex={30}>You received the Silver Badge!</h3>
                         <Image
                             src="/images_interface/central_silver.svg"
                             width={250}
                             height={250}
                             alt="image of central park quiz silver badge"
                             className={styles.imageBadge}
+                            tabIndex={30}
                         />
-                        <h5 className={styles.popUpBodyText}>You found all the locations and got 2/4 on the quiz. Not too shabby!</h5>
+                        <h5 className={styles.popUpBodyText} tabIndex={30}>You found all the locations and got 2/4 on the quiz. Not too shabby!</h5>
                     </div>
                     <div id="bronzeBadgeDiv" className={styles.innerBronzeDiv}>
-                        <h3>You received the Bronze Badge!</h3>
+                        <h3 tabIndex={30}>You received the Bronze Badge!</h3>
                         <Image
                             src="/images_interface/central_bronze.svg"
                             width={250}
                             height={250}
                             alt="image of central park quiz bronze badge"
                             className={styles.imageBadge}
+                            tabIndex={30}
                         />
-                        <h5 className={styles.popUpBodyText}>You found all the locations and got 1/4 on the quiz. You tried your best.</h5>
+                        <h5 className={styles.popUpBodyText} tabIndex={30}>You found all the locations and got 1/4 on the quiz. You tried your best.</h5>
                     </div>
                     <div id="noBadgeDiv" className={styles.innerNoBadgeDiv}>
-                        <h3>Sqwee is very sad</h3>
+                        <h3 tabIndex={30}>Sqwee is very sad</h3>
                         <Image
                             src="/images_interface/sadsqwee.svg"
                             width={250}
                             height={250}
                             alt="image of sad sqwee squirrel with a broken acorn"
                             className={styles.imageBadge}
+                            tabIndex={30}
                         />
-                        <h5 className={styles.popUpBodyText}>You found all the locations <br/> but scored 0/4 on the quiz.<br/>Better luck next time!</h5>
+                        <h5 className={styles.popUpBodyText} tabIndex={30}>You found all the locations <br/> but scored 0/4 on the quiz.<br/>Better luck next time!</h5>
                     </div>
                     <button 
                             onClick={() => router.push('/Quiz/QuizStart')}
                             className={styles.buttonTryAgain}
-                            tabIndex={31}
+                            tabIndex={30}
                             >Try Again
                     </button>
                     <button 
                             onClick={() => router.push('/Community')}
                             className={styles.buttonLeaderboard}
+                            tabIndex={30}
                             >View Leaderboard
                     </button>
                 </div>
