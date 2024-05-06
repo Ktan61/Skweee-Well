@@ -15,7 +15,7 @@ export default function Map() {
     const washroomPosition = [49.23205018416982, -123.01950102189362]
     const stadiumPosition = [49.23099449849083, -123.02140538722364]
     const tennisPosition = [49.22632607441752, -123.01318314417719]
-    const waterPosition = [49.228135388951884, -123.02008889119962]
+    const waterPosition = [49.22819918664637, -123.02041496819135]
     const poolPosition = [49.228419149507424, -123.02228562039738]
     const playgroundPosition = [49.23176766916034, -123.01890161746299]
     const picnicPosition = [49.22692282522505, -123.02035269261953]
@@ -24,7 +24,7 @@ export default function Map() {
 
     return (
         <div>
-            <MapContainer className={styles.mapStyle} center={position} zoom={17} scrollWheelZoom={true} ref={setMap}>
+            <MapContainer className={styles.mapStyle} center={position} zoom={18} scrollWheelZoom={true} ref={setMap}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -38,8 +38,9 @@ export default function Map() {
                     height={35}
                     alt="parking interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(parkingPosition, 17, {"animate":true});
+                        map.setView(parkingPosition, 18, {"animate":true});
                         setPosition(parkingPosition);
                     }}
                 />
@@ -49,8 +50,9 @@ export default function Map() {
                     height={35}
                     alt="washroom interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(washroomPosition, 17, {"animate":true});
+                        map.setView(washroomPosition, 18, {"animate":true});
                         setPosition(washroomPosition);
                     }}
                 />
@@ -60,8 +62,9 @@ export default function Map() {
                     height={35}
                     alt="stadium interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(stadiumPosition, 17, {"animate":true});
+                        map.setView(stadiumPosition, 18, {"animate":true});
                         setPosition(stadiumPosition);
                     }}
                 />
@@ -71,8 +74,9 @@ export default function Map() {
                     height={35}
                     alt="tennis interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(tennisPosition, 17, {"animate":true});
+                        map.setView(tennisPosition, 18, {"animate":true});
                         setPosition(tennisPosition);
                     }}
                 />
@@ -82,8 +86,9 @@ export default function Map() {
                     height={35}
                     alt="water fountain interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(waterPosition, 17, {"animate":true});
+                        map.setView(waterPosition, 18, {"animate":true});
                         setPosition(waterPosition);
                     }}
                 />
@@ -93,8 +98,9 @@ export default function Map() {
                     height={35}
                     alt="swimming interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(poolPosition, 17, {"animate":true});
+                        map.setView(poolPosition, 18, {"animate":true});
                         setPosition(poolPosition);
                     }}
                 />
@@ -104,8 +110,9 @@ export default function Map() {
                     height={35}
                     alt="playground interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(playgroundPosition, 17, {"animate":true});
+                        map.setView(playgroundPosition, 18, {"animate":true});
                         setPosition(playgroundPosition);
                     }}
                 />
@@ -115,8 +122,9 @@ export default function Map() {
                     height={35}
                     alt="picnic interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(picnicPosition, 17, {"animate":true});
+                        map.setView(picnicPosition, 18, {"animate":true});
                         setPosition(picnicPosition);
                     }}
                 />
@@ -126,8 +134,9 @@ export default function Map() {
                     height={35}
                     alt="food interactive icon"
                     className={styles.mapIndividualIcon}
+                    tabIndex={30}
                     onClick={() => {
-                        map.setView(foodPosition, 17, {"animate":true});
+                        map.setView(foodPosition, 18, {"animate":true});
                         setPosition(foodPosition);
                     }}
                 />

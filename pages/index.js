@@ -21,7 +21,7 @@ return (
       <MenuTutorial/>
       <main className={`${styles.main}`}>
         <section className={styles.sectionBanner}>
-          <h1 className={styles.welcome}>
+          <h1 className={styles.welcome} tabIndex={10}>
             {welcome}
           </h1>
           <Image
@@ -41,48 +41,54 @@ return (
           />
         </section>
         <section className={styles.sectionQuickLinks}>
-          <h3 className={styles.headerQuickLinks}>Quick Links</h3>
+          <h3 className={styles.headerQuickLinks} tabIndex={10}>Quick Links</h3>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box1}`}
             onClick={() => router.push('/ParksLibrary')}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>Park Library</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box2}`}
             onClick={() => router.push('/ScavengerHunts/AllHunts')}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>Sqwee Scavenger Hunt</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box3}`}
             onClick={() => router.push('/Community')}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>Community</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box4}`}
             onClick={() => router.push('/Profile')}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>My Profile</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box5}`}
             onClick={() => router.push('/Community')}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>Upcoming Events</h5>
           </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box6}`}
             onClick={() => router.push('/Profile')}
+            tabIndex={10}
           >
             <h5 className={styles.quickLinkBoxes_Text}>My Monthly Park Report</h5>
           </div>
         </section>
         <section className={styles.sectionFeaturedParks}>
-         <h3 className={styles.headerFeaturedParks}>Featured Parks</h3>
+         <h3 className={styles.headerFeaturedParks} tabIndex={10}>Featured Parks</h3>
          <div className={styles.FPContainer}>
-          <div className={`${styles.featuredParksCard} ${styles.FPC_First}`}>
+          <div className={`${styles.featuredParksCard} ${styles.FPC_First}`} tabIndex={10}>
             <Image
                   src="/images_content/FP_Central.png"
                   width={308}
@@ -99,7 +105,7 @@ return (
               >Learn more &#8594;</p>
             </div>
           </div>
-          <div className={styles.featuredParksCard}>
+          <div className={styles.featuredParksCard} tabIndex={10}>
             <Image
                   src="/images_content/FP_BurnabyMountain.png"
                   width={308}
@@ -115,7 +121,7 @@ return (
               >Learn more &#8594;</p>
             </div>
           </div>
-          <div className={styles.featuredParksCard}>
+          <div className={styles.featuredParksCard} tabIndex={10}>
             <Image
                   src="/images_content/FP_Kensington.png"
                   width={308}
@@ -131,7 +137,7 @@ return (
               >Learn more &#8594;</p>
             </div>
           </div>
-          <div className={styles.featuredParksCard}>
+          <div className={styles.featuredParksCard} tabIndex={10}>
             <Image
                   src="/images_content/FP_RobertBurnaby.png"
                   width={308}
@@ -147,7 +153,7 @@ return (
               >Learn more &#8594;</p>
             </div>
           </div>
-          <div className={`${styles.featuredParksCard} ${styles.FPC_Last}`}>
+          <div className={`${styles.featuredParksCard} ${styles.FPC_Last}`} tabIndex={10}>
             <Image
                   src="/images_content/FP_Taylor.png"
                   width={308}
