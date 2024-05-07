@@ -7,15 +7,15 @@
 
 ## Description
 This application is an interactive web app that provides the user with nearby outdoor parks that they can visit. Users can select a park and can:
+- search and filter through BC parks 
 - view information about park amenities
-- view a park map
-- view activities available at the park
-- play a scavenger hunt game 
-- quiz about the park and nature
-- play a quiz as part of the scavenger hunt game
-- get directions to parks that are new to you
+- use an interactive park map to find amenities
+- play a scavenger hunt game including a quiz about the park 
+- rank in a community leaderboard
+- view personal park statistics
 
 ## Packages Installed
 - react-chartjs-2
 - react-leaflet
 - leaflet-defaulticon-compatibility
+- use-sound 

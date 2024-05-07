@@ -48,6 +48,13 @@ export default function Help() {
             <h5 className={styles.quickLinkBoxes_Text}>How to Update Your Profile</h5>
           </div>
           <Image
+                src="/images_interface/Tree_Home1.svg"
+                width={355}
+                height={289}
+                alt="design image of part of a tree"
+                className={styles.imageTree1}
+          />
+          <Image
             src="/images_interface/orange_swirl.svg"
             width={760.51}
             height={610.78}

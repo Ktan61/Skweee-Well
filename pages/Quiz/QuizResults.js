@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { quiz } from "@/data/quizData";
 import { useState, useEffect } from "react";
 import HeadArea from "@/components/HeadArea";
+import useSound from "use-sound";
 
 export default function QuizResults() {
     const router = useRouter();
@@ -14,6 +15,8 @@ export default function QuizResults() {
     const {questions} = quiz;
     let resultAnswers = [];
     const [score, setScore] = useState(0);
+    const [yippee] = useSound('/sound/yippee.mp3');
+    const [ruhroh] = useSound('/sound/ruhrohraggy.mp3');
 
     useEffect(() => {
         if (router.isReady) {
@@ -33,21 +36,27 @@ export default function QuizResults() {
         if (totalScore === questions.length) {
             document.getElementById("badgeDiv").style.display = "block";
             document.getElementById("championBadgeDiv").style.display = "block";
+            yippee();
         } else if (totalScore === questions.length - 1) {
             document.getElementById("badgeDiv").style.display = "block";
             document.getElementById("goldBadgeDiv").style.display = "block";
+            yippee();
         } else if (totalScore === questions.length - 2) {
             document.getElementById("badgeDiv").style.display = "block";
             document.getElementById("silverBadgeDiv").style.display = "block";
+            yippee();
         } else if (totalScore === questions.length - 3) {
             document.getElementById("badgeDiv").style.display = "block";
             document.getElementById("bronzeBadgeDiv").style.display = "block";
+            yippee();
         } else {
             document.getElementById("badgeDiv").style.display = "block";
             document.getElementById("noBadgeDiv").style.display = "block";
+            ruhroh();
         }
 
         setScore(totalScore);
+        
     }
 
     return (
@@ -113,7 +122,7 @@ export default function QuizResults() {
                             width={250}
                             height={250}
                             alt="image of sad sqwee squirrel with a broken acorn"
-                            className={styles.imageBadge}
+                            className={`${styles.imageBadge} ${styles.imageSadSqwee}`}
                             tabIndex={30}
                         />
                         <h5 className={styles.popUpBodyText} tabIndex={30}>You found all the locations <br/> but scored 0/4 on the quiz.<br/>Better luck next time!</h5>
@@ -179,7 +188,6 @@ export default function QuizResults() {
                     tabIndex={31}
                     >Collect Badge
                 </button>
-                
             </div>
             <Image
                 src="/images_interface/sqwee_4_acorns.svg"
