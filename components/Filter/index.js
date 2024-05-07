@@ -31,7 +31,8 @@ const Filter = ({ onChange }) => {
 
   return (
     <div className={styles.filterContainer}>
-      <aside className={`${styles.filter}`}>
+        {filterOpen && <div className={styles.overlay} onClick={closeFilter}></div>}
+        <aside className={`${styles.filter} ${filterOpen ? styles.open : ""}`}>
         <div className={styles.sqweeeFilter}>
           <Image
             src="/images_interface/filterSqweee.svg"
@@ -49,46 +50,45 @@ const Filter = ({ onChange }) => {
           <div className={styles.chips}>
             <ul className={styles.chipsList}>
               <li className={styles.links} onClick={() => toggleFilter("Washroom")}>
-                <h5>Washroom</h5>
+                <p>Washroom</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Picnic Tables")}>
-                <h5>Picnic Tables</h5>
+                <p>Picnic Tables</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Golf Course")}>
-                <h5>Golf Course</h5>
+                <p>Golf Course</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Water Fountain")}>
-                <h5>Water Fountain</h5>
+                <p>Water Fountain</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Pet Friendly")}>
-                <h5>Pet Friendly</h5>
+                <p>Pet Friendly</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Playground")}>
-                <h5>Playground</h5>
+                <p>Playground</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Swimming Pool")}>
-                <h5>Swimming Pool</h5>
+                <p>Swimming Pool</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Trails")}>
-                <h5>Trails</h5>
+                <p>Trails</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Sports Amenities")}>
-                <h5>Sports Amenities</h5>
+                <p>Sports Amenities</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Concession")}>
-                <h5>Concession</h5>
+                <p>Concession</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Stadium")}>
-                <h5>Stadium</h5>
+                <p>Stadium</p>
               </li>
               <li className={styles.links} onClick={() => toggleFilter("Sqweee Hunt")}>
-                <h5>Sqweee Hunt</h5>
+                <p>Sqweee Hunt</p>
               </li>
               <li li className={styles.links} onClick={sortByDistance}>
-                <h5>Sort by Distance</h5>
+                <p>Sort by Distance</p>
               </li>
               <br></br>
-
 
             </ul>
           </div>
@@ -96,14 +96,13 @@ const Filter = ({ onChange }) => {
             <ul className={styles.chipsList}>
               {selectedCat || sortBy ? (
                   <li className={styles.clearFilters} onClick={clearFilters}>
-                    <h5>Clear Filters</h5>
+                    <p>Clear Filters</p>
                   </li>
               ) : null}
             </ul>
 
           </div>
         </div>
-
 
         </aside>
       </div>
