@@ -98,6 +98,18 @@
   text-align: center;
 }
 
+.BCParksLink {
+  text-decoration: none;
+}
+
+.BCParksLink a {
+  text-decoration: none;
+}
+
+.BCPark1 h5 {
+  text-decoration: none;
+}
+
 .BCPark2 {
   width: 123px;
   height: 115px;

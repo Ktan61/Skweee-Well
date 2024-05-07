@@ -16,6 +16,12 @@ const ParksLibrary = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const filterRef = useRef(null);
 
+  const ExternalLink = ({ href, children }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={styles.BCParksLink}>
+      {children}
+    </a>
+  );
+
   useEffect(() => {
     setData(inventory.parks);
     setFilteredData(inventory.parks);
@@ -113,21 +119,27 @@ const ParksLibrary = () => {
         <button className={styles.showMoreButton} tabIndex={7}>Show More</button>
 
         <section className={styles.discoverBCParks}>
-          <div className={styles.discoverBCParks_header} tabIndex={8}>
-            <h3>Discover BC Parks</h3>
+      <div className={styles.discoverBCParks_header} tabIndex={8}>
+        <h3>Discover BC Parks</h3>
+      </div>
+      <div className={styles.BCParksContainer}>
+        <ExternalLink href="https://www.vancouvertrails.com/trails/bert-flinn-park/">
+          <div className={styles.BCPark1} tabIndex={9}>
+            <h5>Bert Flinn Park</h5>
           </div>
-          <div className={styles.BCParksContainer}>
-            <div className={styles.BCPark1} tabIndex={9}>
-              <h5>Bert Flinn Park</h5>
-            </div>
-            <div className={styles.BCPark2} tabIndex={10}>
-              <h5>Aspenwood Park</h5>
-            </div>
-            <div className={styles.BCPark3} tabIndex={11}>
-              <h5>David Lam Park</h5>
-            </div>
+        </ExternalLink>
+        <ExternalLink href="https://storymaps.arcgis.com/stories/705025c0363a44e6b0d5ce80e65a2198">
+          <div className={styles.BCPark2} tabIndex={10}>
+            <h5>Aspenwood Park</h5>
           </div>
-        </section>
+        </ExternalLink>
+        <ExternalLink href="https://covapp.vancouver.ca/parkfinder/parkdetail.aspx?inparkid=16">
+          <div className={styles.BCPark3} tabIndex={11}>
+            <h5>David Lam Park</h5>
+          </div>
+        </ExternalLink>
+      </div>
+    </section>
 
       </main>
     </>
