@@ -29,7 +29,7 @@
 /*SEARCH*/
 
 .searchSection {
-  z-index: 2;
+  z-index: 1;
 }
 
 .searchInput {
@@ -149,4 +149,13 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 0;
+}
+
+.overlayBackground {
+  position: fixed;
+  top: 4.92rem;
+  z-index: 1;
+  width: 430px;
+  background-color: rgba(5, 49, 41, 0.5);
+  height: 932px;
 }

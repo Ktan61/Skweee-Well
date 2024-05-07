@@ -1,3 +1,4 @@
+// Import necessary modules/components
 import React, { useState, useEffect, useRef } from 'react';
 import Filter from "@/components/Filter";
 import styles from "@/styles/ParksLibrary.module.css";
@@ -16,11 +17,13 @@ const ParksLibrary = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const filterRef = useRef(null);
 
+
   const ExternalLink = ({ href, children }) => (
     <a href={href} target="_blank" rel="noopener noreferrer" className={styles.BCParksLink}>
       {children}
     </a>
   );
+
 
   useEffect(() => {
     setData(inventory.parks);
@@ -33,9 +36,11 @@ const ParksLibrary = () => {
     };
   }, []); 
 
+
   useEffect(() => {
     filterParks();
   }, [data, searchQuery]);
+
 
   const toggleFilter = () => {
     setFilterOpen(!filterOpen);
@@ -53,9 +58,11 @@ const ParksLibrary = () => {
     }
   };
 
+
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
+
 
   const filterParks = () => {
     let filteredParks = data;
@@ -66,6 +73,7 @@ const ParksLibrary = () => {
     }
     setFilteredData(filteredParks);
   };
+
 
   const handleClickOutside = (event) => {
     if (filterRef.current && !filterRef.current.contains(event.target)) {
@@ -80,6 +88,7 @@ const ParksLibrary = () => {
       <Navbar />
       <main className={`${styles.main}`}>
 
+        {/* Search input */}
         <section className={styles.searchSection}>
           <input
             type="text"
@@ -91,6 +100,7 @@ const ParksLibrary = () => {
           />
         </section>
         
+        {/* Parks header with filter icon */}
         <section className={styles.parkLibHeader}>
           <div className={styles.parksHeader}>
             <h3 tabIndex={4}>Parks</h3>
@@ -105,9 +115,11 @@ const ParksLibrary = () => {
               className={styles.imageFilter}
             />
           </div>
+          {/* Render filter sidebar */}
           {filterOpen && <div ref={filterRef}><Filter onChange={handleFilterChange} /></div>} 
         </section>
 
+        {/* Park cards section */}
         <section className={styles.PC_Library} tabIndex={6}>
           <div className={styles.parkCard}>
             {filteredData.map((park, index) => (
@@ -116,31 +128,35 @@ const ParksLibrary = () => {
           </div>
         </section>
 
+        {/* Show More button */}
         <button className={styles.showMoreButton} tabIndex={7}>Show More</button>
 
+        {/* Discover BC Parks section */}
         <section className={styles.discoverBCParks}>
-      <div className={styles.discoverBCParks_header} tabIndex={8}>
-        <h3>Discover BC Parks</h3>
-      </div>
-      <div className={styles.BCParksContainer}>
-        <ExternalLink href="https://www.vancouvertrails.com/trails/bert-flinn-park/">
-          <div className={styles.BCPark1} tabIndex={9}>
-            <h5>Bert Flinn Park</h5>
+          <div className={styles.discoverBCParks_header} tabIndex={8}>
+            <h3>Discover BC Parks</h3>
           </div>
-        </ExternalLink>
-        <ExternalLink href="https://storymaps.arcgis.com/stories/705025c0363a44e6b0d5ce80e65a2198">
-          <div className={styles.BCPark2} tabIndex={10}>
-            <h5>Aspenwood Park</h5>
+          <div className={styles.BCParksContainer}>
+            <ExternalLink href="https://www.vancouvertrails.com/trails/bert-flinn-park/">
+              <div className={styles.BCPark1} tabIndex={9}>
+                <h5>Bert Flinn Park</h5>
+              </div>
+            </ExternalLink>
+            <ExternalLink href="https://storymaps.arcgis.com/stories/705025c0363a44e6b0d5ce80e65a2198">
+              <div className={styles.BCPark2} tabIndex={10}>
+                <h5>Aspenwood Park</h5>
+              </div>
+            </ExternalLink>
+            <ExternalLink href="https://covapp.vancouver.ca/parkfinder/parkdetail.aspx?inparkid=16">
+              <div className={styles.BCPark3} tabIndex={11}>
+                <h5>David Lam Park</h5>
+              </div>
+            </ExternalLink>
           </div>
-        </ExternalLink>
-        <ExternalLink href="https://covapp.vancouver.ca/parkfinder/parkdetail.aspx?inparkid=16">
-          <div className={styles.BCPark3} tabIndex={11}>
-            <h5>David Lam Park</h5>
-          </div>
-        </ExternalLink>
-      </div>
-    </section>
-    <div className={styles.background}></div>
+        </section>
+
+        {filterOpen && <div className={styles.overlayBackground}></div>}
+        <div className={styles.background}></div>
       </main>
     </>
   );
