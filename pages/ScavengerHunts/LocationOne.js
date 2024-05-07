@@ -4,9 +4,15 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import MenuBack from "@/components/MenuBack";
+import useSound from "use-sound";
 
 export default function LocationOne() {
   const router = useRouter();
+  const [camera] = useSound('/sound/camera.mp3');
+  const handleButtonClick = (section) => {
+    camera(); 
+    document.getElementById(section).style.display = "block";
+  };
 
   return (
     <>
@@ -34,9 +40,7 @@ export default function LocationOne() {
                 height={74}
                 alt="design image of part of a tree"
                 className={styles.iconCamera}
-                onClick={() => 
-                    document.getElementById("sectionFinishedShot").style.display = "block"
-                }
+                onClick={() => handleButtonClick("sectionFinishedShot")}
                 tabIndex={10}
             />
             <Image
