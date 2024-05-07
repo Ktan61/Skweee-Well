@@ -16,16 +16,16 @@ export default function Navbar() {
                     height={50}
                     alt="icon for home"
                     onClick={() => router.push("/")}
-                    style={{ border: router.pathname === "/" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    style={{ borderBottom: router.pathname === "/" ? 'solid var(--orange) 5px' : 'solid var(--darkGreen) 4px' }}
                     tabIndex={100}
                 />
                 <Image 
                     src="/images_interface/community_icon.svg"
-                    width={50}
-                    height={50}
+                    width={46}
+                    height={46}
                     alt="icon for community"
                     onClick={() => router.push("/Community")}
-                    style={{ border: router.pathname === "/Community" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    style={{ borderBottom: router.pathname === "/Community" ? 'solid var(--orange) 5px' : 'solid var(--darkGreen) 4px' }}
                     tabIndex={101}
                 />
                 <Image 
@@ -34,16 +34,16 @@ export default function Navbar() {
                     height={50}
                     alt="icon for parks"
                     onClick={() => router.push("/ParksLibrary")}
-                    style={{ border: router.pathname === "/ParksLibrary" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    style={{ borderBottom: router.pathname === "/ParksLibrary" ? 'solid var(--orange) 5px' : 'solid var(--darkGreen) 4px' }}
                     tabIndex={102}
                 />
                 <Image 
                     src="/images_interface/profile_icon.svg"
-                    width={50}
-                    height={50}
+                    width={46}
+                    height={46}
                     alt="icon for profile"
                     onClick={() => router.push("/Profile")}
-                    style={{ border: router.pathname === "/Profile" ? 'solid var(--orange) 4px' : 'solid var(--darkGreen) 4px' }}
+                    style={{ borderBottom: router.pathname === "/Profile" ? 'solid var(--orange) 5px' : 'solid var(--darkGreen) 4px' }}
                     tabIndex={103}
                 />        
             </section>
