@@ -50,7 +50,7 @@ export default function VerticalChart(){
                     text: "Daily Revenue"
                 }
             },
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
             responsive: true
         })
     }, [])

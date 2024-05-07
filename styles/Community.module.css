@@ -9,15 +9,18 @@
 }
 
 .communityHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-top: 40px;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 49%;
+
 }
 
 .leaderboard {
-  margin-top: 5.5rem;
-  margin-bottom: 10px;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .list {
@@ -31,13 +34,20 @@
   background-color: var(--white);
   margin-bottom: .5rem;
   border-radius: 15px;
-  display: block;
   width: 400px;
+}
+
+.runnerUpsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .2rem;
 }
 
 .leaderboardPhotoContainer {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -53,10 +63,10 @@
 .topThree {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:center;
   align-items: flex-end;
-  margin-bottom: -1rem;
-  margin-top: -.8rem;
+  left: 50%;
+
 }
 
 .firstPlace {
@@ -66,12 +76,12 @@
 }
 
 .secondPlace {
-  display: inline-block;
+
   margin-left: 2rem;
 }
 
 .thirdPlace {
-  display: inline-block;
+
   margin-right: 2rem;
 }
 
@@ -81,19 +91,10 @@
 }
 
 .eventsHeader {
-  position: absolute;
-  transform: translateX(-50%);
-  left: 49%;
-  top: 110%;
-  z-index: 1;
+  display: flex;
+  margin-right: 2rem;
+  margin-top: 1rem;
 }
-
-/* .swirlContainer {
-  z-index: 0;
-  position: absolute;
-  top: 106%;
-} */
-
 
 /** 
 *events card
@@ -102,13 +103,10 @@
 .FPContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   gap: 1.25rem;
   max-width: 430px;
-  overflow-x: scroll;
-  margin-top: 1rem;
   z-index: 1;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .featuredParksCard {
@@ -151,69 +149,4 @@
 .FPContainerTwo {
   margin-bottom: 2rem;
   z-index: 1;
-}
-
-@media only screen and (max-device-width: 430px) {
-  .main {
-    min-height: 197vh;
-  }
-
-  .topThree {
-    justify-content: center;
-    position: absolute;
-    top: -13.5rem;
-    overflow: hidden;
-  }
-
-  .leaderboard {
-    position: absolute;
-    transform: translateX(-28.5%);
-    left: 38.6%;
-    margin-top: 6.5rem;
-    width: 400px;
-    top: 30%;
-   
-  }
-
-  .communityHeader {
-    width: 100%;
-    transform: translateX(-25%);
-    left: 43%;
-    top: 7.8%;
-    z-index: 1;
-    position: absolute;
-    overflow: hidden;
-  }
-
-  /* .swirlContainer{
-  /* position: absolute;
-  transform: translateX(-50%);
-  left:50%;
-margin-top: 0rem;
-width:400px;} */
-
-  .FPContainer {
-    transform: translateX(-20%);
-    left: 40%;
-    top: 86%;
-    z-index: 1;
-    position: absolute;
-  }
-
-  .FPContainerTwo {
-    transform: translateX(-20%);
-    left: 40%;
-    top: 138%;
-    z-index: 1;
-    position: absolute;
-  }
-
-  .eventsHeader {
-    width: 100%;
-    transform: translateX(-25%);
-    left: 45%;
-    top: 89%;
-    z-index: 1;
-    position: absolute;
-  }
 }
