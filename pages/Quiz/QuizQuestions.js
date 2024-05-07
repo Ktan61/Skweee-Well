@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import HeadArea from "@/components/HeadArea";
+import useSound from "use-sound";
 
 export default function qPage() {
     const router = useRouter();
@@ -20,12 +21,13 @@ export default function qPage() {
         correctAnswers: 0,
         wrongAnswers:0,
     });
-
     const {questions} = quiz;
     const {question, answers, correctAnswer} = questions[activeQuestion];
+    const [buttonSound] = useSound('/sound/button.mp3');
 
     // Select and check answer
     const onAnswerSelected = (answer, index) => {
+        buttonSound();
         setSelectedAnswers(selectedAnswers + index);
         if (answer === correctAnswer) {
             setSuccess(true);
@@ -36,7 +38,7 @@ export default function qPage() {
     };
 
     // Calculate score and increment to next question
-    const nextQuestion = () => {
+    const nextQuestion = () => { 
         var questionResult = document.getElementById("resultDiv");
         questionResult.style.display = "none";
         setSuccess(false);
@@ -45,6 +47,7 @@ export default function qPage() {
             setActiveQuestion((prev) => prev + 1);
         } 
     };
+
 
     return (
         <main className={styles.page}>
