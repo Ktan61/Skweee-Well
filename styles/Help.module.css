@@ -87,3 +87,11 @@ width: 390px;
     transform: translate(-50%);
     z-index: -10;
 }
+
+.imageTree1 {
+    position: absolute; /*can change to fixed so it doesn't scroll*/
+    top: 3.5rem;
+    left: 50%;
+    transform: translate(-39.4%) rotateY(180deg);
+    z-index: -1;
+  }

@@ -1,10 +1,11 @@
 .page {
   display: fixed;
+  height: 933px;
 }
 
 .innerQuizContainer {
   background-color: transparent;
-  min-height: 80vh;
+  min-height: 100vh;
   margin-top: 5rem;
   padding: 2.5rem 1.25rem;
   position: fixed;
@@ -62,7 +63,7 @@
   z-index: 10;
   background-color: var(--blue);
   width: 390px;
-  height: 40rem;
+  height: 35.5rem;
   border-radius: 10px;
 }
 
@@ -71,7 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
