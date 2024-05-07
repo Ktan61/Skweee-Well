@@ -186,6 +186,7 @@ return (
         alt="image of a forest with a trail curving into it"
         className={styles.imageSwirl}
       />
+      <div className={styles.background}></div>
       <Navbar/>
     </>
   );

@@ -103,7 +103,7 @@ export default function AboutUs() {
               <p tabIndex={18}>Hey Sqwell friends! I am a D3 student at BCIT. I hope to be a better designer and developer through the D3 program. I enjoy nature strolls, listening to music, and reading. I hope you had fun with Sqwee!</p>
               </div>
           </div>
-
+          <div className={styles.background}></div>
         </section>
       </main>
     </>

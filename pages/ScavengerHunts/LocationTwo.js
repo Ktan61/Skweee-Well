@@ -68,6 +68,7 @@ export default function LocationTwo() {
             >Next
           </button>
         </section>
+        <div className={styles.background}></div>
       </main>
       <Navbar/>
     </>

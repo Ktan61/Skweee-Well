@@ -429,6 +429,7 @@ export default function CentralPark() {
             >Start Now
           </button>    
         </section>
+        <div className={styles.background}></div>
       </main>
       <Navbar/>
     </>

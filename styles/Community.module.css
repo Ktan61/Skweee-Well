@@ -150,3 +150,15 @@
   margin-bottom: 2rem;
   z-index: 1;
 }
+
+.background {
+  width: 430px;
+  height: 932px;
+  border-left: 1px solid var(--darkGreen);
+  border-right: 1px solid var(--darkGreen);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -300;
+}

@@ -60,6 +60,7 @@ export default function Friends() {
             </div>
             </div>
             </main>
+            <div className={styles.background}></div>
             <Navbar />
         </>
     )

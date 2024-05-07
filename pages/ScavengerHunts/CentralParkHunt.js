@@ -33,6 +33,7 @@ export default function CentralParkHunt() {
             >Start Now
           </button>    
         </section>
+        <div className={styles.background}></div>
       </main>
       <Navbar/>
     </>

@@ -235,7 +235,7 @@ export default function Profile() {
           <Link href="/Community">
             <button className={styles.leaderboardButton} tabIndex={24}>View Leaderboard</button>
           </Link>
-          
+          <div className={styles.background}></div>
       </main>
     </>
   );

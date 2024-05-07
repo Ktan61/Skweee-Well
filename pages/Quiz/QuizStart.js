@@ -38,6 +38,7 @@ export default function Quiz() {
                     <Navbar/>
                 </div>
             </section>
+            <div className={styles.background}></div>
             <section className={styles.gridRight}></section>
         </main>
     )

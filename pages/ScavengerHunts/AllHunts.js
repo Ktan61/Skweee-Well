@@ -88,6 +88,7 @@ export default function AllHunts() {
             className={styles.imageSwirl}
           />
         </section>
+        <div className={styles.background}></div>
       </main>
       <Navbar/>
     </>

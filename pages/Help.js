@@ -84,6 +84,7 @@ export default function Help() {
             className={styles.imageSqwee}
         />
       </main>
+      <div className={styles.background}></div>
       <Navbar/>
     </>
   );

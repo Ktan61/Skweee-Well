@@ -287,6 +287,18 @@
   margin-right: 3.75rem;
 }
 
+.background {
+  width: 430px;
+  height: 932px;
+  border-left: 1px solid var(--darkGreen);
+  border-right: 1px solid var(--darkGreen);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -300;
+}
+
 @media only screen and (max-device-width: 430px) {
   .main {
     min-height: 223vh;
