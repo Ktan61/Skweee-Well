@@ -115,23 +115,23 @@ const ParksLibrary = () => {
               className={styles.imageFilter}
             />
           </div>
-          {/* Render filter sidebar */}
+          
           {filterOpen && <div ref={filterRef}><Filter onChange={handleFilterChange} /></div>} 
         </section>
 
-        {/* Park cards section */}
+        
         <section className={styles.PC_Library} tabIndex={6}>
           <div className={styles.parkCard}>
             {filteredData.map((park, index) => (
-              <ParksInfo key={index} parksData={park} className={styles.parkCards}/>
+              <ParksInfo key={index} parksData={park} className={styles.PC_Component}/>
             ))}
           </div>
         </section>
 
-        {/* Show More button */}
+        
         <button className={styles.showMoreButton} tabIndex={7}>Show More</button>
 
-        {/* Discover BC Parks section */}
+        
         <section className={styles.discoverBCParks}>
           <div className={styles.discoverBCParks_header} tabIndex={8}>
             <h3>Discover BC Parks</h3>
