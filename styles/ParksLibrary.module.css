@@ -10,10 +10,6 @@
 
 /*PARK CARDS HEADER*/
 
-.imageSearchBar {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 
 .parkLibHeader {
   display: flex;
@@ -57,6 +53,8 @@
 
 .filterIcon {
   z-index: 2;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 /*PARK LIBRARY CARDS SECTION*/
@@ -69,6 +67,7 @@
   transform: translate(-50%);
   gap: 1.25rem;
 }
+
 
 .parkCard {
   display: flex;
@@ -100,6 +99,7 @@
   max-width: 430px;
   margin-top: 1.25rem;
   padding-left: 10px;
+  z-index: 1;
 }
 
 .BCPark1 {
@@ -109,15 +109,18 @@
   border-radius: 10px;
   align-content: center;
   text-align: center;
+  z-index: 1;
 }
 
 .BCParksLink {
   text-decoration: none;
   color: black;
+  z-index: 1;
 }
 
 .BCParksLink a {
   text-decoration: none;
+  z-index: 1;
 }
 
 
@@ -128,6 +131,7 @@
   border-radius: 10px;
   align-content: center;
   text-align: center;
+  z-index: 1;
 }
 
 .BCPark3 {
@@ -137,6 +141,7 @@
   border-radius: 10px;
   align-content: center;
   text-align: center;
+  z-index: 1;
 }
 
 .background {
@@ -156,6 +161,6 @@
   top: 4.92rem;
   z-index: 1;
   width: 430px;
-  background-color: rgba(5, 49, 41, 0.5);
+  background-color: rgba(5, 49, 41, 0.7);
   height: 932px;
 }
