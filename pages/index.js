@@ -6,49 +6,65 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import MenuTutorial from "@/components/MenuTutorial";
 
+const Loading = () => (
+  <div className={styles.loading}>
+    <h1>Loading...</h1>
+  </div>
+);
+
 export default function Home() {
-
   const router = useRouter();
-  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const welcome = process.env.NEXT_PUBLIC_WELCOME;
 
-  var welcome = process.env.NEXT_PUBLIC_WELCOME;
+  useEffect(() => {
+    const fetchData = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    };
 
-return (
+    fetchData();
+  }, []);
+
+  return (
     <>
-      <HeadArea
-        title="Sqwell Home"
-      />
-      <MenuTutorial/>
-      <main className={`${styles.main}`}>
-        <section className={styles.sectionBanner}>
-          <h1 className={styles.welcome} tabIndex={10}>
-            {welcome}
-          </h1>
-          <Image
-            src="/images_interface/sqwee_big_acorn.svg"
-            width={148}
-            height={115}
-            alt="image of sqwee the squirrel holding a giant acorn"
-            className={styles.imageSqweeAcorn}
-            tabIndex={10}
-          />
-          <Image
+      <HeadArea title="Sqwell Home" />
+      {loading ? ( 
+        <Loading />
+      ) : (
+        <>
+          <MenuTutorial />
+          <main className={styles.main}>
+            <section className={styles.sectionBanner}>
+              <h1 className={styles.welcome} tabIndex={10}>
+                {welcome}
+              </h1>
+              <Image
+                src="/images_interface/sqwee_big_acorn.svg"
+                width={148}
+                height={115}
+                alt="image of sqwee the squirrel holding a giant acorn"
+                className={styles.imageSqweeAcorn}
+                tabIndex={10}
+              />
+              <Image
                 src="/images_interface/Tree_Home1.svg"
                 width={355}
                 height={289}
                 alt="design image of part of a tree"
                 className={styles.imageTree1}
-          />
-        </section>
-        <section className={styles.sectionQuickLinks}>
-          <h3 className={styles.headerQuickLinks} tabIndex={10}>Quick Links</h3>
-          <div 
-            className={`${styles.quickLinkBoxes} ${styles.box1}`}
-            onClick={() => router.push('/ParksLibrary')}
-            tabIndex={10}
-          >
-            <h5 className={styles.quickLinkBoxes_Text}>Park Library</h5>
-          </div>
+              />
+            </section>
+            <section className={styles.sectionQuickLinks}>
+              <h3 className={styles.headerQuickLinks} tabIndex={10}>Quick Links</h3>
+              <div 
+                className={`${styles.quickLinkBoxes} ${styles.box1}`}
+                onClick={() => router.push('/ParksLibrary')}
+                tabIndex={10}
+              >
+                <h5 className={styles.quickLinkBoxes_Text}>Park Library</h5>
+              </div>
           <div 
             className={`${styles.quickLinkBoxes} ${styles.box2}`}
             onClick={() => router.push('/ScavengerHunts/AllHunts')}
@@ -178,16 +194,18 @@ return (
                 className={styles.imageTree2}
           />
         </section>
-      </main>
-      <Image
-        src="/images_interface/orange_swirl.svg"
-        width={760.51}
-        height={610.78}
-        alt="image of a forest with a trail curving into it"
-        className={styles.imageSwirl}
-      />
-      <div className={styles.background}></div>
-      <Navbar/>
+        </main>
+          <Image
+            src="/images_interface/orange_swirl.svg"
+            width={760.51}
+            height={610.78}
+            alt="image of a forest with a trail curving into it"
+            className={styles.imageSwirl}
+          />
+          <div className={styles.background}></div>
+          <Navbar />
+        </>
+      )}
     </>
   );
 }

@@ -123,7 +123,7 @@ const ParksLibrary = () => {
         <section className={styles.PC_Library} tabIndex={6}>
           <div className={styles.parkCard}>
             {filteredData.map((park, index) => (
-              <ParksInfo key={index} parksData={park} />
+              <ParksInfo key={index} parksData={park} className={styles.parkCards}/>
             ))}
           </div>
         </section>
