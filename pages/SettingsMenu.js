@@ -1,14 +1,21 @@
 import styles from "@/styles/SettingsMenu.module.css"
 import Link from "next/link";
 import Image from "next/image";
+import HeadArea from "@/components/HeadArea";
+import MenuBack from "@/components/MenuBack";
+import Navbar from "@/components/Navbar";
 
 export default function SettingsMenu(){
     return(
         <>
-              <div>
+                 <HeadArea
+                title="Settings Menu"
+            />
+            <MenuBack />
+      <main className={styles.main}>
+      <div>
         <aside className={`${styles.sidebar}`}>
           <ul className={styles.menuList}>
-           
             <li>
               <Image
                 src="/images_interface/settings.png"
@@ -17,9 +24,9 @@ export default function SettingsMenu(){
                 alt="gear icon representing settings"
                 className={styles.icon}
               />
-              Account Settings</li>
+              Language Settings</li>
            
-            <li className={styles.user}><Link href="/Profile" className={styles.user}>
+            <li className={styles.user}><Link href="/Profile">
               <Image
                 src="/images_interface/profile-settings.png"
                 width={30}
@@ -31,6 +38,10 @@ export default function SettingsMenu(){
           </ul>
         </aside>
       </div>
+      <div className={styles.background}></div>
+      <div className={styles.background}></div>
+      </main>
+      <Navbar />
         </>
     )
 }

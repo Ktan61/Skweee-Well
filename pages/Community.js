@@ -152,7 +152,15 @@ export default function Community() {
           </div>
         </div>
         </Link>
-    
+        <div className={styles.swirlContainer}>
+          <Image
+            src="/images_interface/orange_swirl.svg"
+            width={760.51}
+            height={610.78}
+            alt="orange swirl background"
+            className={styles.imageSwirl}
+          />
+        </div>
         <div className={styles.FPContainerTwo}>
        <Link href="https://vancouver.ca/parks-recreation-culture/parks-recreation-events.aspx" className={styles.eventLink}>
         <div className={styles.featuredParksCard}>
