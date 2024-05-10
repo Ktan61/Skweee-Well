@@ -131,6 +131,7 @@ export default function Community() {
       </ol>
         </div>
         <h3 className={styles.eventsHeader}>Upcoming Local Events</h3>
+        <Link href="https://vancouver.ca/parks-recreation-culture/parks-recreation-events.aspx" className={styles.eventLink}>
         <div className={styles.FPContainer}>
         <div className={styles.featuredParksCard}>
             <Image
@@ -150,7 +151,10 @@ export default function Community() {
             </div>
           </div>
         </div>
+        </Link>
+    
         <div className={styles.FPContainerTwo}>
+       <Link href="https://vancouver.ca/parks-recreation-culture/parks-recreation-events.aspx" className={styles.eventLink}>
         <div className={styles.featuredParksCard}>
             <Image
                   src="/images_content/event-card-image2.png"
@@ -168,6 +172,7 @@ export default function Community() {
               >Learn more &#8594;</p>
             </div>
           </div>
+          </Link>
         </div>
         <div className={styles.background}></div>
       </main>

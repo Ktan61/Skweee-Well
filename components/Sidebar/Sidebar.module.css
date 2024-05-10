@@ -3,7 +3,7 @@
     top: 79.9px;
     right: 0px;
     width: 250px;
-    height: 57vh;
+    height: 50vh;
     background-color: var(--greenGrey);
     transition: right 0.3s ease;
     z-index: 1000;
@@ -32,8 +32,19 @@
     list-style-type: none;
     display: block;
 }
-
+.listItemFirst {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--black);
+    list-style-type: none;
+    display: block;
+    margin-top:.5rem;
+}
 .listItem:hover {
+    color: var(--orange);
+    font-weight: bolder;
+}
+.listItemFirst:hover {
     color: var(--orange);
     font-weight: bolder;
 }
