@@ -13,7 +13,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 40px;
-
+  z-index: 1;
 }
 
 .leaderboard {
@@ -27,6 +27,7 @@
   list-style-type: none;
   padding: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .runnerUps {
@@ -35,15 +36,9 @@
   margin-bottom: .5rem;
   border-radius: 15px;
   width: 400px;
+
 }
 
-.runnerUpsContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: .2rem;
-}
 
 .leaderboardPhotoContainer {
   display: flex;
@@ -94,6 +89,7 @@
   display: flex;
   margin-right: 2rem;
   margin-top: 1rem;
+  z-index: 1;
 }
 
 /** 
@@ -107,6 +103,7 @@
   max-width: 430px;
   z-index: 1;
   margin-top: 2rem;
+  
 }
 
 .featuredParksCard {
@@ -117,14 +114,8 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 1rem;
   overflow: hidden;
-}
-
-.FPC_First {
-  margin-left: 1.25rem;
-}
-
-.FPC_Last {
-  margin-right: 1.25rem;
+  z-index: 1;
+  
 }
 
 .FPC_Image {
@@ -134,16 +125,27 @@
 
 .FPC_TextDiv {
   padding: 0.5rem 1.25rem;
+ 
+}
+.eventLink{
+  text-decoration:none;
+  color: var(--black);
+  cursor:pointer;
+}
+.eventLink:hover{
+  text-decoration:underline var(--orange);
 }
 
 .FPC_TextHeader {
   padding-bottom: 0.5rem;
+  
 }
 
 .FPC_LearnMore {
   color: var(--darkGreen);
   font-weight: 700;
   text-align: end;
+  z-index: 1;
 }
 
 .FPContainerTwo {
@@ -160,18 +162,20 @@
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  z-index: -300;
-}
-
-.background {
-  width: 430px;
-  height: 932px;
-  border-left: 1px solid var(--darkGreen);
-  border-right: 1px solid var(--darkGreen);
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
   z-index: 0;
   pointer-events: none;
+}
+
+.imageSwirl {
+  max-width: 430px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.swirlContainer {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  position: fixed;
 }
