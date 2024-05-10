@@ -15,7 +15,8 @@
 }
 .popupArea{
     position: absolute;
-    left:50%;
+    left:50.6%;
+    top:24.5%;
     transform: translateX(-50%);
     z-index: 999;
 }

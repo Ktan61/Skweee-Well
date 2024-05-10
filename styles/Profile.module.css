@@ -4,9 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 273vh;
+  min-height: 270vh;
   background-color: var(--bone);
   margin-bottom: 6rem;
+}
+.topSectionContainer{
+  z-index:1;
 }
 
 .badgeCollection {
@@ -21,6 +24,7 @@
   gap: .50rem;
   max-width: 430px;
   padding-bottom: 1.25rem;
+  z-index:2;
 }
 
 .navChip {
@@ -88,6 +92,7 @@
   align-items: center;
   width: 380px;
   margin-top: 1.7rem;
+  position: relative;
 }
 
 .username {
@@ -118,16 +123,12 @@
   width: 11.5rem;
   height: 4.625rem;
   font-size: var(--font-button);
-  font-weight: 600;
-  font-family: 'KoHo';
-  border: none;
   border-radius: 4rem;
   cursor: pointer;
   background-color: var(--orange);
-  color: var(--black);
   margin-right: .4rem;
   margin-left: .4rem;
-
+  z-index: 3;
 }
 
 .friendsButtonContainer {
@@ -139,7 +140,7 @@
 .imageSwirl {
   max-width: 430px;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 
 .swirlContainer {
@@ -147,6 +148,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1.6rem;
+  position: fixed;
 }
 
 .chartHeaderContainer {
@@ -156,48 +158,33 @@
   z-index: 1;
   margin-right: 11.7rem;
   position: relative;
-  margin-top: -7rem;
+  margin-top: -13rem;
 }
 
 .chartContainer {
-  margin-bottom: 1rem;
   z-index: 1;
   position: relative;
   height: auto;
   top: -1rem;
 }
-
 .leaderboardButton {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   align-items: center;
   text-decoration: none;
+  z-index: 2;
 }
-
+.leaderboardButtonContainer{
+  z-index: 1;
+}
 .tree {
-  z-index: 1;
-  position: absolute;
-  left: 46.5%;
+  position: relative;
+  left: 33.3%;
   transform: translate(-50%);
-  top: 195%;
-}
-
-.visitedParks {
-  position: absolute;
-  transform: translateX(-50%);
-  top: 140%;
-  left: 50%;
   z-index: 1;
 }
 
-.sectionFeaturedParks {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  padding: 2.5rem 0rem;
-  margin-top: -1rem;
-}
 
 .parksHeader {
   position: relative;
@@ -207,7 +194,9 @@
 }
 
 /*visited parks*/
-
+.visitedParks{
+  z-index:1;
+}
 .FPContainer {
   display: flex;
   flex-direction: row;
@@ -215,6 +204,8 @@
   gap: 1.25rem;
   max-width: 430px;
   overflow-x: scroll;
+  margin-top: 1.5rem;
+  
 }
 
 .featuredParksCard {
@@ -223,7 +214,7 @@
   background-color: var(--greenGrey);
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .FPC_First {
@@ -251,32 +242,24 @@
 .galleryHeader {
   position: relative;
   margin-left: 2rem;
-  top: 3rem;
-  z-index: 1;
+  top: 4.5rem;
+
 }
 
 .sectionCarousel {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
 }
 
-.FPContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 1.25rem;
-  max-width: 430px;
-  overflow-x: scroll;
-
-}
 
 .carouselCard {
   width: 308px;
   height: 311px;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
 }
 
 .carousel_First {
@@ -285,6 +268,10 @@
 
 .carousel_Last {
   margin-right: 3.75rem;
+}
+
+.galleryContainer{
+ z-index: 1;
 }
 
 .background {
@@ -296,26 +283,24 @@
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  z-index: -300;
+  z-index: 0;
+  pointer-events: none;
 }
+
 
 @media only screen and (max-device-width: 430px) {
-  .main {
-    min-height: 223vh;
-  }
 
-  .tree {
-    display: none;
+  .tree{
+  margin-top:10rem;
   }
-
-  .visitedParks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -12rem;
+  .chartHeaderContainer{
+    width:100%;
   }
-
-  .chartHeaderContainer {
-    position: relative;
+  .chartContainer{
+    margin-top:-4rem;
   }
-}
+  .leaderboardButton{
+    margin-top: -2rem;
+  }
+  }
+  

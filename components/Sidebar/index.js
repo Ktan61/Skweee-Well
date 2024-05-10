@@ -15,22 +15,15 @@ const Sidebar = () => {
       <div>
         <aside className={`${styles.sidebar}`}>
           <ul className={styles.menuList}>
-            <li>
-              <Image
-                src="/images_interface/searchbar-settings.png"
-                width={245}
-                height={39}
-                alt="searchbar placeholder"
-                className={styles.search}
-              />
-            </li>
-            <li className={styles.listItem}><Link href="/" className={styles.link}>
+           
+            <li className={styles.listItemFirst}><Link href="/SettingsMenu" className={styles.link}>
               <Image
                 src="/images_interface/settings.png"
                 width={30}
                 height={30}
                 alt="gear icon representing settings"
                 className={styles.icon}
+                onClick={toggleSidebar}
               />
               Account Settings</Link></li>
             <li className={styles.listItem}><Link href="/AboutUs" className={styles.link}>
@@ -40,6 +33,7 @@ const Sidebar = () => {
                 height={30}
                 alt="acorn icon representing about us"
                 className={styles.icon}
+                
               />
               About Us</Link></li>
             <li className={styles.listItem}><Link href="/Community" className={styles.link}>
@@ -81,6 +75,7 @@ const Sidebar = () => {
           </ul>
         </aside>
       </div>
+      {sidebarOpen} 
     </>
   );
 };

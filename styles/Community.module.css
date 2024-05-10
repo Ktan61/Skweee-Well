@@ -63,7 +63,7 @@
 .topThree {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-items: flex-end;
   left: 50%;
 
@@ -161,4 +161,17 @@
   left: 50%;
   transform: translate(-50%);
   z-index: -300;
+}
+
+.background {
+  width: 430px;
+  height: 932px;
+  border-left: 1px solid var(--darkGreen);
+  border-right: 1px solid var(--darkGreen);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+  pointer-events: none;
 }

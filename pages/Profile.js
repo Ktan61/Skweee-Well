@@ -119,13 +119,6 @@ export default function Profile() {
                 className={`${styles.carouselCard} ${styles.carousel_Last}`}
                 tabIndex={15}
               />
-              <Image
-                src="/images_interface/orange_swirl.svg"
-                width={760.51}
-                height={610.78}
-                alt="background orange swirl"
-                className={styles.imageSwirl}
-              />
             </div>
           </section>
         </div>
@@ -225,16 +218,20 @@ export default function Profile() {
             className={styles.tree}
           />
           </div>
-  
+        <div className={styles.parkReportContainer}>
           <div className={styles.chartHeaderContainer}>
           <h3 className={styles.chartHeader} tabIndex={22}>Park Report</h3>
          </div>
           <div className={styles.chartContainer} tabIndex={23}>
             <VerticalChart />
           </div>
+          </div>
+          <div className={styles.leaderboardButtonContainer}>
           <Link href="/Community">
             <button className={styles.leaderboardButton} tabIndex={24}>View Leaderboard</button>
           </Link>
+          </div>
+          
           <div className={styles.background}></div>
       </main>
     </>
