@@ -8,7 +8,7 @@
 }
 
 /*LOADING PAGE*/
-.loading {
+.loadingContainer {
   background-color: #86C2B6;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,29 @@
   left: 50%;
   transform: translate(-50%);
   z-index: -300;
+}
+
+.progressBar {
+  border-radius: 10px; 
+  width: 90%;
+  height: 10px;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+}
+.progressBar::-webkit-progress-bar {
+  background-color: var(--bone);
+  border-radius: 10px;
+}
+.progressBar::-webkit-progress-value {
+  background-color: var(--darkGreen);
+  border-radius: 10px;
+}
+
+.loadingStyle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 

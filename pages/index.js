@@ -7,9 +7,11 @@ import { useRouter } from "next/router";
 import MenuTutorial from "@/components/MenuTutorial";
 
 const Loading = ({ progress }) => (
-  <div className={styles.loading}>
+  <div className={styles.loadingContainer}>
+    <div lassName={styles.loadingStyle}>
     <h1>Loading...</h1>
     <progress value={progress} max="100" className={styles.progressBar}></progress>
+    </div>
   </div>
 );
 
