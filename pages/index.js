@@ -6,22 +6,30 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import MenuTutorial from "@/components/MenuTutorial";
 
-const Loading = () => (
+const Loading = ({ progress }) => (
   <div className={styles.loading}>
     <h1>Loading...</h1>
+    <progress value={progress} max="100" className={styles.progressBar}></progress>
   </div>
 );
 
 export default function Home() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const [loadingProgress, setLoadingProgress] = useState(0);
   const welcome = process.env.NEXT_PUBLIC_WELCOME;
 
   useEffect(() => {
     const fetchData = () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += 5;
+        setLoadingProgress(progress);
+        if (progress >= 100) {
+          clearInterval(interval);
+          setLoading(false);
+        }
+      }, 200);
     };
 
     fetchData();
@@ -31,7 +39,7 @@ export default function Home() {
     <>
       <HeadArea title="Sqwell Home" />
       {loading ? ( 
-        <Loading />
+        <Loading progress={loadingProgress} />
       ) : (
         <>
           <MenuTutorial />
