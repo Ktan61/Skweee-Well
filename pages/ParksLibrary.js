@@ -1,4 +1,3 @@
-// Import necessary modules/components
 import React, { useState, useEffect, useRef } from 'react';
 import Filter from "@/components/Filter";
 import styles from "@/styles/ParksLibrary.module.css";
@@ -88,7 +87,6 @@ const ParksLibrary = () => {
       <Navbar />
       <main className={`${styles.main}`}>
 
-        {/* Search input */}
         <section className={styles.searchSection}>
           <input
             type="text"
@@ -100,7 +98,6 @@ const ParksLibrary = () => {
           />
         </section>
         
-        {/* Parks header with filter icon */}
         <section className={styles.parkLibHeader}>
           <div className={styles.parksHeader}>
             <h3 tabIndex={4}>Parks</h3>
@@ -119,7 +116,6 @@ const ParksLibrary = () => {
           {filterOpen && <div ref={filterRef}><Filter onChange={handleFilterChange} /></div>} 
         </section>
 
-        
         <section className={styles.PC_Library} tabIndex={6}>
           <div className={styles.parkCard}>
             {filteredData.map((park, index) => (
@@ -128,10 +124,8 @@ const ParksLibrary = () => {
           </div>
         </section>
 
-        
         <button className={styles.showMoreButton} tabIndex={7}>Show More</button>
 
-        
         <section className={styles.discoverBCParks}>
           <div className={styles.discoverBCParks_header} tabIndex={8}>
             <h3>Discover BC Parks</h3>
@@ -156,7 +150,9 @@ const ParksLibrary = () => {
         </section>
 
         {filterOpen && <div className={styles.overlayBackground}></div>}
+
         <div className={styles.background}></div>
+
       </main>
     </>
   );

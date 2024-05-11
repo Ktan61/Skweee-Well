@@ -8,8 +8,8 @@
   background-color: var(--bone);
 }
 
-/*PARK CARDS HEADER*/
 
+/*PARK CARDS HEADER*/
 
 .parkLibHeader {
   display: flex;
@@ -21,6 +21,7 @@
   padding-left: 10px;
   width: 380px;
 }
+
 
 /*SEARCH*/
 
@@ -49,6 +50,7 @@
   outline-color: var(--purple);
 }
 
+
 /*FILTER*/
 
 .filterIcon {
@@ -56,6 +58,7 @@
   left: 50%;
   transform: translate(-50%);
 }
+
 
 /*PARK LIBRARY CARDS SECTION*/
 
@@ -67,7 +70,6 @@
   transform: translate(-50%);
   gap: 1.25rem;
 }
-
 
 .parkCard {
   display: flex;
@@ -122,7 +124,6 @@
   text-decoration: none;
   z-index: 1;
 }
-
 
 .BCPark2 {
   width: 123px;

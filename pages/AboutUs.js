@@ -13,12 +13,12 @@ export default function AboutUs() {
       />
       <MenuBack />
       <Image
-                  src="/images_interface/AboutUs_OrangeBG.svg"
-                  width={430}
-                  height={602}
-                  alt="Orange swirl background"
-                  className={styles.imageOrangeBG}
-            />
+        src="/images_interface/AboutUs_OrangeBG.svg"
+        width={430}
+        height={602}
+        alt="Orange swirl background"
+        className={styles.imageOrangeBG}
+      />
             
       <Navbar />
       <main className={`${styles.main}`}>
