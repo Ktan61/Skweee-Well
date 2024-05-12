@@ -9,13 +9,9 @@ import MenuTutorial from "@/components/MenuTutorial";
 const Loading = ({ progress }) => (
   <div className={styles.loadingContainer}>
     <div className={styles.loadingStyle}>
-      <Image
-        src="/images_content/loadingSqweee.gif"
-        width={410}
-        height={234}
-        alt="animated image of sqwee the squirrel for the loading page"
-        className={styles.loadingSqweee}
-      />
+    <video width="430" height="300" controls={false} autoPlay muted loop>
+      <source src="/images_content/loadingSqweee.mp4" type="video/mp4" />
+    </video>
       <progress value={progress} max="100" className={styles.progressBar}></progress>
     </div>
   </div>
@@ -31,13 +27,13 @@ export default function Home() {
     const fetchData = () => {
       let progress = 0;
       const interval = setInterval(() => {
-        progress += 5;
+        progress += 10;
         setLoadingProgress(progress);
         if (progress >= 100) {
           clearInterval(interval);
           setLoading(false);
         }
-      }, 270);
+      }, 300);
     };
 
     fetchData();
