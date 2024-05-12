@@ -9,7 +9,7 @@
 
 /*LOADING PAGE*/
 .loadingContainer {
-  background-color: #86C2B6;
+  background-color: #98c1bf;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,3 +231,4 @@
   transform: translate(-50%);
   z-index: -300;
 }
+
