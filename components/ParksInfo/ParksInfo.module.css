@@ -1,35 +1,36 @@
 .PC_Container {
-    display: flex;
-    flex-direction: row;
-    max-width: 420px;
-    text-decoration: none;
-    z-index: 1;
-  }
+  display: flex;
+  flex-direction: row;
+  max-width: 420px;
+  text-decoration: none;
+  z-index: 1;
+}
 
-  .parkCard {
-    width: 185px;
-    margin-top: 1rem;
-    text-decoration: none;
-  }
+.parkCard {
+  width: 185px;
+  margin-top: 1rem;
+  text-decoration: none;
+}
 
-  .PC_ImageDiv {
-    margin-bottom: -10px;
-    z-index: -2;
-    text-decoration: none;
-  }
+.PC_ImageDiv {
+  margin-bottom: -10px;
+  z-index: -2;
+  text-decoration: none;
+}
 
-  .PC_TextDiv {
-    background-color: var(--lightGreen);
-    width: 185px;
-    height: 80px;
-    border-radius: 10px;
-    align-content: center;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-  }
+.PC_TextDiv {
+  background-color: var(--lightGreen);
+  padding-top: 10px;
+  width: 185px;
+  height: 80px;
+  border-radius: 10px;
+  align-content: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
 
-  .PC_TextHeader {
-    text-align: center;
-    text-decoration: none;
-    color: var(--black);
-  }
+.PC_TextHeader {
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+}

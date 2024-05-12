@@ -7,9 +7,17 @@ import { useRouter } from "next/router";
 import MenuTutorial from "@/components/MenuTutorial";
 
 const Loading = ({ progress }) => (
-  <div className={styles.loading}>
-    <h1>Loading...</h1>
-    <progress value={progress} max="100" className={styles.progressBar}></progress>
+  <div className={styles.loadingContainer}>
+    <div className={styles.loadingStyle}>
+      <Image
+        src="/images_content/loadingSqweee.gif"
+        width={410}
+        height={234}
+        alt="animated image of sqwee the squirrel for the loading page"
+        className={styles.loadingSqweee}
+      />
+      <progress value={progress} max="100" className={styles.progressBar}></progress>
+    </div>
   </div>
 );
 
@@ -29,7 +37,7 @@ export default function Home() {
           clearInterval(interval);
           setLoading(false);
         }
-      }, 200);
+      }, 270);
     };
 
     fetchData();
@@ -37,11 +45,11 @@ export default function Home() {
 
   return (
     <>
-      <HeadArea title="Sqwell Home" />
       {loading ? ( 
         <Loading progress={loadingProgress} />
       ) : (
         <>
+          <HeadArea title="Sqwell Home" />
           <MenuTutorial />
           <main className={styles.main}>
             <section className={styles.sectionBanner}>

@@ -89,9 +89,9 @@ const Filter = ({ onChange }) => {
                 <p>Sort by Distance</p>
               </li>
               <br></br>
-
             </ul>
           </div>
+
           <div className={styles.clearFilters}>
             <ul className={styles.chipsList}>
               {selectedCat || sortBy ? (
@@ -100,12 +100,12 @@ const Filter = ({ onChange }) => {
                   </li>
               ) : null}
             </ul>
-
           </div>
+
         </div>
 
-        </aside>
-      </div>
+      </aside>
+    </div>
 
   );
 };
