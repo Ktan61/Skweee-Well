@@ -10,7 +10,7 @@ const Loading = ({ progress }) => (
   <div className={styles.loadingContainer}>
     <div className={styles.loadingStyle}>
     <video width="430" height="300" controls={false} autoPlay muted loop>
-      <source src="/images_content/loadingSqweee.mp4" type="video/mp4" />
+      <source src="/images_content/loadingSqweee.webm" type="video/webm" />
     </video>
       <progress value={progress} max="100" className={styles.progressBar}></progress>
     </div>
