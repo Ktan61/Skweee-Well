@@ -4,64 +4,65 @@
     justify-content: space-between;
     align-items: center;
     padding: 6rem;
-    min-height: 120vh;
+    min-height: 115vh;
     background-color: var(--bone);
     margin-bottom: 6rem;
 }
 
 .profilePhotoContainer {
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 200px;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.profilePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:1;
+    position: relative;
+    
+  }
+  
+  .profilePhoto {
     object-fit: cover;
-    height: auto;
-}
-
-.passportIconContainer {
-    position: absolute;
-    top: 22.5rem;
-    left: 46%;
-    transform: translateX(-50%);
+    
+  }
+  
+  .pageHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 380px;
+    margin-top: 1.7rem;
     z-index: 1;
-}
-
-.pageHeader {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 43.89%;
-    top: 120px;
-}
-
-.username {
-    position: absolute;
-    left: 50%;
-    top: 26.4rem;
-    transform: translateX(-50%);
+  }
+  
+  .username {
+    text-align: center;
+    position: relative;
     z-index: 1;
-}
-
-.bioText {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+  }
+  
+  .bioText {
     height: 3rem;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
-    font-size: var(--font-body);
-    top: 29.5rem;
-    position: absolute;
-    width: 20%;
-    transform: translateX(-50%);
+    line-height: 1.5;
+    width: 365px;
     text-align: center;
-    left: 50%;
     z-index: 1;
-}
+  }
+  
+  .bioContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 
 .friend {
     padding: 1rem;
@@ -69,24 +70,21 @@
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .friendListContainer {
     border-radius: 10px;
-    padding: 1rem;
-    width: 22%;
-    position: absolute;
-    margin: 1rem;
-    top: 78%;
-    transform: translateX(-53%);
-    left: 50%;
+    width: 99.5%;
+    position: relative;
+    top: 90.5%;
+   z-index: 1;
 }
 
 .friendsHeader {
-    position:absolute;
-    top: -10%;
+    margin-bottom: 1rem;
+    margin-top:0;
 }
-
 .background {
     width: 430px;
     height: 932px;
@@ -96,8 +94,10 @@
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    z-index: -300;
+    z-index: 0;
+    pointer-events: none;
   }
+  
 
 @media only screen and (max-device-width: 430px) {
     .profilePhotoContainer {

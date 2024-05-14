@@ -65,16 +65,18 @@
    display: flex;
    flex-direction: row;
    justify-content: center;
-   padding:6px;
+   padding:px;
 }
 
 .userName {
   margin-top: .2rem;
     width:auto;
+    padding:1rem;
 }
 .userIcon{
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     position: relative;
+    margin-top:.8rem;
 }
 .icon {
     margin-right: 2rem;
