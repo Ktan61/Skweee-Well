@@ -37,14 +37,14 @@ export default function Profile() {
             </h5>
             {popup && <BadgeCollection onClose={() => setPopup(false)} className={styles.badgeCollection} />}
           </section>
-          <div className={styles.profilePhotoContainer}  tabIndex={4}>
+          <div className={styles.profilePhotoContainer} tabIndex={4}>
             <Image
               src="/images_content/profile-photo.jpg"
               width={200}
               height={200}
               alt="profile photo of a woman with brown hair"
               className={styles.profilePhoto}
-             
+
             />
           </div>
           <div className={styles.username}>
@@ -214,18 +214,18 @@ export default function Profile() {
             height={489}
             alt="green tree background image"
           />
-          </div>
-          <div className={styles.chartContainer} tabIndex={23}>
+        </div>
+        <div className={styles.chartContainer} tabIndex={23}>
           <h3 className={styles.chartHeader} tabIndex={22}>Park Report</h3>
-            <VerticalChart />
-          </div>
-          <div className={styles.leaderboardButtonContainer}>
+          <VerticalChart />
+        </div>
+        <div className={styles.leaderboardButtonContainer}>
           <Link href="/Community">
             <button className={styles.leaderboardButton} tabIndex={24}>View Leaderboard</button>
           </Link>
-          </div>
-          
-          <div className={styles.background}></div>
+        </div>
+
+        <div className={styles.background}></div>
       </main>
     </>
   );

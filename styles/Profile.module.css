@@ -8,8 +8,9 @@
   background-color: var(--bone);
   margin-bottom: 4rem;
 }
-.topSectionContainer{
-  z-index:1;
+
+.topSectionContainer {
+  z-index: 1;
 }
 
 .badgeCollection {
@@ -24,7 +25,7 @@
   gap: .50rem;
   max-width: 430px;
   padding-bottom: 1.25rem;
-  z-index:2;
+  z-index: 2;
 }
 
 .navChip {
@@ -139,7 +140,7 @@
 }
 
 /* bottom section */
-.chartHeader{
+.chartHeader {
   padding-bottom: 1rem;
   display: flex;
   z-index: 1;
@@ -151,36 +152,39 @@
   position: relative;
   height: auto;
   margin-bottom: 1rem;
-top:17rem;
+  top: 17rem;
 }
 
-.leaderboardButtonContainer{
+.leaderboardButtonContainer {
   z-index: 1;
   text-decoration: none;
   margin-top: 16rem;
   display: flex;
   justify-content: center;
 }
+
 .treeContainer {
   position: absolute;
   left: 45.4%;
   transform: translate(-50%);
   z-index: 1;
   margin-bottom: 0;
-  top:93.6rem;
+  top: 93.6rem;
 }
 
 /*visited parks*/
-.visitedParks{
-  z-index:1;
-  margin-top:0;
+.visitedParks {
+  z-index: 1;
+  margin-top: 0;
 }
 
 .parksHeader {
   z-index: 1;
   margin-left: 20px;
-  margin-top: 0;;
+  margin-top: 0;
+  ;
 }
+
 .FPContainer {
   display: flex;
   flex-direction: row;
@@ -189,7 +193,7 @@ top:17rem;
   max-width: 430px;
   overflow-x: scroll;
   margin-top: 1.5rem;
-  
+
 }
 
 .featuredParksCard {
@@ -247,9 +251,9 @@ top:17rem;
   margin-right: 3.75rem;
 }
 
-.galleryContainer{
- z-index: 1;
- margin-top:0;
+.galleryContainer {
+  z-index: 1;
+  margin-top: 0;
 }
 
 .background {
@@ -268,17 +272,16 @@ top:17rem;
 
 @media only screen and (max-device-width: 430px) {
 
-  .tree{
-  margin-top:10rem;
+  .treeContainer {
+    margin-top: 10rem;
+    margin-left:-3rem;
   }
-  .chartHeaderContainer{
-    width:100%;
+
+  .chartHeaderContainer {
+    width: 100%;
   }
-  .chartContainer{
-    margin-top:-4rem;
+
+  .leaderboardButtonContainer {
+margin-bottom: 3rem;
   }
-  .leaderboardButton{
-    margin-top: -2rem;
-  }
-  }
-  
+}
