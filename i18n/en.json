@@ -1,0 +1,9 @@
+{
+    "page.home.head.title": "Next.jsi18n example",
+    "page.home.head.meta.description": "Next.js i18n example - English",
+    "page.home.title": "Account Settings",
+    "page.home.description": "Language Preference",
+    "page.home.notifications": "Notifications",
+    "page.home.privacy": "Privacy",
+    "page.home.profile": "My Profile"
+}
