@@ -37,21 +37,21 @@ export default function Profile() {
             </h5>
             {popup && <BadgeCollection onClose={() => setPopup(false)} className={styles.badgeCollection} />}
           </section>
-          <div className={styles.profilePhotoContainer}>
+          <div className={styles.profilePhotoContainer}  tabIndex={4}>
             <Image
               src="/images_content/profile-photo.jpg"
               width={200}
               height={200}
               alt="profile photo of a woman with brown hair"
               className={styles.profilePhoto}
-              tabIndex={4}
+             
             />
           </div>
           <div className={styles.username}>
-            <h4 tabIndex={6}>@naturelover222</h4>
+            <h4 tabIndex={5}>@naturelover222</h4>
           </div>
           <div className={styles.bioContainer}>
-            <textarea className={styles.bioText} placeholder="Lover of nature, family and friends" tabIndex={5}></textarea>
+            <textarea className={styles.bioText} placeholder="Lover of nature, family and friends" tabIndex={6}></textarea>
           </div>
           <div className={styles.friendsButtonContainer}>
             <Link href='/Friends'>
@@ -62,7 +62,6 @@ export default function Profile() {
             </Link>
           </div>
         </div>
-
         <div className={styles.galleryContainer}>
           <h3 className={styles.galleryHeader} tabIndex={9}>My Gallery</h3>
           <section className={styles.sectionCarousel}>
@@ -208,23 +207,17 @@ export default function Profile() {
             className={styles.imageSwirl}
           />
         </div>
-
         <div className={styles.treeContainer}>
           <Image
             src="/images_content/profile-tree.png"
-            width={323}
-            height={560}
+            width={295}
+            height={489}
             alt="green tree background image"
-            className={styles.tree}
           />
           </div>
-        <div className={styles.parkReportContainer}>
-          <div className={styles.chartHeaderContainer}>
-          <h3 className={styles.chartHeader} tabIndex={22}>Park Report</h3>
-         </div>
           <div className={styles.chartContainer} tabIndex={23}>
+          <h3 className={styles.chartHeader} tabIndex={22}>Park Report</h3>
             <VerticalChart />
-          </div>
           </div>
           <div className={styles.leaderboardButtonContainer}>
           <Link href="/Community">

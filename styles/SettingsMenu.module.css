@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5rem 1.25rem 5rem 1.25rem;
-    min-height: 120vh;
+    min-height: 100vh;
     background-color: var(--bone);
   }
   .background {
@@ -19,12 +19,114 @@
     z-index: 0;
     pointer-events: none;
   }
+  .headerContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+ 
   .menuList {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: left;
     list-style-type: none;
     padding: 0;
 }
+.userIcon{
+  margin-left: 9.85rem;
+}
+.profileContainer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:.2rem;
+}
+.privacyContainer{
+  display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:.3rem;
+}
+.privacyIcon{
+  margin-left: 11rem;
+}
+.languageContainer{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: .2rem;
+}
+.flagIcon{
+  margin-left: 5rem;
+}
+/* switch styling */
+.settingsMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .toggleContainer {
+   display: inline-block;
+    margin-left: 8rem;
+    margin-top:.5rem;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--lightGreen);
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 23px;
+    left: 1px;
+    bottom: 1px;
+    background-color: var(--darkGreen);
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--orange);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--orange);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(25.2px);
+  }
+  
+  /* Rounded slider */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

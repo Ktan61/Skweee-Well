@@ -68,7 +68,7 @@ const Sidebar = () => {
                 src="/images_interface/profile-settings.png"
                 width={30}
                 height={30}
-                alt="logout icon "
+                alt="profile photo icon "
                 className={styles.userIcon}
               />
               <span className={styles.userName}>@naturelover222</span></Link></li>

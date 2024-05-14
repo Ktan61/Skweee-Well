@@ -4,9 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 270vh;
+  min-height: 257vh;
   background-color: var(--bone);
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 .topSectionContainer{
   z-index:1;
@@ -48,9 +48,6 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: "KoHo";
-  font-size: 20px;
-  font-weight: 600;
   color: var(--darkGreen);
 }
 
@@ -76,14 +73,6 @@
 
 .profilePhoto {
   object-fit: cover;
-}
-
-.passportIconContainer {
-  position: absolute;
-  top: 22rem;
-  left: 46%;
-  transform: translateX(-50%);
-  z-index: 1;
 }
 
 .pageHeader {
@@ -146,55 +135,51 @@
   z-index: 0;
   display: flex;
   justify-content: center;
-  margin-bottom: 1.6rem;
   position: fixed;
 }
 
-.chartHeaderContainer {
-  padding-bottom: 50px;
+/* bottom section */
+.chartHeader{
+  padding-bottom: 1rem;
   display: flex;
-  justify-content: center;
   z-index: 1;
   margin-right: 11.7rem;
-  position: relative;
-  margin-top: -13rem;
 }
 
 .chartContainer {
   z-index: 1;
   position: relative;
   height: auto;
-  top: -1rem;
+  margin-bottom: 1rem;
+top:17rem;
 }
-.leaderboardButton {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  align-items: center;
-  text-decoration: none;
-  z-index: 2;
-}
+
 .leaderboardButtonContainer{
   z-index: 1;
+  text-decoration: none;
+  margin-top: 16rem;
+  display: flex;
+  justify-content: center;
 }
-.tree {
-  position: relative;
-  left: 33.3%;
+.treeContainer {
+  position: absolute;
+  left: 45.4%;
   transform: translate(-50%);
   z-index: 1;
-}
-
-
-.parksHeader {
-  position: relative;
-  margin-top: 0rem;
-  z-index: 1;
-  margin-left: 2rem;
+  margin-bottom: 0;
+  top:93.6rem;
 }
 
 /*visited parks*/
 .visitedParks{
   z-index:1;
+  margin-top:0;
+}
+
+.parksHeader {
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: 0;;
 }
 .FPContainer {
   display: flex;
@@ -233,25 +218,18 @@
   padding: 0.5rem 1.25rem;
 }
 
-.FPC_TextHeader {
-  padding-bottom: 0.5rem;
-}
+
 
 /* gallery carousel */
 .galleryHeader {
-  position: relative;
-  margin-left: 2rem;
-  top: 0;
-
+  margin-left: 20px;
+  margin-top: 0;
 }
 
 .sectionCarousel {
   display: flex;
-  flex-direction: column;
   gap: 1.25rem;
-  margin-bottom: 2rem;
 }
-
 
 .carouselCard {
   width: 308px;
@@ -271,7 +249,7 @@
 
 .galleryContainer{
  z-index: 1;
- margin-top: 2rem;
+ margin-top:0;
 }
 
 .background {

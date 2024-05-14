@@ -10,52 +10,56 @@
 }
 
 .profilePhotoContainer {
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 200px;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.profilePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:1;
+    position: relative;
+    
+  }
+  
+  .profilePhoto {
     object-fit: cover;
-    height: auto;
-}
-
-
-.pageHeader {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 43.89%;
-    top: 120px;
-}
-
-.username {
-    position: absolute;
-    left: 50%;
-    top: 26.4rem;
-    transform: translateX(-50%);
+    
+  }
+  
+  .pageHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 380px;
+    margin-top: 1.7rem;
     z-index: 1;
-}
-
-.bioText {
+  }
+  
+  .username {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .bioText {
     height: 3rem;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
-    font-size: 14px;
     line-height: 1.5;
-    top: 29.5rem;
-    position: absolute;
-    width: 20%;
-    transform: translateX(-50%);
+    width: 365px;
     text-align: center;
-    left: 50%;
     z-index: 1;
-}
+  }
+  
+  .bioContainer {
+    display: flex;
+    justify-content: center;
+  }
 
 .friend {
     padding: 1rem;
@@ -67,18 +71,15 @@
 
 .friendListContainer {
     border-radius: 10px;
-    padding: 1rem;
-    width: 22%;
-    position: absolute;
-    margin: 1rem;
-    top: 65.5%;
-    transform: translateX(-54.5%);
-    left: 50%;
+    width: 29.5%;
+    position: relative;
+    top: 90.5%;
+   
 }
 
 .friendsHeader {
-    margin-bottom: 1.5rem;
-    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top:0;
 }
 .requestBox{
     float: right;
@@ -116,7 +117,22 @@
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    z-index: -300;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .imageSwirl {
+    max-width: 430px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .swirlContainer {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+    position: fixed;
   }
 @media only screen and (max-device-width: 430px) {
     .profilePhotoContainer {
