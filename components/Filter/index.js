@@ -45,8 +45,19 @@ const Filter = ({ onChange }) => {
         <div className={styles.filterContent}>
           <div className={styles.header}>
             <h3>Filters</h3>
+            <div className={styles.clearFiltersContainer}>
+            <ul className={styles.chipsList}>
+              {selectedCat || sortBy ? (
+                  <li className={styles.clearFilters} onClick={clearFilters}>
+                    <p className={styles.clearLabel}>Clear Filters</p>
+                  </li>
+              ) : null}
+            </ul>
           </div>
+          </div>
+
           <br />
+          
           <div className={styles.chips}>
             <ul className={styles.chipsList}>
               <li className={styles.links} onClick={() => toggleFilter("Washroom")}>
@@ -91,17 +102,6 @@ const Filter = ({ onChange }) => {
               <br></br>
             </ul>
           </div>
-
-          <div className={styles.clearFilters}>
-            <ul className={styles.chipsList}>
-              {selectedCat || sortBy ? (
-                  <li className={styles.clearFilters} onClick={clearFilters}>
-                    <p className={styles.clearLabel}>Clear Filters</p>
-                  </li>
-              ) : null}
-            </ul>
-          </div>
-
         </div>
 
       </aside>
