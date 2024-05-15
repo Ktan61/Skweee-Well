@@ -24,9 +24,9 @@
 /*language buttons */
 .languageOptions {
   position: absolute;
-  display:flex;
+  display: flex;
   flex-direction: row;
-  gap:1rem;
+  gap: 1rem;
   margin-top: 11.9rem;
   left: 57%;
   text-decoration: none;
@@ -37,6 +37,7 @@
 .headerContainer {
   margin-top: 2rem;
 }
+
 /*settings list */
 .menuList {
   margin-top: 2rem;
@@ -82,7 +83,7 @@
 
 .flagIcon {
   margin-left: 5rem;
-  display:none;
+  display: none;
 }
 
 /* switch styling */

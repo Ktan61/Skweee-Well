@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 257vh;
+  min-height: 230vh;
   background-color: var(--bone);
   margin-bottom: 4rem;
 }
@@ -151,25 +151,15 @@
   z-index: 1;
   position: relative;
   height: auto;
-  margin-bottom: 1rem;
-  top: 17rem;
+  margin-bottom: 0;
 }
 
 .leaderboardButtonContainer {
   z-index: 1;
   text-decoration: none;
-  margin-top: 16rem;
+  margin-top: 0;
   display: flex;
   justify-content: center;
-}
-
-.treeContainer {
-  position: absolute;
-  left: 45.4%;
-  transform: translate(-50%);
-  z-index: 1;
-  margin-bottom: 0;
-  top: 93.6rem;
 }
 
 /*visited parks*/

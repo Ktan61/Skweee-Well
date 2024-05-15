@@ -207,14 +207,6 @@ export default function Profile() {
             className={styles.imageSwirl}
           />
         </div>
-        <div className={styles.treeContainer}>
-          <Image
-            src="/images_content/profile-tree.png"
-            width={295}
-            height={489}
-            alt="green tree background image"
-          />
-        </div>
         <div className={styles.chartContainer} tabIndex={23}>
           <h3 className={styles.chartHeader} tabIndex={22}>Park Report</h3>
           <VerticalChart />

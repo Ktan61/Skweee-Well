@@ -1,144 +1,145 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6rem;
-    min-height: 115vh;
-    background-color: var(--bone);
-    margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 115vh;
+  background-color: var(--bone);
+  margin-bottom: 6rem;
 }
 
 .profilePhotoContainer {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    z-index:1;
-    position: relative;
-    
-  }
-  
-  .profilePhoto {
-    object-fit: cover;
-    
-  }
-  
-  .pageHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 380px;
-    margin-top: 1.7rem;
-    z-index: 1;
-  }
-  
-  .username {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
-  }
-  
-  .bioText {
-    height: 3rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: none;
-    line-height: 1.5;
-    width: 365px;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .bioContainer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: relative;
+
+}
+
+.profilePhoto {
+  object-fit: cover;
+
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 380px;
+  margin-top: 1.7rem;
+  z-index: 1;
+}
+
+.username {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.bioText {
+  height: 3rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  line-height: 1.5;
+  width: 365px;
+  text-align: center;
+  z-index: 1;
+}
+
+.bioContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
 .friend {
-    padding: 1rem;
-    margin-bottom: 6px;
-    background-color: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+  padding: 1rem;
+  margin-bottom: 6px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .friendListContainer {
-    border-radius: 10px;
-    width: 99.5%;
-    position: relative;
-    top: 90.5%;
-   z-index: 1;
+  border-radius: 10px;
+  width: 99.5%;
+  position: relative;
+  top: 90.5%;
+  z-index: 1;
 }
 
 .friendsHeader {
-    margin-bottom: 1rem;
-    margin-top:0;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
+
 .background {
-    width: 430px;
-    height: 932px;
-    border-left: 1px solid var(--darkGreen);
-    border-right: 1px solid var(--darkGreen);
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 0;
-    pointer-events: none;
-  }
-  
+  width: 430px;
+  height: 932px;
+  border-left: 1px solid var(--darkGreen);
+  border-right: 1px solid var(--darkGreen);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
 
 @media only screen and (max-device-width: 430px) {
-    .profilePhotoContainer {
-        left: 50%;
-        transform: translateX(135%);
-        top: 10%;
-    }
+  .profilePhotoContainer {
+    left: 50%;
+    transform: translateX(135%);
+    top: 10%;
+  }
 
-    .username {
-        left: 50%;
-        transform: translateX(150%);
-        top: 45%;
-    }
+  .username {
+    left: 50%;
+    transform: translateX(150%);
+    top: 45%;
+  }
 
-    .bioText {
-        width: 45%;
-        left: 50%;
-        transform: translateX(55%);
-        top:55%;
-    }
+  .bioText {
+    width: 45%;
+    left: 50%;
+    transform: translateX(55%);
+    top: 55%;
+  }
 
-    .passportIconContainer {
-        left: 35%;
-    }
+  .passportIconContainer {
+    left: 35%;
+  }
 
-    .friendListContainer {
-        width: 40%;
-        left: 50%;
-        transform: translateX(58%);
-        margin-top: 2rem;
-        top: 60%;
-    }
+  .friendListContainer {
+    width: 40%;
+    left: 50%;
+    transform: translateX(58%);
+    margin-top: 2rem;
+    top: 60%;
+  }
 
-    .friendsPage {
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  .friendsPage {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    .main {
-        min-height: 90vh;
-    }
-  
-    
+  .main {
+    min-height: 90vh;
+  }
+
+
 }
