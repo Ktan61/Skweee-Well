@@ -96,7 +96,7 @@ const Filter = ({ onChange }) => {
             <ul className={styles.chipsList}>
               {selectedCat || sortBy ? (
                   <li className={styles.clearFilters} onClick={clearFilters}>
-                    <p>Clear Filters</p>
+                    <p className={styles.clearLabel}>Clear Filters</p>
                   </li>
               ) : null}
             </ul>

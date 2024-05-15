@@ -78,12 +78,22 @@
 .clearFilters {
     text-decoration: none;
     margin: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
     border: none;
     border-radius: 4rem;
     cursor: pointer;
     background-color: var(--darkGreen);
     color: var(--white);
     text-align: center;
+    align-content: center;
+}
+
+.clearLabel {
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
 }
 
 .overlay {
