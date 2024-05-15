@@ -1,9 +1,9 @@
 .filter {
     position: fixed;
     top: 80px;
-    left: 57%;
-    transform: translate(-43%);
-    width: 200px;
+    left: 54%;
+    transform: translate(-46%);
+    width: 300px;
     height: 100vh;
     transition: bottom 0.3s ease;
     z-index: 100;
@@ -25,38 +25,43 @@
 .header h3 {
     width: 70px;
     text-align: center;
+    padding-left: 10px;
 }
 
 .sqweeeFilter {
     margin: 0;
     margin-bottom: -18px;
-    padding-left: 65px;
+    padding-left: 160px;
 }
 
 .filterContent {
     margin: 2;
     background-color: var(--greenGrey);
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
     align-content: center;
 }
 
 .chips {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .chipsList {
-    gap: 2px;
+    gap: 3px;
     list-style-type: none;
     text-align: center;
     padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .chips li {
     padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin-top: 3px;
     margin-bottom: 3px;
     border: none;
@@ -78,6 +83,7 @@
     cursor: pointer;
     background-color: var(--darkGreen);
     color: var(--white);
+    text-align: center;
 }
 
 .overlay {
