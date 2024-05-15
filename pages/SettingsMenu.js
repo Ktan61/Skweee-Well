@@ -33,7 +33,7 @@ export default function SettingsMenu({ dir }) {
         <div className={styles.languageOptions}>
           {[...locales].sort().map((locale) => (
             <Link key={locale} href="/SettingsMenu" locale={locale}>
-            <div>{locale}</div>
+              <div>{locale}</div>
             </Link>
           ))}
         </div>
@@ -42,14 +42,14 @@ export default function SettingsMenu({ dir }) {
         <div>
           <div className={styles.headerContainer}>
             <h5 className={styles.settingsHeader}>
-              <FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b>}}/></h5>
+              <FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b> }} /></h5>
           </div>
           <br></br>
           <hr></hr>
           <ul className={styles.menuList}>
             <div className={styles.languageContainer} tabIndex={3}>
               <li className={styles.listItem}>
-                <FormattedMessage id="page.home.description"/> </li>
+                <FormattedMessage id="page.home.description" /> </li>
               <Image
                 src="/images_interface/enflag.png"
                 width={30}
@@ -59,7 +59,7 @@ export default function SettingsMenu({ dir }) {
                 tabIndex={4}
               />
             </div>
-            <li className={styles.listItem} tabIndex={5}><FormattedMessage id="page.home.notifications"/>
+            <li className={styles.listItem} tabIndex={5}><FormattedMessage id="page.home.notifications" />
               <div className={styles.toggleContainer}>
                 <label className={styles.switch} tabIndex={6}>
                   <input type="checkbox" checked={checked} onChange={handleChange} />
@@ -68,7 +68,7 @@ export default function SettingsMenu({ dir }) {
               </div>
             </li>
             <div className={styles.privacyContainer} tabIndex={7}>
-              <li className={styles.listItem}><FormattedMessage id="page.home.privacy"/></li>
+              <li className={styles.listItem}><FormattedMessage id="page.home.privacy" /></li>
               <Image
                 src="/images_interface/lockIcon.png"
                 width={27}
@@ -79,7 +79,7 @@ export default function SettingsMenu({ dir }) {
               />
             </div>
             <div className={styles.profileContainer} tabIndex={9}>
-              <li className={styles.listItem}><FormattedMessage id="page.home.profile"/>
+              <li className={styles.listItem}><FormattedMessage id="page.home.profile" />
               </li> <Image
                 src="/images_interface/profile-settings.png"
                 width={30}
