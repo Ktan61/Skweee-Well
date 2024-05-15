@@ -114,6 +114,18 @@
   z-index: 1;
 }
 
+.BCPark1 h5 {
+  align-content: center;
+}
+
+.BCPark2 h5 {
+  align-content: center;
+}
+
+.BCPark3 h5 {
+  align-content: center;
+}
+
 .BCParksLink {
   text-decoration: none;
   color: black;
