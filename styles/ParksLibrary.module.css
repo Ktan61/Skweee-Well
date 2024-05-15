@@ -105,6 +105,7 @@
 }
 
 .BCPark1 {
+  display: flex;
   width: 123px;
   height: 115px;
   background-color: var(--purple);
@@ -112,7 +113,6 @@
   align-content: center;
   text-align: center;
   z-index: 1;
-  padding-top: 10px;
 }
 
 .BCPark1 h5 {
@@ -139,6 +139,7 @@
 }
 
 .BCPark2 {
+  display: flex;
   width: 123px;
   height: 115px;
   background-color: var(--blue);
@@ -146,10 +147,10 @@
   align-content: center;
   text-align: center;
   z-index: 1;
-  padding-top: 10px;
 }
 
 .BCPark3 {
+  display: flex;
   width: 123px;
   height: 115px;
   background-color: var(--orange);
@@ -157,7 +158,6 @@
   align-content: center;
   text-align: center;
   z-index: 1;
-  padding-top: 10px;
 }
 
 .background {
