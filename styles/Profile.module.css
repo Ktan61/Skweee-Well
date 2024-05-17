@@ -118,6 +118,7 @@
   margin-right: .4rem;
   margin-left: .4rem;
   z-index: 3;
+  font-family: var(--font-button);
 }
 
 .friendsButtonContainer {
@@ -143,7 +144,6 @@
 .chartHeader {
   z-index: 1;
   margin-left: 20px;
-  margin-top: 2.5rem;
   padding-bottom: 1rem;
 }
 
@@ -157,9 +157,10 @@
 .leaderboardButtonContainer {
   z-index: 1;
   text-decoration: none;
-  margin-top: 1.5rem;
+  margin-top: .2rem;
   display: flex;
   justify-content: center;
+  font-family: var(--font-button);
 }
 
 /*visited parks*/
@@ -171,7 +172,6 @@
 .parksHeader {
   z-index: 1;
   margin-left: 20px;
-  margin-top: 2rem;
 }
 
 .FPContainer {
@@ -216,7 +216,6 @@
 /* gallery carousel */
 .galleryHeader {
   margin-left: 20px;
-  margin-top: 2rem;
 }
 
 .sectionCarousel {
