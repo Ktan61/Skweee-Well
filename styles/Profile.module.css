@@ -141,7 +141,6 @@
 
 /* bottom section */
 .chartHeader {
-  padding-bottom: 1.5rem;
   z-index: 1;
   margin-left: 20px;
   margin-top: 2.5rem;
@@ -157,7 +156,7 @@
 .leaderboardButtonContainer {
   z-index: 1;
   text-decoration: none;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
