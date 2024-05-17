@@ -36,6 +36,13 @@
 /* page header*/
 .headerContainer {
   margin-top: 2rem;
+  width:100%;
+}
+.hr{
+  width:300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*settings list */
@@ -43,15 +50,11 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5rem;
   list-style-type: none;
   padding: 0;
 }
 
-.userIcon {
-  margin-left: 9.6rem;
-  position: relative;
-}
 
 .profileContainer {
   display: flex;
@@ -69,11 +72,6 @@
   position: relative;
 }
 
-.privacyIcon {
-  margin-left: 11rem;
-  position: relative;
-}
-
 .languageContainer {
   display: flex;
   flex-direction: row;
@@ -81,22 +79,16 @@
   margin-bottom: .2rem;
 }
 
-.flagIcon {
-  margin-left: 5rem;
-  display: none;
+.icon{
+  margin-right: .6rem;
+ margin-left: auto;
 }
 
 /* switch styling */
-.settingsMenu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .toggleContainer {
-  display: inline-block;
-  margin-left: 8.4rem;
-  position: absolute;
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .switch {
